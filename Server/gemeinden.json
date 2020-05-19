@@ -1,0 +1,8480 @@
+{
+    "gemeinden": [
+        {
+            "postCode": "6067",
+            "name": "Absam"
+        },
+        {
+            "postCode": "3462",
+            "name": "Absdorf"
+        },
+        {
+            "postCode": "5441",
+            "name": "Abtenau"
+        },
+        {
+            "postCode": "2481",
+            "name": "Achau"
+        },
+        {
+            "postCode": "6215",
+            "name": "Achenkirch"
+        },
+        {
+            "postCode": "2232",
+            "name": "Aderklaa"
+        },
+        {
+            "postCode": "4541",
+            "name": "Adlwang"
+        },
+        {
+            "postCode": "8911",
+            "name": "Admont"
+        },
+        {
+            "postCode": "5421",
+            "name": "Adnet"
+        },
+        {
+            "postCode": "4184",
+            "name": "Afiesl"
+        },
+        {
+            "postCode": "8623",
+            "name": "Aflenz"
+        },
+        {
+            "postCode": "9542",
+            "name": "Afritz am See"
+        },
+        {
+            "postCode": "3641",
+            "name": "Aggsbach"
+        },
+        {
+            "postCode": "4184",
+            "name": "Ahorn"
+        },
+        {
+            "postCode": "8966",
+            "name": "Aich"
+        },
+        {
+            "postCode": "4671",
+            "name": "Aichkirchen"
+        },
+        {
+            "postCode": "8943",
+            "name": "Aigen im Ennstal"
+        },
+        {
+            "postCode": "4160",
+            "name": "Aigen-Schlägl"
+        },
+        {
+            "postCode": "9951",
+            "name": "Ainet"
+        },
+        {
+            "postCode": "4676",
+            "name": "Aistersheim"
+        },
+        {
+            "postCode": "9571",
+            "name": "Albeck"
+        },
+        {
+            "postCode": "2054",
+            "name": "Alberndorf im Pulkautal"
+        },
+        {
+            "postCode": "4211",
+            "name": "Alberndorf in der Riedmark"
+        },
+        {
+            "postCode": "6861",
+            "name": "Alberschwende"
+        },
+        {
+            "postCode": "8200",
+            "name": "Albersdorf-Prebuch"
+        },
+        {
+            "postCode": "3613",
+            "name": "Albrechtsberg an der Großen Krems"
+        },
+        {
+            "postCode": "6071",
+            "name": "Aldrans"
+        },
+        {
+            "postCode": "4072",
+            "name": "Alkoven"
+        },
+        {
+            "postCode": "2534",
+            "name": "Alland"
+        },
+        {
+            "postCode": "3804",
+            "name": "Allentsteig"
+        },
+        {
+            "postCode": "8412",
+            "name": "Allerheiligen bei Wildon"
+        },
+        {
+            "postCode": "4320",
+            "name": "Allerheiligen im Mühlkreis"
+        },
+        {
+            "postCode": "4511",
+            "name": "Allhaming"
+        },
+        {
+            "postCode": "3365",
+            "name": "Allhartsberg"
+        },
+        {
+            "postCode": "6236",
+            "name": "Alpbach"
+        },
+        {
+            "postCode": "6844",
+            "name": "Altach"
+        },
+        {
+            "postCode": "8992",
+            "name": "Altaussee"
+        },
+        {
+            "postCode": "4203",
+            "name": "Altenberg bei Linz"
+        },
+        {
+            "postCode": "3591",
+            "name": "Altenburg"
+        },
+        {
+            "postCode": "2632",
+            "name": "Altendorf"
+        },
+        {
+            "postCode": "4121",
+            "name": "Altenfelden"
+        },
+        {
+            "postCode": "2571",
+            "name": "Altenmarkt an der Triesting"
+        },
+        {
+            "postCode": "8934",
+            "name": "Altenmarkt bei Sankt Gallen"
+        },
+        {
+            "postCode": "5541",
+            "name": "Altenmarkt im Pongau"
+        },
+        {
+            "postCode": "4950",
+            "name": "Altheim"
+        },
+        {
+            "postCode": "9330",
+            "name": "Althofen"
+        },
+        {
+            "postCode": "3033",
+            "name": "Altlengbach"
+        },
+        {
+            "postCode": "2144",
+            "name": "Altlichtenwarth"
+        },
+        {
+            "postCode": "3925",
+            "name": "Altmelon"
+        },
+        {
+            "postCode": "4813",
+            "name": "Altmünster"
+        },
+        {
+            "postCode": "4721",
+            "name": "Altschwendt"
+        },
+        {
+            "postCode": "3872",
+            "name": "Amaliendorf-Aalfang"
+        },
+        {
+            "postCode": "9908",
+            "name": "Amlach"
+        },
+        {
+            "postCode": "6070",
+            "name": "Ampass"
+        },
+        {
+            "postCode": "4843",
+            "name": "Ampflwang im Hausruckwald"
+        },
+        {
+            "postCode": "3300",
+            "name": "Amstetten"
+        },
+        {
+            "postCode": "7163",
+            "name": "Andau"
+        },
+        {
+            "postCode": "6866",
+            "name": "Andelsbuch"
+        },
+        {
+            "postCode": "2301",
+            "name": "Andlersdorf"
+        },
+        {
+            "postCode": "4770",
+            "name": "Andorf"
+        },
+        {
+            "postCode": "4754",
+            "name": "Andrichsfurt"
+        },
+        {
+            "postCode": "6321",
+            "name": "Angath"
+        },
+        {
+            "postCode": "8184",
+            "name": "Anger"
+        },
+        {
+            "postCode": "6320",
+            "name": "Angerberg"
+        },
+        {
+            "postCode": "2261",
+            "name": "Angern an der March"
+        },
+        {
+            "postCode": "5081",
+            "name": "Anif"
+        },
+        {
+            "postCode": "3222",
+            "name": "Annaberg"
+        },
+        {
+            "postCode": "5524",
+            "name": "Annaberg-Lungötz"
+        },
+        {
+            "postCode": "9912",
+            "name": "Anras"
+        },
+        {
+            "postCode": "4053",
+            "name": "Ansfelden"
+        },
+        {
+            "postCode": "7042",
+            "name": "Antau"
+        },
+        {
+            "postCode": "5102",
+            "name": "Anthering"
+        },
+        {
+            "postCode": "4980",
+            "name": "Antiesenhofen"
+        },
+        {
+            "postCode": "7143",
+            "name": "Apetlon"
+        },
+        {
+            "postCode": "3925",
+            "name": "Arbesbach"
+        },
+        {
+            "postCode": "4341",
+            "name": "Arbing"
+        },
+        {
+            "postCode": "3321",
+            "name": "Ardagger"
+        },
+        {
+            "postCode": "8904",
+            "name": "Ardning"
+        },
+        {
+            "postCode": "8454",
+            "name": "Arnfels"
+        },
+        {
+            "postCode": "9601",
+            "name": "Arnoldstein"
+        },
+        {
+            "postCode": "4122",
+            "name": "Arnreit"
+        },
+        {
+            "postCode": "9543",
+            "name": "Arriach"
+        },
+        {
+            "postCode": "3661",
+            "name": "Artstetten-Pöbring"
+        },
+        {
+            "postCode": "6471",
+            "name": "Arzl im Pitztal"
+        },
+        {
+            "postCode": "4082",
+            "name": "Aschach an der Donau"
+        },
+        {
+            "postCode": "4421",
+            "name": "Aschach an der Steyr"
+        },
+        {
+            "postCode": "6274",
+            "name": "Aschau im Zillertal"
+        },
+        {
+            "postCode": "3361",
+            "name": "Aschbach-Markt"
+        },
+        {
+            "postCode": "5252",
+            "name": "Aspach"
+        },
+        {
+            "postCode": "2870",
+            "name": "Aspang-Markt"
+        },
+        {
+            "postCode": "2870",
+            "name": "Aspangberg-St. Peter"
+        },
+        {
+            "postCode": "2151",
+            "name": "Asparn an der Zaya"
+        },
+        {
+            "postCode": "3041",
+            "name": "Asperhofen"
+        },
+        {
+            "postCode": "9911",
+            "name": "Assling"
+        },
+        {
+            "postCode": "4481",
+            "name": "Asten"
+        },
+        {
+            "postCode": "4864",
+            "name": "Attersee am Attersee"
+        },
+        {
+            "postCode": "4800",
+            "name": "Attnang-Puchheim"
+        },
+        {
+            "postCode": "4904",
+            "name": "Atzbach"
+        },
+        {
+            "postCode": "3452",
+            "name": "Atzenbrugg"
+        },
+        {
+            "postCode": "4152",
+            "name": "Atzesberg"
+        },
+        {
+            "postCode": "6883",
+            "name": "Au"
+        },
+        {
+            "postCode": "2451",
+            "name": "Au am Leithaberge"
+        },
+        {
+            "postCode": "4171",
+            "name": "Auberg"
+        },
+        {
+            "postCode": "5224",
+            "name": "Auerbach"
+        },
+        {
+            "postCode": "2214",
+            "name": "Auersthal"
+        },
+        {
+            "postCode": "4861",
+            "name": "Aurach am Hongar"
+        },
+        {
+            "postCode": "6371",
+            "name": "Aurach bei Kitzbühel"
+        },
+        {
+            "postCode": "4971",
+            "name": "Aurolzmünster"
+        },
+        {
+            "postCode": "9931",
+            "name": "Außervillgraten"
+        },
+        {
+            "postCode": "6094",
+            "name": "Axams"
+        },
+        {
+            "postCode": "6653",
+            "name": "Bach"
+        },
+        {
+            "postCode": "4672",
+            "name": "Bachmanning"
+        },
+        {
+            "postCode": "8990",
+            "name": "Bad Aussee"
+        },
+        {
+            "postCode": "9530",
+            "name": "Bad Bleiberg"
+        },
+        {
+            "postCode": "8283",
+            "name": "Bad Blumau"
+        },
+        {
+            "postCode": "2405",
+            "name": "Bad Deutsch-Altenburg"
+        },
+        {
+            "postCode": "2822",
+            "name": "Bad Erlach"
+        },
+        {
+            "postCode": "2721",
+            "name": "Bad Fischau-Brunn"
+        },
+        {
+            "postCode": "5640",
+            "name": "Bad Gastein"
+        },
+        {
+            "postCode": "8344",
+            "name": "Bad Gleichenberg"
+        },
+        {
+            "postCode": "4822",
+            "name": "Bad Goisern am Hallstättersee"
+        },
+        {
+            "postCode": "3972",
+            "name": "Bad Großpertholz"
+        },
+        {
+            "postCode": "4540",
+            "name": "Bad Hall"
+        },
+        {
+            "postCode": "6323",
+            "name": "Bad Häring"
+        },
+        {
+            "postCode": "5630",
+            "name": "Bad Hofgastein"
+        },
+        {
+            "postCode": "4820",
+            "name": "Bad Ischl"
+        },
+        {
+            "postCode": "9546",
+            "name": "Bad Kleinkirchheim"
+        },
+        {
+            "postCode": "4362",
+            "name": "Bad Kreuzen"
+        },
+        {
+            "postCode": "4190",
+            "name": "Bad Leonfelden"
+        },
+        {
+            "postCode": "8983",
+            "name": "Bad Mitterndorf"
+        },
+        {
+            "postCode": "2222",
+            "name": "Bad Pirawarth"
+        },
+        {
+            "postCode": "8490",
+            "name": "Bad Radkersburg"
+        },
+        {
+            "postCode": "7202",
+            "name": "Bad Sauerbrunn"
+        },
+        {
+            "postCode": "4701",
+            "name": "Bad Schallerbach"
+        },
+        {
+            "postCode": "2853",
+            "name": "Bad Schönau"
+        },
+        {
+            "postCode": "9462",
+            "name": "Bad St. Leonhard im Lavanttal"
+        },
+        {
+            "postCode": "7431",
+            "name": "Bad Tatzmannsdorf"
+        },
+        {
+            "postCode": "3632",
+            "name": "Bad Traunstein"
+        },
+        {
+            "postCode": "5424",
+            "name": "Bad Vigaun"
+        },
+        {
+            "postCode": "2540",
+            "name": "Bad Vöslau"
+        },
+        {
+            "postCode": "8271",
+            "name": "Bad Waltersdorf"
+        },
+        {
+            "postCode": "4654",
+            "name": "Bad Wimsbach-Neydharting"
+        },
+        {
+            "postCode": "4283",
+            "name": "Bad Zell"
+        },
+        {
+            "postCode": "2500",
+            "name": "Baden"
+        },
+        {
+            "postCode": "7512",
+            "name": "Badersdorf"
+        },
+        {
+            "postCode": "9805",
+            "name": "Baldramsdorf"
+        },
+        {
+            "postCode": "8572",
+            "name": "Bärnbach"
+        },
+        {
+            "postCode": "3665",
+            "name": "Bärnkopf"
+        },
+        {
+            "postCode": "6781",
+            "name": "Bartholomäberg"
+        },
+        {
+            "postCode": "7021",
+            "name": "Baumgarten"
+        },
+        {
+            "postCode": "4342",
+            "name": "Baumgartenberg"
+        },
+        {
+            "postCode": "6121",
+            "name": "Baumkirchen"
+        },
+        {
+            "postCode": "4441",
+            "name": "Behamberg"
+        },
+        {
+            "postCode": "2413",
+            "name": "Berg"
+        },
+        {
+            "postCode": "4880",
+            "name": "Berg im Attergau"
+        },
+        {
+            "postCode": "9771",
+            "name": "Berg im Drautal"
+        },
+        {
+            "postCode": "3512",
+            "name": "Bergern im Dunkelsteinerwald"
+        },
+        {
+            "postCode": "5101",
+            "name": "Bergheim"
+        },
+        {
+            "postCode": "3254",
+            "name": "Bergland"
+        },
+        {
+            "postCode": "2560",
+            "name": "Berndorf"
+        },
+        {
+            "postCode": "5165",
+            "name": "Berndorf bei Salzburg"
+        },
+        {
+            "postCode": "2275",
+            "name": "Bernhardsthal"
+        },
+        {
+            "postCode": "7434",
+            "name": "Bernstein"
+        },
+        {
+            "postCode": "6622",
+            "name": "Berwang"
+        },
+        {
+            "postCode": "6870",
+            "name": "Bezau"
+        },
+        {
+            "postCode": "3353",
+            "name": "Biberbach"
+        },
+        {
+            "postCode": "6633",
+            "name": "Biberwier"
+        },
+        {
+            "postCode": "6621",
+            "name": "Bichlbach"
+        },
+        {
+            "postCode": "2362",
+            "name": "Biedermannsdorf"
+        },
+        {
+            "postCode": "7521",
+            "name": "Bildein"
+        },
+        {
+            "postCode": "6858",
+            "name": "Bildstein"
+        },
+        {
+            "postCode": "6092",
+            "name": "Birgitz"
+        },
+        {
+            "postCode": "8190",
+            "name": "Birkfeld"
+        },
+        {
+            "postCode": "2102",
+            "name": "Bisamberg"
+        },
+        {
+            "postCode": "5500",
+            "name": "Bischofshofen"
+        },
+        {
+            "postCode": "3232",
+            "name": "Bischofstetten"
+        },
+        {
+            "postCode": "6874",
+            "name": "Bizau"
+        },
+        {
+            "postCode": "9150",
+            "name": "Bleiburg"
+        },
+        {
+            "postCode": "3372",
+            "name": "Blindenmarkt"
+        },
+        {
+            "postCode": "6723",
+            "name": "Blons"
+        },
+        {
+            "postCode": "6700",
+            "name": "Bludenz"
+        },
+        {
+            "postCode": "6719",
+            "name": "Bludesch"
+        },
+        {
+            "postCode": "2602",
+            "name": "Blumau-Neurißhof"
+        },
+        {
+            "postCode": "2213",
+            "name": "Bockfließ"
+        },
+        {
+            "postCode": "7551",
+            "name": "Bocksdorf"
+        },
+        {
+            "postCode": "3071",
+            "name": "Böheimkirchen"
+        },
+        {
+            "postCode": "5733",
+            "name": "Bramberg am Wildkogel"
+        },
+        {
+            "postCode": "6708",
+            "name": "Brand"
+        },
+        {
+            "postCode": "3053",
+            "name": "Brand-Laaben"
+        },
+        {
+            "postCode": "3871",
+            "name": "Brand-Nagelberg"
+        },
+        {
+            "postCode": "6290",
+            "name": "Brandberg"
+        },
+        {
+            "postCode": "6234",
+            "name": "Brandenberg"
+        },
+        {
+            "postCode": "5280",
+            "name": "Braunau am Inn"
+        },
+        {
+            "postCode": "6900",
+            "name": "Bregenz"
+        },
+        {
+            "postCode": "2624",
+            "name": "Breitenau"
+        },
+        {
+            "postCode": "8614",
+            "name": "Breitenau am Hochlantsch"
+        },
+        {
+            "postCode": "6252",
+            "name": "Breitenbach am Inn"
+        },
+        {
+            "postCode": "7091",
+            "name": "Breitenbrunn am Neusiedler See"
+        },
+        {
+            "postCode": "2384",
+            "name": "Breitenfurt bei Wien"
+        },
+        {
+            "postCode": "2673",
+            "name": "Breitenstein"
+        },
+        {
+            "postCode": "6600",
+            "name": "Breitenwang"
+        },
+        {
+            "postCode": "6364",
+            "name": "Brixen im Thale"
+        },
+        {
+            "postCode": "6230",
+            "name": "Brixlegg"
+        },
+        {
+            "postCode": "2833",
+            "name": "Bromberg"
+        },
+        {
+            "postCode": "6260",
+            "name": "Bruck am Ziller"
+        },
+        {
+            "postCode": "5671",
+            "name": "Bruck an der Großglocknerstraße"
+        },
+        {
+            "postCode": "2460",
+            "name": "Bruck an der Leitha"
+        },
+        {
+            "postCode": "8600",
+            "name": "Bruck an der Mur"
+        },
+        {
+            "postCode": "9371",
+            "name": "Brückl"
+        },
+        {
+            "postCode": "2460",
+            "name": "Bruckneudorf"
+        },
+        {
+            "postCode": "2345",
+            "name": "Brunn am Gebirge"
+        },
+        {
+            "postCode": "3595",
+            "name": "Brunn an der Wild"
+        },
+        {
+            "postCode": "4786",
+            "name": "Brunnenthal"
+        },
+        {
+            "postCode": "6960",
+            "name": "Buch"
+        },
+        {
+            "postCode": "6220",
+            "name": "Buch in Tirol"
+        },
+        {
+            "postCode": "8274",
+            "name": "Buch-St. Magdalena"
+        },
+        {
+            "postCode": "2630",
+            "name": "Buchbach"
+        },
+        {
+            "postCode": "4611",
+            "name": "Buchkirchen"
+        },
+        {
+            "postCode": "2630",
+            "name": "Bürg-Vöstenhof"
+        },
+        {
+            "postCode": "8291",
+            "name": "Burgau"
+        },
+        {
+            "postCode": "8291",
+            "name": "Burgauberg-Neudauberg"
+        },
+        {
+            "postCode": "5274",
+            "name": "Burgkirchen"
+        },
+        {
+            "postCode": "3730",
+            "name": "Burgschleinitz-Kühnring"
+        },
+        {
+            "postCode": "5111",
+            "name": "Bürmoos"
+        },
+        {
+            "postCode": "6706",
+            "name": "Bürs"
+        },
+        {
+            "postCode": "6707",
+            "name": "Bürserberg"
+        },
+        {
+            "postCode": "6752",
+            "name": "Dalaas"
+        },
+        {
+            "postCode": "6884",
+            "name": "Damüls"
+        },
+        {
+            "postCode": "8241",
+            "name": "Dechantskirchen"
+        },
+        {
+            "postCode": "9635",
+            "name": "Dellach"
+        },
+        {
+            "postCode": "9772",
+            "name": "Dellach im Drautal"
+        },
+        {
+            "postCode": "4693",
+            "name": "Desselbrunn"
+        },
+        {
+            "postCode": "8483",
+            "name": "Deutsch Goritz"
+        },
+        {
+            "postCode": "2423",
+            "name": "Deutsch Jahrndorf"
+        },
+        {
+            "postCode": "7572",
+            "name": "Deutsch Kaltenbrunn"
+        },
+        {
+            "postCode": "7474",
+            "name": "Deutsch Schützen-Eisenberg"
+        },
+        {
+            "postCode": "9572",
+            "name": "Deutsch-Griffen"
+        },
+        {
+            "postCode": "2232",
+            "name": "Deutsch-Wagram"
+        },
+        {
+            "postCode": "8121",
+            "name": "Deutschfeistritz"
+        },
+        {
+            "postCode": "7301",
+            "name": "Deutschkreutz"
+        },
+        {
+            "postCode": "8530",
+            "name": "Deutschlandsberg"
+        },
+        {
+            "postCode": "5652",
+            "name": "Dienten am Hochkönig"
+        },
+        {
+            "postCode": "4776",
+            "name": "Diersbach"
+        },
+        {
+            "postCode": "4407",
+            "name": "Dietach"
+        },
+        {
+            "postCode": "3813",
+            "name": "Dietmanns"
+        },
+        {
+            "postCode": "9103",
+            "name": "Diex"
+        },
+        {
+            "postCode": "4371",
+            "name": "Dimbach"
+        },
+        {
+            "postCode": "3843",
+            "name": "Dobersberg"
+        },
+        {
+            "postCode": "8143",
+            "name": "Dobl-Zwaring"
+        },
+        {
+            "postCode": "9991",
+            "name": "Dölsach"
+        },
+        {
+            "postCode": "7082",
+            "name": "Donnerskirchen"
+        },
+        {
+            "postCode": "6933",
+            "name": "Doren"
+        },
+        {
+            "postCode": "4751",
+            "name": "Dorf an der Pram"
+        },
+        {
+            "postCode": "5152",
+            "name": "Dorfbeuern"
+        },
+        {
+            "postCode": "5632",
+            "name": "Dorfgastein"
+        },
+        {
+            "postCode": "4392",
+            "name": "Dorfstetten"
+        },
+        {
+            "postCode": "6850",
+            "name": "Dornbirn"
+        },
+        {
+            "postCode": "2165",
+            "name": "Drasenhofen"
+        },
+        {
+            "postCode": "7021",
+            "name": "Draßburg"
+        },
+        {
+            "postCode": "7372",
+            "name": "Draßmarkt"
+        },
+        {
+            "postCode": "2095",
+            "name": "Drosendorf-Zissersdorf"
+        },
+        {
+            "postCode": "2265",
+            "name": "Drösing"
+        },
+        {
+            "postCode": "3552",
+            "name": "Droß"
+        },
+        {
+            "postCode": "3392",
+            "name": "Dunkelsteinerwald"
+        },
+        {
+            "postCode": "6822",
+            "name": "Düns"
+        },
+        {
+            "postCode": "6822",
+            "name": "Dünserberg"
+        },
+        {
+            "postCode": "2263",
+            "name": "Dürnkrut"
+        },
+        {
+            "postCode": "3601",
+            "name": "Dürnstein"
+        },
+        {
+            "postCode": "6341",
+            "name": "Ebbs"
+        },
+        {
+            "postCode": "6212",
+            "name": "Eben am Achensee"
+        },
+        {
+            "postCode": "5531",
+            "name": "Eben im Pongau"
+        },
+        {
+            "postCode": "5323",
+            "name": "Ebenau"
+        },
+        {
+            "postCode": "2490",
+            "name": "Ebenfurth"
+        },
+        {
+            "postCode": "4802",
+            "name": "Ebensee am Traunsee"
+        },
+        {
+            "postCode": "2251",
+            "name": "Ebenthal"
+        },
+        {
+            "postCode": "9065",
+            "name": "Ebenthal in Kärnten"
+        },
+        {
+            "postCode": "7521",
+            "name": "Eberau"
+        },
+        {
+            "postCode": "2435",
+            "name": "Ebergassing"
+        },
+        {
+            "postCode": "9141",
+            "name": "Eberndorf"
+        },
+        {
+            "postCode": "4906",
+            "name": "Eberschwang"
+        },
+        {
+            "postCode": "8273",
+            "name": "Ebersdorf"
+        },
+        {
+            "postCode": "4653",
+            "name": "Eberstalzell"
+        },
+        {
+            "postCode": "9372",
+            "name": "Eberstein"
+        },
+        {
+            "postCode": "2483",
+            "name": "Ebreichsdorf"
+        },
+        {
+            "postCode": "3903",
+            "name": "Echsenbach"
+        },
+        {
+            "postCode": "2305",
+            "name": "Eckartsau"
+        },
+        {
+            "postCode": "8332",
+            "name": "Edelsbach bei Feldbach"
+        },
+        {
+            "postCode": "8583",
+            "name": "Edelschrott"
+        },
+        {
+            "postCode": "2413",
+            "name": "Edelstal"
+        },
+        {
+            "postCode": "4580",
+            "name": "Edlbach"
+        },
+        {
+            "postCode": "2842",
+            "name": "Edlitz"
+        },
+        {
+            "postCode": "4650",
+            "name": "Edt bei Lambach"
+        },
+        {
+            "postCode": "4070",
+            "name": "Eferding"
+        },
+        {
+            "postCode": "6863",
+            "name": "Egg"
+        },
+        {
+            "postCode": "5142",
+            "name": "Eggelsberg"
+        },
+        {
+            "postCode": "3730",
+            "name": "Eggenburg"
+        },
+        {
+            "postCode": "2492",
+            "name": "Eggendorf"
+        },
+        {
+            "postCode": "4622",
+            "name": "Eggendorf im Traunkreis"
+        },
+        {
+            "postCode": "4773",
+            "name": "Eggerding"
+        },
+        {
+            "postCode": "3861",
+            "name": "Eggern"
+        },
+        {
+            "postCode": "8063",
+            "name": "Eggersdorf bei Graz"
+        },
+        {
+            "postCode": "6600",
+            "name": "Ehenbichl"
+        },
+        {
+            "postCode": "8461",
+            "name": "Ehrenhausen an der Weinstraße"
+        },
+        {
+            "postCode": "6632",
+            "name": "Ehrwald"
+        },
+        {
+            "postCode": "8552",
+            "name": "Eibiswald"
+        },
+        {
+            "postCode": "6911",
+            "name": "Eichenberg"
+        },
+        {
+            "postCode": "3032",
+            "name": "Eichgraben"
+        },
+        {
+            "postCode": "8322",
+            "name": "Eichkögl"
+        },
+        {
+            "postCode": "4201",
+            "name": "Eidenberg"
+        },
+        {
+            "postCode": "8790",
+            "name": "Eisenerz"
+        },
+        {
+            "postCode": "9135",
+            "name": "Eisenkappel-Vellach"
+        },
+        {
+            "postCode": "7000",
+            "name": "Eisenstadt"
+        },
+        {
+            "postCode": "3862",
+            "name": "Eisgarn"
+        },
+        {
+            "postCode": "4970",
+            "name": "Eitzing"
+        },
+        {
+            "postCode": "6652",
+            "name": "Elbigenalp"
+        },
+        {
+            "postCode": "5161",
+            "name": "Elixhausen"
+        },
+        {
+            "postCode": "6083",
+            "name": "Ellbögen"
+        },
+        {
+            "postCode": "6352",
+            "name": "Ellmau"
+        },
+        {
+            "postCode": "6644",
+            "name": "Elmen"
+        },
+        {
+            "postCode": "5061",
+            "name": "Elsbethen"
+        },
+        {
+            "postCode": "7562",
+            "name": "Eltendorf"
+        },
+        {
+            "postCode": "3644",
+            "name": "Emmersdorf an der Donau"
+        },
+        {
+            "postCode": "8081",
+            "name": "Empersdorf"
+        },
+        {
+            "postCode": "2292",
+            "name": "Engelhartstetten"
+        },
+        {
+            "postCode": "4090",
+            "name": "Engelhartszell"
+        },
+        {
+            "postCode": "4209",
+            "name": "Engerwitzdorf"
+        },
+        {
+            "postCode": "4470",
+            "name": "Enns"
+        },
+        {
+            "postCode": "4482",
+            "name": "Ennsdorf"
+        },
+        {
+            "postCode": "4761",
+            "name": "Enzenkirchen"
+        },
+        {
+            "postCode": "2640",
+            "name": "Enzenreith"
+        },
+        {
+            "postCode": "2431",
+            "name": "Enzersdorf an der Fischa"
+        },
+        {
+            "postCode": "2202",
+            "name": "Enzersfeld im Weinviertel"
+        },
+        {
+            "postCode": "2551",
+            "name": "Enzesfeld-Lindabrunn"
+        },
+        {
+            "postCode": "6343",
+            "name": "Erl"
+        },
+        {
+            "postCode": "3253",
+            "name": "Erlauf"
+        },
+        {
+            "postCode": "2115",
+            "name": "Ernstbrunn"
+        },
+        {
+            "postCode": "4432",
+            "name": "Ernsthofen"
+        },
+        {
+            "postCode": "3355",
+            "name": "Ertl"
+        },
+        {
+            "postCode": "3153",
+            "name": "Eschenau"
+        },
+        {
+            "postCode": "4724",
+            "name": "Eschenau im Hausruckkreis"
+        },
+        {
+            "postCode": "4092",
+            "name": "Esternberg"
+        },
+        {
+            "postCode": "5301",
+            "name": "Eugendorf"
+        },
+        {
+            "postCode": "3324",
+            "name": "Euratsfeld"
+        },
+        {
+            "postCode": "6525",
+            "name": "Faggen"
+        },
+        {
+            "postCode": "5324",
+            "name": "Faistenau"
+        },
+        {
+            "postCode": "2162",
+            "name": "Falkenstein"
+        },
+        {
+            "postCode": "2133",
+            "name": "Fallbach"
+        },
+        {
+            "postCode": "8350",
+            "name": "Fehring"
+        },
+        {
+            "postCode": "2873",
+            "name": "Feistritz am Wechsel"
+        },
+        {
+            "postCode": "9613",
+            "name": "Feistritz an der Gail"
+        },
+        {
+            "postCode": "9181",
+            "name": "Feistritz im Rosental"
+        },
+        {
+            "postCode": "9143",
+            "name": "Feistritz ob Bleiburg"
+        },
+        {
+            "postCode": "8221",
+            "name": "Feistritztal"
+        },
+        {
+            "postCode": "9544",
+            "name": "Feld am See"
+        },
+        {
+            "postCode": "8330",
+            "name": "Feldbach"
+        },
+        {
+            "postCode": "6800",
+            "name": "Feldkirch"
+        },
+        {
+            "postCode": "4101",
+            "name": "Feldkirchen an der Donau"
+        },
+        {
+            "postCode": "8073",
+            "name": "Feldkirchen bei Graz"
+        },
+        {
+            "postCode": "5143",
+            "name": "Feldkirchen bei Mattighofen"
+        },
+        {
+            "postCode": "9560",
+            "name": "Feldkirchen in Kärnten"
+        },
+        {
+            "postCode": "2603",
+            "name": "Felixdorf"
+        },
+        {
+            "postCode": "3481",
+            "name": "Fels am Wagram"
+        },
+        {
+            "postCode": "6528",
+            "name": "Fendels"
+        },
+        {
+            "postCode": "9170",
+            "name": "Ferlach"
+        },
+        {
+            "postCode": "9702",
+            "name": "Ferndorf"
+        },
+        {
+            "postCode": "8072",
+            "name": "Fernitz-Mellach"
+        },
+        {
+            "postCode": "3325",
+            "name": "Ferschnitz"
+        },
+        {
+            "postCode": "6391",
+            "name": "Fieberbrunn"
+        },
+        {
+            "postCode": "5532",
+            "name": "Filzmoos"
+        },
+        {
+            "postCode": "6292",
+            "name": "Finkenberg"
+        },
+        {
+            "postCode": "9584",
+            "name": "Finkenstein am Faaker See"
+        },
+        {
+            "postCode": "2401",
+            "name": "Fischamend"
+        },
+        {
+            "postCode": "8654",
+            "name": "Fischbach"
+        },
+        {
+            "postCode": "4652",
+            "name": "Fischlham"
+        },
+        {
+            "postCode": "6533",
+            "name": "Fiss"
+        },
+        {
+            "postCode": "5542",
+            "name": "Flachau"
+        },
+        {
+            "postCode": "8163",
+            "name": "Fladnitz an der Teichalm"
+        },
+        {
+            "postCode": "9831",
+            "name": "Flattach"
+        },
+        {
+            "postCode": "6403",
+            "name": "Flaurling"
+        },
+        {
+            "postCode": "6521",
+            "name": "Fließ"
+        },
+        {
+            "postCode": "6572",
+            "name": "Flirsch"
+        },
+        {
+            "postCode": "8183",
+            "name": "Floing"
+        },
+        {
+            "postCode": "8753",
+            "name": "Fohnsdorf"
+        },
+        {
+            "postCode": "6733",
+            "name": "Fontanella"
+        },
+        {
+            "postCode": "6670",
+            "name": "Forchach"
+        },
+        {
+            "postCode": "7212",
+            "name": "Forchtenstein"
+        },
+        {
+            "postCode": "4892",
+            "name": "Fornach"
+        },
+        {
+            "postCode": "5552",
+            "name": "Forstau"
+        },
+        {
+            "postCode": "4070",
+            "name": "Fraham"
+        },
+        {
+            "postCode": "7361",
+            "name": "Frankenau-Unterpullendorf"
+        },
+        {
+            "postCode": "4873",
+            "name": "Frankenburg am Hausruck"
+        },
+        {
+            "postCode": "3213",
+            "name": "Frankenfels"
+        },
+        {
+            "postCode": "4890",
+            "name": "Frankenmarkt"
+        },
+        {
+            "postCode": "5131",
+            "name": "Franking"
+        },
+        {
+            "postCode": "9413",
+            "name": "Frantschach-St. Gertraud"
+        },
+        {
+            "postCode": "6820",
+            "name": "Frastanz"
+        },
+        {
+            "postCode": "7132",
+            "name": "Frauenkirchen"
+        },
+        {
+            "postCode": "9311",
+            "name": "Frauenstein"
+        },
+        {
+            "postCode": "8523",
+            "name": "Frauental an der Laßnitz"
+        },
+        {
+            "postCode": "6833",
+            "name": "Fraxern"
+        },
+        {
+            "postCode": "4785",
+            "name": "Freinberg"
+        },
+        {
+            "postCode": "4240",
+            "name": "Freistadt"
+        },
+        {
+            "postCode": "9712",
+            "name": "Fresach"
+        },
+        {
+            "postCode": "8240",
+            "name": "Friedberg"
+        },
+        {
+            "postCode": "9360",
+            "name": "Friesach"
+        },
+        {
+            "postCode": "6122",
+            "name": "Fritzens"
+        },
+        {
+            "postCode": "8130",
+            "name": "Frohnleiten"
+        },
+        {
+            "postCode": "6263",
+            "name": "Fügen"
+        },
+        {
+            "postCode": "6264",
+            "name": "Fügenberg"
+        },
+        {
+            "postCode": "6166",
+            "name": "Fulpmes"
+        },
+        {
+            "postCode": "8280",
+            "name": "Fürstenfeld"
+        },
+        {
+            "postCode": "2564",
+            "name": "Furth an der Triesting"
+        },
+        {
+            "postCode": "3511",
+            "name": "Furth bei Göttweig"
+        },
+        {
+            "postCode": "5672",
+            "name": "Fusch an der Großglocknerstraße"
+        },
+        {
+            "postCode": "5330",
+            "name": "Fuschl am See"
+        },
+        {
+            "postCode": "6972",
+            "name": "Fußach"
+        },
+        {
+            "postCode": "2531",
+            "name": "Gaaden"
+        },
+        {
+            "postCode": "8731",
+            "name": "Gaal"
+        },
+        {
+            "postCode": "8424",
+            "name": "Gabersdorf"
+        },
+        {
+            "postCode": "3003",
+            "name": "Gablitz"
+        },
+        {
+            "postCode": "3334",
+            "name": "Gaflenz"
+        },
+        {
+            "postCode": "9905",
+            "name": "Gaimberg"
+        },
+        {
+            "postCode": "8783",
+            "name": "Gaishorn am See"
+        },
+        {
+            "postCode": "6974",
+            "name": "Gaißau"
+        },
+        {
+            "postCode": "9132",
+            "name": "Gallizien"
+        },
+        {
+            "postCode": "4210",
+            "name": "Gallneukirchen"
+        },
+        {
+            "postCode": "4713",
+            "name": "Gallspach"
+        },
+        {
+            "postCode": "6222",
+            "name": "Gallzein"
+        },
+        {
+            "postCode": "6563",
+            "name": "Galtür"
+        },
+        {
+            "postCode": "3292",
+            "name": "Gaming"
+        },
+        {
+            "postCode": "8462",
+            "name": "Gamlitz"
+        },
+        {
+            "postCode": "4851",
+            "name": "Gampern"
+        },
+        {
+            "postCode": "2230",
+            "name": "Gänserndorf"
+        },
+        {
+            "postCode": "3571",
+            "name": "Gars am Kamp"
+        },
+        {
+            "postCode": "4451",
+            "name": "Garsten"
+        },
+        {
+            "postCode": "6793",
+            "name": "Gaschurn"
+        },
+        {
+            "postCode": "8616",
+            "name": "Gasen"
+        },
+        {
+            "postCode": "4673",
+            "name": "Gaspoltshofen"
+        },
+        {
+            "postCode": "3852",
+            "name": "Gastern"
+        },
+        {
+            "postCode": "2474",
+            "name": "Gattendorf"
+        },
+        {
+            "postCode": "2154",
+            "name": "Gaubitsch"
+        },
+        {
+            "postCode": "2191",
+            "name": "Gaweinstal"
+        },
+        {
+            "postCode": "4682",
+            "name": "Geboltskirchen"
+        },
+        {
+            "postCode": "3494",
+            "name": "Gedersdorf"
+        },
+        {
+            "postCode": "4922",
+            "name": "Geiersberg"
+        },
+        {
+            "postCode": "4943",
+            "name": "Geinberg"
+        },
+        {
+            "postCode": "8152",
+            "name": "Geistthal-Södingberg"
+        },
+        {
+            "postCode": "2093",
+            "name": "Geras"
+        },
+        {
+            "postCode": "2201",
+            "name": "Gerasdorf bei Wien"
+        },
+        {
+            "postCode": "3385",
+            "name": "Gerersdorf"
+        },
+        {
+            "postCode": "7542",
+            "name": "Gerersdorf-Sulz"
+        },
+        {
+            "postCode": "5132",
+            "name": "Geretsberg"
+        },
+        {
+            "postCode": "6281",
+            "name": "Gerlos"
+        },
+        {
+            "postCode": "6280",
+            "name": "Gerlosberg"
+        },
+        {
+            "postCode": "8212",
+            "name": "Gersdorf an der Feistritz"
+        },
+        {
+            "postCode": "3542",
+            "name": "Gföhl"
+        },
+        {
+            "postCode": "2372",
+            "name": "Gießhübl"
+        },
+        {
+            "postCode": "5133",
+            "name": "Gilgenberg am Weilhart"
+        },
+        {
+            "postCode": "9622",
+            "name": "Gitschtal"
+        },
+        {
+            "postCode": "9555",
+            "name": "Glanegg"
+        },
+        {
+            "postCode": "8443",
+            "name": "Gleinstätten"
+        },
+        {
+            "postCode": "8200",
+            "name": "Gleisdorf"
+        },
+        {
+            "postCode": "2282",
+            "name": "Glinzendorf"
+        },
+        {
+            "postCode": "9142",
+            "name": "Globasnitz"
+        },
+        {
+            "postCode": "9346",
+            "name": "Glödnitz"
+        },
+        {
+            "postCode": "2640",
+            "name": "Gloggnitz"
+        },
+        {
+            "postCode": "3950",
+            "name": "Gmünd"
+        },
+        {
+            "postCode": "9853",
+            "name": "Gmünd in Kärnten"
+        },
+        {
+            "postCode": "4810",
+            "name": "Gmunden"
+        },
+        {
+            "postCode": "2152",
+            "name": "Gnadendorf"
+        },
+        {
+            "postCode": "6069",
+            "name": "Gnadenwald"
+        },
+        {
+            "postCode": "8342",
+            "name": "Gnas"
+        },
+        {
+            "postCode": "9563",
+            "name": "Gnesau"
+        },
+        {
+            "postCode": "6811",
+            "name": "Göfis"
+        },
+        {
+            "postCode": "6353",
+            "name": "Going am Wilden Kaiser"
+        },
+        {
+            "postCode": "5622",
+            "name": "Goldegg"
+        },
+        {
+            "postCode": "4102",
+            "name": "Goldwörth"
+        },
+        {
+            "postCode": "2013",
+            "name": "Göllersdorf"
+        },
+        {
+            "postCode": "3381",
+            "name": "Golling an der Erlauf"
+        },
+        {
+            "postCode": "5440",
+            "name": "Golling an der Salzach"
+        },
+        {
+            "postCode": "7122",
+            "name": "Gols"
+        },
+        {
+            "postCode": "5114",
+            "name": "Göming"
+        },
+        {
+            "postCode": "3800",
+            "name": "Göpfritz an der Wild"
+        },
+        {
+            "postCode": "5574",
+            "name": "Göriach"
+        },
+        {
+            "postCode": "4824",
+            "name": "Gosau"
+        },
+        {
+            "postCode": "8077",
+            "name": "Gössendorf"
+        },
+        {
+            "postCode": "3345",
+            "name": "Göstling an der Ybbs"
+        },
+        {
+            "postCode": "2464",
+            "name": "Göttlesbrunn-Arbesthal"
+        },
+        {
+            "postCode": "2434",
+            "name": "Götzendorf an der Leitha"
+        },
+        {
+            "postCode": "6091",
+            "name": "Götzens"
+        },
+        {
+            "postCode": "6840",
+            "name": "Götzis"
+        },
+        {
+            "postCode": "2020",
+            "name": "Grabern"
+        },
+        {
+            "postCode": "2632",
+            "name": "Grafenbach-St. Valentin"
+        },
+        {
+            "postCode": "8232",
+            "name": "Grafendorf bei Hartberg"
+        },
+        {
+            "postCode": "3492",
+            "name": "Grafenegg"
+        },
+        {
+            "postCode": "7423",
+            "name": "Grafenschachen"
+        },
+        {
+            "postCode": "3912",
+            "name": "Grafenschlag"
+        },
+        {
+            "postCode": "9131",
+            "name": "Grafenstein"
+        },
+        {
+            "postCode": "3484",
+            "name": "Grafenwörth"
+        },
+        {
+            "postCode": "8431",
+            "name": "Gralla"
+        },
+        {
+            "postCode": "6650",
+            "name": "Gramais"
+        },
+        {
+            "postCode": "4201",
+            "name": "Gramastetten"
+        },
+        {
+            "postCode": "2440",
+            "name": "Gramatneusiedl"
+        },
+        {
+            "postCode": "6673",
+            "name": "Grän"
+        },
+        {
+            "postCode": "8101",
+            "name": "Gratkorn"
+        },
+        {
+            "postCode": "8111",
+            "name": "Gratwein-Straßengel"
+        },
+        {
+            "postCode": "8010",
+            "name": "Graz"
+        },
+        {
+            "postCode": "9761",
+            "name": "Greifenburg"
+        },
+        {
+            "postCode": "4360",
+            "name": "Grein"
+        },
+        {
+            "postCode": "8230",
+            "name": "Greinbach"
+        },
+        {
+            "postCode": "3264",
+            "name": "Gresten"
+        },
+        {
+            "postCode": "3264",
+            "name": "Gresten-Land"
+        },
+        {
+            "postCode": "6156",
+            "name": "Gries am Brenner"
+        },
+        {
+            "postCode": "6182",
+            "name": "Gries im Sellrain"
+        },
+        {
+            "postCode": "4710",
+            "name": "Grieskirchen"
+        },
+        {
+            "postCode": "9112",
+            "name": "Griffen"
+        },
+        {
+            "postCode": "2840",
+            "name": "Grimmenstein"
+        },
+        {
+            "postCode": "6591",
+            "name": "Grins"
+        },
+        {
+            "postCode": "6095",
+            "name": "Grinzens"
+        },
+        {
+            "postCode": "8962",
+            "name": "Gröbming"
+        },
+        {
+            "postCode": "5082",
+            "name": "Grödig"
+        },
+        {
+            "postCode": "3920",
+            "name": "Groß Gerungs"
+        },
+        {
+            "postCode": "8522",
+            "name": "Groß Sankt Florian"
+        },
+        {
+            "postCode": "2301",
+            "name": "Groß-Enzersdorf"
+        },
+        {
+            "postCode": "2221",
+            "name": "Groß-Schweinbarth"
+        },
+        {
+            "postCode": "3812",
+            "name": "Groß-Siegharts"
+        },
+        {
+            "postCode": "5611",
+            "name": "Großarl"
+        },
+        {
+            "postCode": "3950",
+            "name": "Großdietmanns"
+        },
+        {
+            "postCode": "2203",
+            "name": "Großebersdorf"
+        },
+        {
+            "postCode": "2212",
+            "name": "Großengersdorf"
+        },
+        {
+            "postCode": "5084",
+            "name": "Großgmain"
+        },
+        {
+            "postCode": "3913",
+            "name": "Großgöttfritz"
+        },
+        {
+            "postCode": "2034",
+            "name": "Großharras"
+        },
+        {
+            "postCode": "2282",
+            "name": "Großhofen"
+        },
+        {
+            "postCode": "7051",
+            "name": "Großhöflein"
+        },
+        {
+            "postCode": "9843",
+            "name": "Großkirchheim"
+        },
+        {
+            "postCode": "8452",
+            "name": "Großklein"
+        },
+        {
+            "postCode": "2143",
+            "name": "Großkrut"
+        },
+        {
+            "postCode": "2002",
+            "name": "Großmugl"
+        },
+        {
+            "postCode": "7540",
+            "name": "Großmürbisch"
+        },
+        {
+            "postCode": "7503",
+            "name": "Großpetersdorf"
+        },
+        {
+            "postCode": "4463",
+            "name": "Großraming"
+        },
+        {
+            "postCode": "3471",
+            "name": "Großriedenthal"
+        },
+        {
+            "postCode": "2114",
+            "name": "Großrußbach"
+        },
+        {
+            "postCode": "3922",
+            "name": "Großschönau"
+        },
+        {
+            "postCode": "8265",
+            "name": "Großsteinbach"
+        },
+        {
+            "postCode": "7304",
+            "name": "Großwarasdorf"
+        },
+        {
+            "postCode": "3701",
+            "name": "Großweikersdorf"
+        },
+        {
+            "postCode": "8263",
+            "name": "Großwilfersdorf"
+        },
+        {
+            "postCode": "4645",
+            "name": "Grünau im Almtal"
+        },
+        {
+            "postCode": "4264",
+            "name": "Grünbach"
+        },
+        {
+            "postCode": "2733",
+            "name": "Grünbach am Schneeberg"
+        },
+        {
+            "postCode": "4594",
+            "name": "Grünburg"
+        },
+        {
+            "postCode": "8993",
+            "name": "Grundlsee"
+        },
+        {
+            "postCode": "6150",
+            "name": "Gschnitz"
+        },
+        {
+            "postCode": "4816",
+            "name": "Gschwandt"
+        },
+        {
+            "postCode": "2352",
+            "name": "Gumpoldskirchen"
+        },
+        {
+            "postCode": "2525",
+            "name": "Günselsdorf"
+        },
+        {
+            "postCode": "4623",
+            "name": "Gunskirchen"
+        },
+        {
+            "postCode": "2042",
+            "name": "Guntersdorf"
+        },
+        {
+            "postCode": "2353",
+            "name": "Guntramsdorf"
+        },
+        {
+            "postCode": "9342",
+            "name": "Gurk"
+        },
+        {
+            "postCode": "4942",
+            "name": "Gurten"
+        },
+        {
+            "postCode": "7540",
+            "name": "Güssing"
+        },
+        {
+            "postCode": "4293",
+            "name": "Gutau"
+        },
+        {
+            "postCode": "8160",
+            "name": "Gutenberg-Stenzengreith"
+        },
+        {
+            "postCode": "3665",
+            "name": "Gutenbrunn"
+        },
+        {
+            "postCode": "2770",
+            "name": "Gutenstein"
+        },
+        {
+            "postCode": "9334",
+            "name": "Guttaring"
+        },
+        {
+            "postCode": "7536",
+            "name": "Güttenbach"
+        },
+        {
+            "postCode": "3350",
+            "name": "Haag"
+        },
+        {
+            "postCode": "4680",
+            "name": "Haag am Hausruck"
+        },
+        {
+            "postCode": "8292",
+            "name": "Hackerberg"
+        },
+        {
+            "postCode": "3493",
+            "name": "Hadersdorf-Kammern"
+        },
+        {
+            "postCode": "2061",
+            "name": "Hadres"
+        },
+        {
+            "postCode": "3386",
+            "name": "Hafnerbach"
+        },
+        {
+            "postCode": "4232",
+            "name": "Hagenberg im Mühlkreis"
+        },
+        {
+            "postCode": "2102",
+            "name": "Hagenbrunn"
+        },
+        {
+            "postCode": "4204",
+            "name": "Haibach im Mühlkreis"
+        },
+        {
+            "postCode": "4083",
+            "name": "Haibach ob der Donau"
+        },
+        {
+            "postCode": "4431",
+            "name": "Haidershofen"
+        },
+        {
+            "postCode": "5120",
+            "name": "Haigermoos"
+        },
+        {
+            "postCode": "6425",
+            "name": "Haiming"
+        },
+        {
+            "postCode": "2410",
+            "name": "Hainburg a.d. Donau"
+        },
+        {
+            "postCode": "3170",
+            "name": "Hainfeld"
+        },
+        {
+            "postCode": "6278",
+            "name": "Hainzenberg"
+        },
+        {
+            "postCode": "8492",
+            "name": "Halbenrain"
+        },
+        {
+            "postCode": "7131",
+            "name": "Halbturn"
+        },
+        {
+            "postCode": "6060",
+            "name": "Hall in Tirol"
+        },
+        {
+            "postCode": "5400",
+            "name": "Hallein"
+        },
+        {
+            "postCode": "4830",
+            "name": "Hallstatt"
+        },
+        {
+            "postCode": "5300",
+            "name": "Hallwang"
+        },
+        {
+            "postCode": "5144",
+            "name": "Handenberg"
+        },
+        {
+            "postCode": "7473",
+            "name": "Hannersdorf"
+        },
+        {
+            "postCode": "6971",
+            "name": "Hard"
+        },
+        {
+            "postCode": "2083",
+            "name": "Hardegg"
+        },
+        {
+            "postCode": "4483",
+            "name": "Hargelsberg"
+        },
+        {
+            "postCode": "2286",
+            "name": "Haringsee"
+        },
+        {
+            "postCode": "2111",
+            "name": "Harmannsdorf"
+        },
+        {
+            "postCode": "8075",
+            "name": "Hart bei Graz"
+        },
+        {
+            "postCode": "6265",
+            "name": "Hart im Zillertal"
+        },
+        {
+            "postCode": "8230",
+            "name": "Hartberg"
+        },
+        {
+            "postCode": "8230",
+            "name": "Hartberg Umgebung"
+        },
+        {
+            "postCode": "4081",
+            "name": "Hartkirchen"
+        },
+        {
+            "postCode": "8224",
+            "name": "Hartl"
+        },
+        {
+            "postCode": "6651",
+            "name": "Häselgehr"
+        },
+        {
+            "postCode": "8144",
+            "name": "Haselsdorf-Tobelbad"
+        },
+        {
+            "postCode": "4170",
+            "name": "Haslach an der Mühl"
+        },
+        {
+            "postCode": "2402",
+            "name": "Haslau-Maria Ellend"
+        },
+        {
+            "postCode": "6402",
+            "name": "Hatting"
+        },
+        {
+            "postCode": "3874",
+            "name": "Haugschlag"
+        },
+        {
+            "postCode": "2054",
+            "name": "Haugsdorf"
+        },
+        {
+            "postCode": "3384",
+            "name": "Haunoldstein"
+        },
+        {
+            "postCode": "8967",
+            "name": "Haus"
+        },
+        {
+            "postCode": "2145",
+            "name": "Hausbrunn"
+        },
+        {
+            "postCode": "2184",
+            "name": "Hauskirchen"
+        },
+        {
+            "postCode": "3464",
+            "name": "Hausleiten"
+        },
+        {
+            "postCode": "8071",
+            "name": "Hausmannstätten"
+        },
+        {
+            "postCode": "3860",
+            "name": "Heidenreichstein"
+        },
+        {
+            "postCode": "4733",
+            "name": "Heiligenberg"
+        },
+        {
+            "postCode": "9844",
+            "name": "Heiligenblut am Großglockner"
+        },
+        {
+            "postCode": "7522",
+            "name": "Heiligenbrunn"
+        },
+        {
+            "postCode": "2532",
+            "name": "Heiligenkreuz"
+        },
+        {
+            "postCode": "8081",
+            "name": "Heiligenkreuz am Waasen"
+        },
+        {
+            "postCode": "7561",
+            "name": "Heiligenkreuz im Lafnitztal"
+        },
+        {
+            "postCode": "8451",
+            "name": "Heimschuh"
+        },
+        {
+            "postCode": "9919",
+            "name": "Heinfels"
+        },
+        {
+            "postCode": "6611",
+            "name": "Heiterwang"
+        },
+        {
+            "postCode": "3704",
+            "name": "Heldenberg"
+        },
+        {
+            "postCode": "4184",
+            "name": "Helfenberg"
+        },
+        {
+            "postCode": "4202",
+            "name": "Hellmonsödt"
+        },
+        {
+            "postCode": "5261",
+            "name": "Helpfau-Uttendorf"
+        },
+        {
+            "postCode": "8411",
+            "name": "Hengsberg"
+        },
+        {
+            "postCode": "5302",
+            "name": "Henndorf am Wallersee"
+        },
+        {
+            "postCode": "2332",
+            "name": "Hennersdorf"
+        },
+        {
+            "postCode": "9620",
+            "name": "Hermagor-Pressegger See"
+        },
+        {
+            "postCode": "2560",
+            "name": "Hernstein"
+        },
+        {
+            "postCode": "2171",
+            "name": "Herrnbaumgarten"
+        },
+        {
+            "postCode": "3130",
+            "name": "Herzogenburg"
+        },
+        {
+            "postCode": "4175",
+            "name": "Herzogsdorf"
+        },
+        {
+            "postCode": "7551",
+            "name": "Heugraben"
+        },
+        {
+            "postCode": "2325",
+            "name": "Himberg"
+        },
+        {
+            "postCode": "9562",
+            "name": "Himmelberg"
+        },
+        {
+            "postCode": "2371",
+            "name": "Hinterbrühl"
+        },
+        {
+            "postCode": "6646",
+            "name": "Hinterhornbach"
+        },
+        {
+            "postCode": "5324",
+            "name": "Hintersee"
+        },
+        {
+            "postCode": "4573",
+            "name": "Hinterstoder"
+        },
+        {
+            "postCode": "4070",
+            "name": "Hinzenbach"
+        },
+        {
+            "postCode": "6283",
+            "name": "Hippach"
+        },
+        {
+            "postCode": "7024",
+            "name": "Hirm"
+        },
+        {
+            "postCode": "3942",
+            "name": "Hirschbach"
+        },
+        {
+            "postCode": "4242",
+            "name": "Hirschbach im Mühlkreis"
+        },
+        {
+            "postCode": "8584",
+            "name": "Hirschegg-Pack"
+        },
+        {
+            "postCode": "2552",
+            "name": "Hirtenberg"
+        },
+        {
+            "postCode": "6952",
+            "name": "Hittisau"
+        },
+        {
+            "postCode": "8151",
+            "name": "Hitzendorf"
+        },
+        {
+            "postCode": "5122",
+            "name": "Hochburg-Ach"
+        },
+        {
+            "postCode": "6395",
+            "name": "Hochfilzen"
+        },
+        {
+            "postCode": "2123",
+            "name": "Hochleithen"
+        },
+        {
+            "postCode": "2852",
+            "name": "Hochneukirchen-Gschaidt"
+        },
+        {
+            "postCode": "6973",
+            "name": "Höchst"
+        },
+        {
+            "postCode": "2802",
+            "name": "Hochwolkersdorf"
+        },
+        {
+            "postCode": "2451",
+            "name": "Hof am Leithaberge"
+        },
+        {
+            "postCode": "5322",
+            "name": "Hof bei Salzburg"
+        },
+        {
+            "postCode": "3681",
+            "name": "Hofamt Priel"
+        },
+        {
+            "postCode": "6604",
+            "name": "Höfen"
+        },
+        {
+            "postCode": "4716",
+            "name": "Hofkirchen an der Trattnach"
+        },
+        {
+            "postCode": "4142",
+            "name": "Hofkirchen im Mühlkreis"
+        },
+        {
+            "postCode": "4492",
+            "name": "Hofkirchen im Traunkreis"
+        },
+        {
+            "postCode": "2465",
+            "name": "Höflein"
+        },
+        {
+            "postCode": "2732",
+            "name": "Höflein an der Hohen Wand"
+        },
+        {
+            "postCode": "8200",
+            "name": "Hofstätten an der Raab"
+        },
+        {
+            "postCode": "3202",
+            "name": "Hofstetten-Grünau"
+        },
+        {
+            "postCode": "2724",
+            "name": "Hohe Wand"
+        },
+        {
+            "postCode": "2273",
+            "name": "Hohenau an der March"
+        },
+        {
+            "postCode": "3192",
+            "name": "Hohenberg"
+        },
+        {
+            "postCode": "3945",
+            "name": "Hoheneich"
+        },
+        {
+            "postCode": "6845",
+            "name": "Hohenems"
+        },
+        {
+            "postCode": "2223",
+            "name": "Hohenruppersdorf"
+        },
+        {
+            "postCode": "8785",
+            "name": "Hohentauern"
+        },
+        {
+            "postCode": "9613",
+            "name": "Hohenthurn"
+        },
+        {
+            "postCode": "3472",
+            "name": "Hohenwarth-Mühlbach a.M."
+        },
+        {
+            "postCode": "6914",
+            "name": "Hohenweiler"
+        },
+        {
+            "postCode": "4921",
+            "name": "Hohenzell"
+        },
+        {
+            "postCode": "5251",
+            "name": "Höhnhart"
+        },
+        {
+            "postCode": "2020",
+            "name": "Hollabrunn"
+        },
+        {
+            "postCode": "3343",
+            "name": "Hollenstein an der Ybbs"
+        },
+        {
+            "postCode": "2812",
+            "name": "Hollenthon"
+        },
+        {
+            "postCode": "5731",
+            "name": "Hollersbach im Pinzgau"
+        },
+        {
+            "postCode": "6654",
+            "name": "Holzgau"
+        },
+        {
+            "postCode": "4615",
+            "name": "Holzhausen"
+        },
+        {
+            "postCode": "6361",
+            "name": "Hopfgarten im Brixental"
+        },
+        {
+            "postCode": "9961",
+            "name": "Hopfgarten in Defereggen"
+        },
+        {
+            "postCode": "4132",
+            "name": "Hörbich"
+        },
+        {
+            "postCode": "6912",
+            "name": "Hörbranz"
+        },
+        {
+            "postCode": "7312",
+            "name": "Horitschon"
+        },
+        {
+            "postCode": "3580",
+            "name": "Horn"
+        },
+        {
+            "postCode": "7053",
+            "name": "Hornstein"
+        },
+        {
+            "postCode": "4063",
+            "name": "Hörsching"
+        },
+        {
+            "postCode": "2405",
+            "name": "Hundsheim"
+        },
+        {
+            "postCode": "3383",
+            "name": "Hürm"
+        },
+        {
+            "postCode": "5511",
+            "name": "Hüttau"
+        },
+        {
+            "postCode": "9375",
+            "name": "Hüttenberg"
+        },
+        {
+            "postCode": "5612",
+            "name": "Hüttschlag"
+        },
+        {
+            "postCode": "7142",
+            "name": "Illmitz"
+        },
+        {
+            "postCode": "8262",
+            "name": "Ilz"
+        },
+        {
+            "postCode": "8211",
+            "name": "Ilztal"
+        },
+        {
+            "postCode": "6460",
+            "name": "Imst"
+        },
+        {
+            "postCode": "6492",
+            "name": "Imsterberg"
+        },
+        {
+            "postCode": "6751",
+            "name": "Innerbraz"
+        },
+        {
+            "postCode": "5310",
+            "name": "Innerschwand am Mondsee"
+        },
+        {
+            "postCode": "9932",
+            "name": "Innervillgraten"
+        },
+        {
+            "postCode": "6020",
+            "name": "Innsbruck"
+        },
+        {
+            "postCode": "7540",
+            "name": "Inzenhof"
+        },
+        {
+            "postCode": "4565",
+            "name": "Inzersdorf im Kremstal"
+        },
+        {
+            "postCode": "3131",
+            "name": "Inzersdorf-Getzersdorf"
+        },
+        {
+            "postCode": "6401",
+            "name": "Inzing"
+        },
+        {
+            "postCode": "8952",
+            "name": "Irdning-Donnersbachtal"
+        },
+        {
+            "postCode": "3754",
+            "name": "Irnfritz-Messern"
+        },
+        {
+            "postCode": "9773",
+            "name": "Irschen"
+        },
+        {
+            "postCode": "6561",
+            "name": "Ischgl"
+        },
+        {
+            "postCode": "9992",
+            "name": "Iselsberg-Stronach"
+        },
+        {
+            "postCode": "6305",
+            "name": "Itter"
+        },
+        {
+            "postCode": "7503",
+            "name": "Jabing"
+        },
+        {
+            "postCode": "8091",
+            "name": "Jagerberg"
+        },
+        {
+            "postCode": "3542",
+            "name": "Jaidhof"
+        },
+        {
+            "postCode": "3763",
+            "name": "Japons"
+        },
+        {
+            "postCode": "2264",
+            "name": "Jedenspeigen"
+        },
+        {
+            "postCode": "5225",
+            "name": "Jeging"
+        },
+        {
+            "postCode": "6200",
+            "name": "Jenbach"
+        },
+        {
+            "postCode": "8380",
+            "name": "Jennersdorf"
+        },
+        {
+            "postCode": "6474",
+            "name": "Jerzens"
+        },
+        {
+            "postCode": "6373",
+            "name": "Jochberg"
+        },
+        {
+            "postCode": "7093",
+            "name": "Jois"
+        },
+        {
+            "postCode": "3441",
+            "name": "Judenau-Baumgarten"
+        },
+        {
+            "postCode": "8750",
+            "name": "Judenburg"
+        },
+        {
+            "postCode": "4162",
+            "name": "Julbach"
+        },
+        {
+            "postCode": "6691",
+            "name": "Jungholz"
+        },
+        {
+            "postCode": "8573",
+            "name": "Kainach bei Voitsberg"
+        },
+        {
+            "postCode": "8010",
+            "name": "Kainbach bei Graz"
+        },
+        {
+            "postCode": "8224",
+            "name": "Kaindorf"
+        },
+        {
+            "postCode": "6655",
+            "name": "Kaisers"
+        },
+        {
+            "postCode": "7342",
+            "name": "Kaisersdorf"
+        },
+        {
+            "postCode": "4720",
+            "name": "Kallham"
+        },
+        {
+            "postCode": "9981",
+            "name": "Kals am Großglockner"
+        },
+        {
+            "postCode": "8401",
+            "name": "Kalsdorf bei Graz"
+        },
+        {
+            "postCode": "6272",
+            "name": "Kaltenbach"
+        },
+        {
+            "postCode": "4273",
+            "name": "Kaltenberg"
+        },
+        {
+            "postCode": "2391",
+            "name": "Kaltenleutgeben"
+        },
+        {
+            "postCode": "8775",
+            "name": "Kalwang"
+        },
+        {
+            "postCode": "8773",
+            "name": "Kammern im Liesingtal"
+        },
+        {
+            "postCode": "3141",
+            "name": "Kapelln"
+        },
+        {
+            "postCode": "8605",
+            "name": "Kapfenberg"
+        },
+        {
+            "postCode": "8353",
+            "name": "Kapfenstein"
+        },
+        {
+            "postCode": "9321",
+            "name": "Kappel am Krappfeld"
+        },
+        {
+            "postCode": "6555",
+            "name": "Kappl"
+        },
+        {
+            "postCode": "5710",
+            "name": "Kaprun"
+        },
+        {
+            "postCode": "3822",
+            "name": "Karlstein an der Thaya"
+        },
+        {
+            "postCode": "3121",
+            "name": "Karlstetten"
+        },
+        {
+            "postCode": "6462",
+            "name": "Karres"
+        },
+        {
+            "postCode": "6463",
+            "name": "Karrösten"
+        },
+        {
+            "postCode": "9941",
+            "name": "Kartitsch"
+        },
+        {
+            "postCode": "3072",
+            "name": "Kasten bei Böheimkirchen"
+        },
+        {
+            "postCode": "4223",
+            "name": "Katsdorf"
+        },
+        {
+            "postCode": "2801",
+            "name": "Katzelsdorf"
+        },
+        {
+            "postCode": "2572",
+            "name": "Kaumberg"
+        },
+        {
+            "postCode": "6527",
+            "name": "Kaunerberg"
+        },
+        {
+            "postCode": "6524",
+            "name": "Kaunertal"
+        },
+        {
+            "postCode": "6526",
+            "name": "Kauns"
+        },
+        {
+            "postCode": "3851",
+            "name": "Kautzen"
+        },
+        {
+            "postCode": "4292",
+            "name": "Kefermarkt"
+        },
+        {
+            "postCode": "4633",
+            "name": "Kematen am Innbach"
+        },
+        {
+            "postCode": "4531",
+            "name": "Kematen an der Krems"
+        },
+        {
+            "postCode": "3331",
+            "name": "Kematen an der Ybbs"
+        },
+        {
+            "postCode": "6175",
+            "name": "Kematen in Tirol"
+        },
+        {
+            "postCode": "7531",
+            "name": "Kemeten"
+        },
+        {
+            "postCode": "6921",
+            "name": "Kennelbach"
+        },
+        {
+            "postCode": "9074",
+            "name": "Keutschach am See"
+        },
+        {
+            "postCode": "3233",
+            "name": "Kilb"
+        },
+        {
+            "postCode": "8650",
+            "name": "Kindberg"
+        },
+        {
+            "postCode": "9632",
+            "name": "Kirchbach"
+        },
+        {
+            "postCode": "8082",
+            "name": "Kirchbach-Zerlach"
+        },
+        {
+            "postCode": "3470",
+            "name": "Kirchberg am Wagram"
+        },
+        {
+            "postCode": "3932",
+            "name": "Kirchberg am Walde"
+        },
+        {
+            "postCode": "2880",
+            "name": "Kirchberg am Wechsel"
+        },
+        {
+            "postCode": "3204",
+            "name": "Kirchberg an der Pielach"
+        },
+        {
+            "postCode": "8324",
+            "name": "Kirchberg an der Raab"
+        },
+        {
+            "postCode": "5232",
+            "name": "Kirchberg bei Mattighofen"
+        },
+        {
+            "postCode": "6365",
+            "name": "Kirchberg in Tirol"
+        },
+        {
+            "postCode": "4131",
+            "name": "Kirchberg ob der Donau"
+        },
+        {
+            "postCode": "4062",
+            "name": "Kirchberg-Thening"
+        },
+        {
+            "postCode": "6322",
+            "name": "Kirchbichl"
+        },
+        {
+            "postCode": "4982",
+            "name": "Kirchdorf am Inn"
+        },
+        {
+            "postCode": "4560",
+            "name": "Kirchdorf an der Krems"
+        },
+        {
+            "postCode": "6382",
+            "name": "Kirchdorf in Tirol"
+        },
+        {
+            "postCode": "4656",
+            "name": "Kirchham"
+        },
+        {
+            "postCode": "4932",
+            "name": "Kirchheim im Innkreis"
+        },
+        {
+            "postCode": "3631",
+            "name": "Kirchschlag"
+        },
+        {
+            "postCode": "4202",
+            "name": "Kirchschlag bei Linz"
+        },
+        {
+            "postCode": "2860",
+            "name": "Kirchschlag in der Buckligen Welt"
+        },
+        {
+            "postCode": "3062",
+            "name": "Kirchstetten"
+        },
+        {
+            "postCode": "3241",
+            "name": "Kirnberg an der Mank"
+        },
+        {
+            "postCode": "2421",
+            "name": "Kittsee"
+        },
+        {
+            "postCode": "6370",
+            "name": "Kitzbühel"
+        },
+        {
+            "postCode": "8442",
+            "name": "Kitzeck im Sausal"
+        },
+        {
+            "postCode": "4163",
+            "name": "Klaffer am Hochficht"
+        },
+        {
+            "postCode": "9020",
+            "name": "Klagenfurt am Wörthersee"
+        },
+        {
+            "postCode": "4352",
+            "name": "Klam"
+        },
+        {
+            "postCode": "6833",
+            "name": "Klaus"
+        },
+        {
+            "postCode": "4564",
+            "name": "Klaus an der Pyhrnbahn"
+        },
+        {
+            "postCode": "2533",
+            "name": "Klausen-Leopoldsdorf"
+        },
+        {
+            "postCode": "9753",
+            "name": "Kleblach-Lind"
+        },
+        {
+            "postCode": "9373",
+            "name": "Klein St. Paul"
+        },
+        {
+            "postCode": "2431",
+            "name": "Klein-Neusiedl"
+        },
+        {
+            "postCode": "3660",
+            "name": "Klein-Pöchlarn"
+        },
+        {
+            "postCode": "5603",
+            "name": "Kleinarl"
+        },
+        {
+            "postCode": "7540",
+            "name": "Kleinmürbisch"
+        },
+        {
+            "postCode": "3171",
+            "name": "Kleinzell"
+        },
+        {
+            "postCode": "4115",
+            "name": "Kleinzell im Mühlkreis"
+        },
+        {
+            "postCode": "7013",
+            "name": "Klingenbach"
+        },
+        {
+            "postCode": "8493",
+            "name": "Klöch"
+        },
+        {
+            "postCode": "6754",
+            "name": "Klösterle"
+        },
+        {
+            "postCode": "3400",
+            "name": "Klosterneuburg"
+        },
+        {
+            "postCode": "8720",
+            "name": "Knittelfeld"
+        },
+        {
+            "postCode": "8723",
+            "name": "Kobenz"
+        },
+        {
+            "postCode": "7332",
+            "name": "Kobersdorf"
+        },
+        {
+            "postCode": "6842",
+            "name": "Koblach"
+        },
+        {
+            "postCode": "8580",
+            "name": "Köflach"
+        },
+        {
+            "postCode": "7512",
+            "name": "Kohfidisch"
+        },
+        {
+            "postCode": "4154",
+            "name": "Kollerschlag"
+        },
+        {
+            "postCode": "6114",
+            "name": "Kolsass"
+        },
+        {
+            "postCode": "6115",
+            "name": "Kolsassberg"
+        },
+        {
+            "postCode": "3465",
+            "name": "Königsbrunn am Wagram"
+        },
+        {
+            "postCode": "7563",
+            "name": "Königsdorf"
+        },
+        {
+            "postCode": "3433",
+            "name": "Königstetten"
+        },
+        {
+            "postCode": "4280",
+            "name": "Königswiesen"
+        },
+        {
+            "postCode": "4794",
+            "name": "Kopfing im Innkreis"
+        },
+        {
+            "postCode": "5321",
+            "name": "Koppl"
+        },
+        {
+            "postCode": "2100",
+            "name": "Korneuburg"
+        },
+        {
+            "postCode": "6345",
+            "name": "Kössen"
+        },
+        {
+            "postCode": "5203",
+            "name": "Köstendorf"
+        },
+        {
+            "postCode": "9640",
+            "name": "Kötschach-Mauthen"
+        },
+        {
+            "postCode": "3623",
+            "name": "Kottes-Purk"
+        },
+        {
+            "postCode": "2542",
+            "name": "Kottingbrunn"
+        },
+        {
+            "postCode": "9071",
+            "name": "Köttmannsdorf"
+        },
+        {
+            "postCode": "8854",
+            "name": "Krakau"
+        },
+        {
+            "postCode": "6233",
+            "name": "Kramsach"
+        },
+        {
+            "postCode": "8714",
+            "name": "Kraubath an der Mur"
+        },
+        {
+            "postCode": "3500",
+            "name": "Krems an der Donau"
+        },
+        {
+            "postCode": "9861",
+            "name": "Krems in Kärnten"
+        },
+        {
+            "postCode": "4550",
+            "name": "Kremsmünster"
+        },
+        {
+            "postCode": "4631",
+            "name": "Krenglbach"
+        },
+        {
+            "postCode": "7031",
+            "name": "Krensdorf"
+        },
+        {
+            "postCode": "2123",
+            "name": "Kreuttal"
+        },
+        {
+            "postCode": "2124",
+            "name": "Kreuzstetten"
+        },
+        {
+            "postCode": "8670",
+            "name": "Krieglach"
+        },
+        {
+            "postCode": "5743",
+            "name": "Krimml"
+        },
+        {
+            "postCode": "5425",
+            "name": "Krispl"
+        },
+        {
+            "postCode": "4484",
+            "name": "Kronstorf"
+        },
+        {
+            "postCode": "8564",
+            "name": "Krottendorf-Gaisfeld"
+        },
+        {
+            "postCode": "3543",
+            "name": "Krumau am Kamp"
+        },
+        {
+            "postCode": "2851",
+            "name": "Krumbach"
+        },
+        {
+            "postCode": "6942",
+            "name": "Krumbach"
+        },
+        {
+            "postCode": "3375",
+            "name": "Krummnußbaum"
+        },
+        {
+            "postCode": "9201",
+            "name": "Krumpendorf am Wörthersee"
+        },
+        {
+            "postCode": "5431",
+            "name": "Kuchl"
+        },
+        {
+            "postCode": "6330",
+            "name": "Kufstein"
+        },
+        {
+            "postCode": "7543",
+            "name": "Kukmirn"
+        },
+        {
+            "postCode": "8062",
+            "name": "Kumberg"
+        },
+        {
+            "postCode": "6250",
+            "name": "Kundl"
+        },
+        {
+            "postCode": "2136",
+            "name": "Laa an der Thaya"
+        },
+        {
+            "postCode": "2381",
+            "name": "Laab im Walde"
+        },
+        {
+            "postCode": "4663",
+            "name": "Laakirchen"
+        },
+        {
+            "postCode": "7322",
+            "name": "Lackenbach"
+        },
+        {
+            "postCode": "7321",
+            "name": "Lackendorf"
+        },
+        {
+            "postCode": "2126",
+            "name": "Ladendorf"
+        },
+        {
+            "postCode": "6532",
+            "name": "Ladis"
+        },
+        {
+            "postCode": "8233",
+            "name": "Lafnitz"
+        },
+        {
+            "postCode": "4650",
+            "name": "Lambach"
+        },
+        {
+            "postCode": "4772",
+            "name": "Lambrechten"
+        },
+        {
+            "postCode": "5112",
+            "name": "Lamprechtshausen"
+        },
+        {
+            "postCode": "6500",
+            "name": "Landeck"
+        },
+        {
+            "postCode": "8931",
+            "name": "Landl"
+        },
+        {
+            "postCode": "8403",
+            "name": "Lang"
+        },
+        {
+            "postCode": "2091",
+            "name": "Langau"
+        },
+        {
+            "postCode": "6932",
+            "name": "Langen bei Bregenz"
+        },
+        {
+            "postCode": "6941",
+            "name": "Langenegg"
+        },
+        {
+            "postCode": "6444",
+            "name": "Längenfeld"
+        },
+        {
+            "postCode": "3550",
+            "name": "Langenlois"
+        },
+        {
+            "postCode": "3442",
+            "name": "Langenrohr"
+        },
+        {
+            "postCode": "4222",
+            "name": "Langenstein"
+        },
+        {
+            "postCode": "8665",
+            "name": "Langenwang"
+        },
+        {
+            "postCode": "2103",
+            "name": "Langenzersdorf"
+        },
+        {
+            "postCode": "6336",
+            "name": "Langkampfen"
+        },
+        {
+            "postCode": "3921",
+            "name": "Langschlag"
+        },
+        {
+            "postCode": "8502",
+            "name": "Lannach"
+        },
+        {
+            "postCode": "6072",
+            "name": "Lans"
+        },
+        {
+            "postCode": "2326",
+            "name": "Lanzendorf"
+        },
+        {
+            "postCode": "2821",
+            "name": "Lanzenkirchen"
+        },
+        {
+            "postCode": "4291",
+            "name": "Lasberg"
+        },
+        {
+            "postCode": "2291",
+            "name": "Lassee"
+        },
+        {
+            "postCode": "8903",
+            "name": "Lassing"
+        },
+        {
+            "postCode": "6830",
+            "name": "Laterns"
+        },
+        {
+            "postCode": "4461",
+            "name": "Laussa"
+        },
+        {
+            "postCode": "6923",
+            "name": "Lauterach"
+        },
+        {
+            "postCode": "9473",
+            "name": "Lavamünd"
+        },
+        {
+            "postCode": "9906",
+            "name": "Lavant"
+        },
+        {
+            "postCode": "2361",
+            "name": "Laxenburg"
+        },
+        {
+            "postCode": "8301",
+            "name": "Laßnitzhöhe"
+        },
+        {
+            "postCode": "8403",
+            "name": "Lebring-Sankt Margarethen"
+        },
+        {
+            "postCode": "6764",
+            "name": "Lech"
+        },
+        {
+            "postCode": "6600",
+            "name": "Lechaschau"
+        },
+        {
+            "postCode": "3652",
+            "name": "Leiben"
+        },
+        {
+            "postCode": "8430",
+            "name": "Leibnitz"
+        },
+        {
+            "postCode": "9909",
+            "name": "Leisach"
+        },
+        {
+            "postCode": "2443",
+            "name": "Leithaprodersdorf"
+        },
+        {
+            "postCode": "2003",
+            "name": "Leitzersdorf"
+        },
+        {
+            "postCode": "4132",
+            "name": "Lembach im Mühlkreis"
+        },
+        {
+            "postCode": "5651",
+            "name": "Lend"
+        },
+        {
+            "postCode": "9811",
+            "name": "Lendorf"
+        },
+        {
+            "postCode": "5211",
+            "name": "Lengau"
+        },
+        {
+            "postCode": "3552",
+            "name": "Lengenfeld"
+        },
+        {
+            "postCode": "4860",
+            "name": "Lenzing"
+        },
+        {
+            "postCode": "8700",
+            "name": "Leoben"
+        },
+        {
+            "postCode": "2100",
+            "name": "Leobendorf"
+        },
+        {
+            "postCode": "2544",
+            "name": "Leobersdorf"
+        },
+        {
+            "postCode": "5771",
+            "name": "Leogang"
+        },
+        {
+            "postCode": "4060",
+            "name": "Leonding"
+        },
+        {
+            "postCode": "4262",
+            "name": "Leopoldschlag"
+        },
+        {
+            "postCode": "2333",
+            "name": "Leopoldsdorf"
+        },
+        {
+            "postCode": "2285",
+            "name": "Leopoldsdorf im Marchfelde"
+        },
+        {
+            "postCode": "6631",
+            "name": "Lermoos"
+        },
+        {
+            "postCode": "9653",
+            "name": "Lesachtal"
+        },
+        {
+            "postCode": "5575",
+            "name": "Lessach"
+        },
+        {
+            "postCode": "6105",
+            "name": "Leutasch"
+        },
+        {
+            "postCode": "8463",
+            "name": "Leutschach an der Weinstraße"
+        },
+        {
+            "postCode": "4170",
+            "name": "Lichtenau im Mühlkreis"
+        },
+        {
+            "postCode": "3522",
+            "name": "Lichtenau im Waldviertel"
+        },
+        {
+            "postCode": "4040",
+            "name": "Lichtenberg"
+        },
+        {
+            "postCode": "2813",
+            "name": "Lichtenegg"
+        },
+        {
+            "postCode": "2493",
+            "name": "Lichtenwörth"
+        },
+        {
+            "postCode": "4252",
+            "name": "Liebenau"
+        },
+        {
+            "postCode": "9556",
+            "name": "Liebenfels"
+        },
+        {
+            "postCode": "8501",
+            "name": "Lieboch"
+        },
+        {
+            "postCode": "9900",
+            "name": "Lienz"
+        },
+        {
+            "postCode": "8940",
+            "name": "Liezen"
+        },
+        {
+            "postCode": "8563",
+            "name": "Ligist"
+        },
+        {
+            "postCode": "3180",
+            "name": "Lilienfeld"
+        },
+        {
+            "postCode": "6951",
+            "name": "Lingenau"
+        },
+        {
+            "postCode": "4020",
+            "name": "Linz"
+        },
+        {
+            "postCode": "3874",
+            "name": "Litschau"
+        },
+        {
+            "postCode": "7532",
+            "name": "Litzelsdorf"
+        },
+        {
+            "postCode": "8734",
+            "name": "Lobmingtal"
+        },
+        {
+            "postCode": "6911",
+            "name": "Lochau"
+        },
+        {
+            "postCode": "5221",
+            "name": "Lochen am See"
+        },
+        {
+            "postCode": "7442",
+            "name": "Lockenhaus"
+        },
+        {
+            "postCode": "5090",
+            "name": "Lofer"
+        },
+        {
+            "postCode": "4923",
+            "name": "Lohnsburg am Kobernaußerwald"
+        },
+        {
+            "postCode": "3211",
+            "name": "Loich"
+        },
+        {
+            "postCode": "7020",
+            "name": "Loipersbach im Burgenland"
+        },
+        {
+            "postCode": "8282",
+            "name": "Loipersdorf bei Fürstenfeld"
+        },
+        {
+            "postCode": "7410",
+            "name": "Loipersdorf-Kitzladen"
+        },
+        {
+            "postCode": "3382",
+            "name": "Loosdorf"
+        },
+        {
+            "postCode": "2443",
+            "name": "Loretto"
+        },
+        {
+            "postCode": "6700",
+            "name": "Lorüns"
+        },
+        {
+            "postCode": "4460",
+            "name": "Losenstein"
+        },
+        {
+            "postCode": "8200",
+            "name": "Ludersdorf-Wilfersdorf"
+        },
+        {
+            "postCode": "6713",
+            "name": "Ludesch"
+        },
+        {
+            "postCode": "9072",
+            "name": "Ludmannsdorf"
+        },
+        {
+            "postCode": "3762",
+            "name": "Ludweis-Aigen"
+        },
+        {
+            "postCode": "4225",
+            "name": "Luftenberg an der Donau"
+        },
+        {
+            "postCode": "3293",
+            "name": "Lunz am See"
+        },
+        {
+            "postCode": "9813",
+            "name": "Lurnfeld"
+        },
+        {
+            "postCode": "6890",
+            "name": "Lustenau"
+        },
+        {
+            "postCode": "7361",
+            "name": "Lutzmannsburg"
+        },
+        {
+            "postCode": "6841",
+            "name": "Mäder"
+        },
+        {
+            "postCode": "9064",
+            "name": "Magdalensberg"
+        },
+        {
+            "postCode": "2024",
+            "name": "Mailberg"
+        },
+        {
+            "postCode": "5751",
+            "name": "Maishofen"
+        },
+        {
+            "postCode": "3712",
+            "name": "Maissau"
+        },
+        {
+            "postCode": "9822",
+            "name": "Mallnitz"
+        },
+        {
+            "postCode": "9854",
+            "name": "Malta"
+        },
+        {
+            "postCode": "3240",
+            "name": "Mank"
+        },
+        {
+            "postCode": "2452",
+            "name": "Mannersdorf am Leithagebirge"
+        },
+        {
+            "postCode": "7444",
+            "name": "Mannersdorf an der Rabnitz"
+        },
+        {
+            "postCode": "4903",
+            "name": "Manning"
+        },
+        {
+            "postCode": "2304",
+            "name": "Mannsdorf an der Donau"
+        },
+        {
+            "postCode": "3671",
+            "name": "Marbach an der Donau"
+        },
+        {
+            "postCode": "2293",
+            "name": "Marchegg"
+        },
+        {
+            "postCode": "4614",
+            "name": "Marchtrenk"
+        },
+        {
+            "postCode": "5761",
+            "name": "Maria Alm am Steinernen Meer"
+        },
+        {
+            "postCode": "2344",
+            "name": "Maria Enzersdorf"
+        },
+        {
+            "postCode": "3643",
+            "name": "Maria Laach am Jauerling"
+        },
+        {
+            "postCode": "8591",
+            "name": "Maria Lankowitz"
+        },
+        {
+            "postCode": "4443",
+            "name": "Maria Neustift"
+        },
+        {
+            "postCode": "9161",
+            "name": "Maria Rain"
+        },
+        {
+            "postCode": "9063",
+            "name": "Maria Saal"
+        },
+        {
+            "postCode": "5241",
+            "name": "Maria Schmolln"
+        },
+        {
+            "postCode": "3672",
+            "name": "Maria Taferl"
+        },
+        {
+            "postCode": "9081",
+            "name": "Maria Wörth"
+        },
+        {
+            "postCode": "3034",
+            "name": "Maria-Anzbach"
+        },
+        {
+            "postCode": "2326",
+            "name": "Maria-Lanzendorf"
+        },
+        {
+            "postCode": "5571",
+            "name": "Mariapfarr"
+        },
+        {
+            "postCode": "7433",
+            "name": "Mariasdorf"
+        },
+        {
+            "postCode": "6324",
+            "name": "Mariastein"
+        },
+        {
+            "postCode": "8630",
+            "name": "Mariazell"
+        },
+        {
+            "postCode": "3385",
+            "name": "Markersdorf-Haindorf"
+        },
+        {
+            "postCode": "2282",
+            "name": "Markgrafneusiedl"
+        },
+        {
+            "postCode": "7411",
+            "name": "Markt Allhau"
+        },
+        {
+            "postCode": "8311",
+            "name": "Markt Hartmannsdorf"
+        },
+        {
+            "postCode": "7464",
+            "name": "Markt Neuhodis"
+        },
+        {
+            "postCode": "2753",
+            "name": "Markt Piesting"
+        },
+        {
+            "postCode": "7341",
+            "name": "Markt Sankt Martin"
+        },
+        {
+            "postCode": "3664",
+            "name": "Martinsberg"
+        },
+        {
+            "postCode": "7221",
+            "name": "Marz"
+        },
+        {
+            "postCode": "6143",
+            "name": "Matrei am Brenner"
+        },
+        {
+            "postCode": "9971",
+            "name": "Matrei in Osttirol"
+        },
+        {
+            "postCode": "7210",
+            "name": "Mattersburg"
+        },
+        {
+            "postCode": "5230",
+            "name": "Mattighofen"
+        },
+        {
+            "postCode": "5163",
+            "name": "Mattsee"
+        },
+        {
+            "postCode": "2243",
+            "name": "Matzen-Raggendorf"
+        },
+        {
+            "postCode": "2751",
+            "name": "Matzendorf-Hölles"
+        },
+        {
+            "postCode": "3001",
+            "name": "Mauerbach"
+        },
+        {
+            "postCode": "5270",
+            "name": "Mauerkirchen"
+        },
+        {
+            "postCode": "3512",
+            "name": "Mautern an der Donau"
+        },
+        {
+            "postCode": "8774",
+            "name": "Mautern in Steiermark"
+        },
+        {
+            "postCode": "5570",
+            "name": "Mauterndorf"
+        },
+        {
+            "postCode": "4310",
+            "name": "Mauthausen"
+        },
+        {
+            "postCode": "4777",
+            "name": "Mayrhof"
+        },
+        {
+            "postCode": "6290",
+            "name": "Mayrhofen"
+        },
+        {
+            "postCode": "4714",
+            "name": "Meggenhofen"
+        },
+        {
+            "postCode": "4941",
+            "name": "Mehrnbach"
+        },
+        {
+            "postCode": "6812",
+            "name": "Meiningen"
+        },
+        {
+            "postCode": "3744",
+            "name": "Meiseldorf"
+        },
+        {
+            "postCode": "3390",
+            "name": "Melk"
+        },
+        {
+            "postCode": "6881",
+            "name": "Mellau"
+        },
+        {
+            "postCode": "9363",
+            "name": "Metnitz"
+        },
+        {
+            "postCode": "8092",
+            "name": "Mettersdorf am Saßbach"
+        },
+        {
+            "postCode": "4931",
+            "name": "Mettmach"
+        },
+        {
+            "postCode": "8965",
+            "name": "Michaelerberg-Pruggern"
+        },
+        {
+            "postCode": "4712",
+            "name": "Michaelnbach"
+        },
+        {
+            "postCode": "3074",
+            "name": "Michelbach"
+        },
+        {
+            "postCode": "9322",
+            "name": "Micheldorf"
+        },
+        {
+            "postCode": "4563",
+            "name": "Micheldorf in Oberösterreich"
+        },
+        {
+            "postCode": "3451",
+            "name": "Michelhausen"
+        },
+        {
+            "postCode": "6142",
+            "name": "Mieders"
+        },
+        {
+            "postCode": "6414",
+            "name": "Mieming"
+        },
+        {
+            "postCode": "2761",
+            "name": "Miesenbach"
+        },
+        {
+            "postCode": "8190",
+            "name": "Miesenbach bei Birkfeld"
+        },
+        {
+            "postCode": "9872",
+            "name": "Millstatt am See"
+        },
+        {
+            "postCode": "6068",
+            "name": "Mils"
+        },
+        {
+            "postCode": "6493",
+            "name": "Mils bei Imst"
+        },
+        {
+            "postCode": "8384",
+            "name": "Minihof-Liebau"
+        },
+        {
+            "postCode": "4962",
+            "name": "Mining"
+        },
+        {
+            "postCode": "7511",
+            "name": "Mischendorf"
+        },
+        {
+            "postCode": "2130",
+            "name": "Mistelbach"
+        },
+        {
+            "postCode": "6991",
+            "name": "Mittelberg"
+        },
+        {
+            "postCode": "3224",
+            "name": "Mitterbach am Erlaufsee"
+        },
+        {
+            "postCode": "8962",
+            "name": "Mitterberg-Sankt Martin"
+        },
+        {
+            "postCode": "8181",
+            "name": "Mitterdorf an der Raab"
+        },
+        {
+            "postCode": "4343",
+            "name": "Mitterkirchen im Machland"
+        },
+        {
+            "postCode": "2441",
+            "name": "Mitterndorf an der Fischa"
+        },
+        {
+            "postCode": "5730",
+            "name": "Mittersill"
+        },
+        {
+            "postCode": "2340",
+            "name": "Mödling"
+        },
+        {
+            "postCode": "8382",
+            "name": "Mogersdorf"
+        },
+        {
+            "postCode": "6900",
+            "name": "Möggers"
+        },
+        {
+            "postCode": "9330",
+            "name": "Mölbling"
+        },
+        {
+            "postCode": "4591",
+            "name": "Molln"
+        },
+        {
+            "postCode": "7123",
+            "name": "Mönchhof"
+        },
+        {
+            "postCode": "5310",
+            "name": "Mondsee"
+        },
+        {
+            "postCode": "2872",
+            "name": "Mönichkirchen"
+        },
+        {
+            "postCode": "3970",
+            "name": "Moorbad Harbach"
+        },
+        {
+            "postCode": "5271",
+            "name": "Moosbach"
+        },
+        {
+            "postCode": "2440",
+            "name": "Moosbrunn"
+        },
+        {
+            "postCode": "9062",
+            "name": "Moosburg"
+        },
+        {
+            "postCode": "5141",
+            "name": "Moosdorf"
+        },
+        {
+            "postCode": "8562",
+            "name": "Mooskirchen"
+        },
+        {
+            "postCode": "7072",
+            "name": "Mörbisch am See"
+        },
+        {
+            "postCode": "4982",
+            "name": "Mörschwang"
+        },
+        {
+            "postCode": "8160",
+            "name": "Mortantsch"
+        },
+        {
+            "postCode": "9842",
+            "name": "Mörtschach"
+        },
+        {
+            "postCode": "7540",
+            "name": "Moschendorf"
+        },
+        {
+            "postCode": "6423",
+            "name": "Mötz"
+        },
+        {
+            "postCode": "3426",
+            "name": "Muckendorf-Wipfing"
+        },
+        {
+            "postCode": "2763",
+            "name": "Muggendorf"
+        },
+        {
+            "postCode": "5505",
+            "name": "Mühlbach am Hochkönig"
+        },
+        {
+            "postCode": "6143",
+            "name": "Mühlbachl"
+        },
+        {
+            "postCode": "9814",
+            "name": "Mühldorf"
+        },
+        {
+            "postCode": "3622",
+            "name": "Mühldorf"
+        },
+        {
+            "postCode": "8822",
+            "name": "Mühlen"
+        },
+        {
+            "postCode": "8385",
+            "name": "Mühlgraben"
+        },
+        {
+            "postCode": "4961",
+            "name": "Mühlheim am Inn"
+        },
+        {
+            "postCode": "5583",
+            "name": "Muhr"
+        },
+        {
+            "postCode": "7052",
+            "name": "Müllendorf"
+        },
+        {
+            "postCode": "2482",
+            "name": "Münchendorf"
+        },
+        {
+            "postCode": "5222",
+            "name": "Munderfing"
+        },
+        {
+            "postCode": "3662",
+            "name": "Münichreith-Laimbach"
+        },
+        {
+            "postCode": "6232",
+            "name": "Münster"
+        },
+        {
+            "postCode": "4323",
+            "name": "Münzbach"
+        },
+        {
+            "postCode": "4792",
+            "name": "Münzkirchen"
+        },
+        {
+            "postCode": "8850",
+            "name": "Murau"
+        },
+        {
+            "postCode": "8480",
+            "name": "Mureck"
+        },
+        {
+            "postCode": "8473",
+            "name": "Murfeld"
+        },
+        {
+            "postCode": "8680",
+            "name": "Mürzzuschlag"
+        },
+        {
+            "postCode": "6600",
+            "name": "Musau"
+        },
+        {
+            "postCode": "6162",
+            "name": "Mutters"
+        },
+        {
+            "postCode": "4331",
+            "name": "Naarn im Machlande"
+        },
+        {
+            "postCode": "8160",
+            "name": "Naas"
+        },
+        {
+            "postCode": "6623",
+            "name": "Namlos"
+        },
+        {
+            "postCode": "2033",
+            "name": "Nappersdorf-Kammersdorf"
+        },
+        {
+            "postCode": "6465",
+            "name": "Nassereith"
+        },
+        {
+            "postCode": "2620",
+            "name": "Natschbach-Loipersbach"
+        },
+        {
+            "postCode": "4723",
+            "name": "Natternbach"
+        },
+        {
+            "postCode": "6161",
+            "name": "Natters"
+        },
+        {
+            "postCode": "6543",
+            "name": "Nauders"
+        },
+        {
+            "postCode": "6145",
+            "name": "Navis"
+        },
+        {
+            "postCode": "4155",
+            "name": "Nebelberg"
+        },
+        {
+            "postCode": "7311",
+            "name": "Neckenmarkt"
+        },
+        {
+            "postCode": "3110",
+            "name": "Neidling"
+        },
+        {
+            "postCode": "6710",
+            "name": "Nenzing"
+        },
+        {
+            "postCode": "6672",
+            "name": "Nesselwängle"
+        },
+        {
+            "postCode": "8302",
+            "name": "Nestelbach bei Graz"
+        },
+        {
+            "postCode": "8692",
+            "name": "Neuberg an der Mürz"
+        },
+        {
+            "postCode": "7537",
+            "name": "Neuberg im Burgenland"
+        },
+        {
+            "postCode": "8292",
+            "name": "Neudau"
+        },
+        {
+            "postCode": "2475",
+            "name": "Neudorf"
+        },
+        {
+            "postCode": "2135",
+            "name": "Neudorf bei Staatz"
+        },
+        {
+            "postCode": "7201",
+            "name": "Neudörfl"
+        },
+        {
+            "postCode": "2491",
+            "name": "Neufeld an der Leitha"
+        },
+        {
+            "postCode": "4120",
+            "name": "Neufelden"
+        },
+        {
+            "postCode": "9155",
+            "name": "Neuhaus"
+        },
+        {
+            "postCode": "8385",
+            "name": "Neuhaus am Klausenbach"
+        },
+        {
+            "postCode": "4501",
+            "name": "Neuhofen an der Krems"
+        },
+        {
+            "postCode": "3364",
+            "name": "Neuhofen an der Ybbs"
+        },
+        {
+            "postCode": "4912",
+            "name": "Neuhofen im Innkreis"
+        },
+        {
+            "postCode": "5741",
+            "name": "Neukirchen am Großvenediger"
+        },
+        {
+            "postCode": "4724",
+            "name": "Neukirchen am Walde"
+        },
+        {
+            "postCode": "5145",
+            "name": "Neukirchen an der Enknach"
+        },
+        {
+            "postCode": "4872",
+            "name": "Neukirchen an der Vöckla"
+        },
+        {
+            "postCode": "4671",
+            "name": "Neukirchen bei Lambach"
+        },
+        {
+            "postCode": "3040",
+            "name": "Neulengbach"
+        },
+        {
+            "postCode": "5202",
+            "name": "Neumarkt am Wallersee"
+        },
+        {
+            "postCode": "3371",
+            "name": "Neumarkt an der Ybbs"
+        },
+        {
+            "postCode": "4720",
+            "name": "Neumarkt im Hausruckkreis"
+        },
+        {
+            "postCode": "4212",
+            "name": "Neumarkt im Mühlkreis"
+        },
+        {
+            "postCode": "8820",
+            "name": "Neumarkt in der Steiermark"
+        },
+        {
+            "postCode": "2620",
+            "name": "Neunkirchen"
+        },
+        {
+            "postCode": "7100",
+            "name": "Neusiedl am See"
+        },
+        {
+            "postCode": "2183",
+            "name": "Neusiedl an der Zaya"
+        },
+        {
+            "postCode": "3323",
+            "name": "Neustadtl an der Donau"
+        },
+        {
+            "postCode": "7423",
+            "name": "Neustift an der Lafnitz"
+        },
+        {
+            "postCode": "7540",
+            "name": "Neustift bei Güssing"
+        },
+        {
+            "postCode": "4143",
+            "name": "Neustift im Mühlkreis"
+        },
+        {
+            "postCode": "6167",
+            "name": "Neustift im Stubaital"
+        },
+        {
+            "postCode": "3052",
+            "name": "Neustift-Innermanzing"
+        },
+        {
+            "postCode": "7343",
+            "name": "Neutal"
+        },
+        {
+            "postCode": "2425",
+            "name": "Nickelsdorf"
+        },
+        {
+            "postCode": "2004",
+            "name": "Niederhollabrunn"
+        },
+        {
+            "postCode": "4133",
+            "name": "Niederkappel"
+        },
+        {
+            "postCode": "2116",
+            "name": "Niederleis"
+        },
+        {
+            "postCode": "6342",
+            "name": "Niederndorf"
+        },
+        {
+            "postCode": "6346",
+            "name": "Niederndorferberg"
+        },
+        {
+            "postCode": "4491",
+            "name": "Niederneukirchen"
+        },
+        {
+            "postCode": "5722",
+            "name": "Niedernsill"
+        },
+        {
+            "postCode": "4692",
+            "name": "Niederthalheim"
+        },
+        {
+            "postCode": "4174",
+            "name": "Niederwaldkirchen"
+        },
+        {
+            "postCode": "8831",
+            "name": "Niederwölz"
+        },
+        {
+            "postCode": "7302",
+            "name": "Nikitsch"
+        },
+        {
+            "postCode": "8712",
+            "name": "Niklasdorf"
+        },
+        {
+            "postCode": "9782",
+            "name": "Nikolsdorf"
+        },
+        {
+            "postCode": "3691",
+            "name": "Nöchling"
+        },
+        {
+            "postCode": "9611",
+            "name": "Nötsch im Gailtal"
+        },
+        {
+            "postCode": "6714",
+            "name": "Nüziders"
+        },
+        {
+            "postCode": "4542",
+            "name": "Nußbach"
+        },
+        {
+            "postCode": "4865",
+            "name": "Nußdorf am Attersee"
+        },
+        {
+            "postCode": "5151",
+            "name": "Nußdorf am Haunsberg"
+        },
+        {
+            "postCode": "3134",
+            "name": "Nußdorf ob der Traisen"
+        },
+        {
+            "postCode": "9990",
+            "name": "Nußdorf-Debant"
+        },
+        {
+            "postCode": "8742",
+            "name": "Obdach"
+        },
+        {
+            "postCode": "3200",
+            "name": "Ober-Grafendorf"
+        },
+        {
+            "postCode": "5411",
+            "name": "Oberalm"
+        },
+        {
+            "postCode": "7501",
+            "name": "Oberdorf im Burgenland"
+        },
+        {
+            "postCode": "9781",
+            "name": "Oberdrauburg"
+        },
+        {
+            "postCode": "8455",
+            "name": "Oberhaag"
+        },
+        {
+            "postCode": "4894",
+            "name": "Oberhofen am Irrsee"
+        },
+        {
+            "postCode": "6406",
+            "name": "Oberhofen im Inntal"
+        },
+        {
+            "postCode": "4144",
+            "name": "Oberkappel"
+        },
+        {
+            "postCode": "9903",
+            "name": "Oberlienz"
+        },
+        {
+            "postCode": "7451",
+            "name": "Oberloisdorf"
+        },
+        {
+            "postCode": "6157",
+            "name": "Obernberg am Brenner"
+        },
+        {
+            "postCode": "4982",
+            "name": "Obernberg am Inn"
+        },
+        {
+            "postCode": "3281",
+            "name": "Oberndorf an der Melk"
+        },
+        {
+            "postCode": "5110",
+            "name": "Oberndorf bei Salzburg"
+        },
+        {
+            "postCode": "4690",
+            "name": "Oberndorf bei Schwanenstadt"
+        },
+        {
+            "postCode": "6372",
+            "name": "Oberndorf in Tirol"
+        },
+        {
+            "postCode": "4181",
+            "name": "Oberneukirchen"
+        },
+        {
+            "postCode": "6173",
+            "name": "Oberperfuss"
+        },
+        {
+            "postCode": "7350",
+            "name": "Oberpullendorf"
+        },
+        {
+            "postCode": "4554",
+            "name": "Oberschlierbach"
+        },
+        {
+            "postCode": "7432",
+            "name": "Oberschützen"
+        },
+        {
+            "postCode": "2283",
+            "name": "Obersiebenbrunn"
+        },
+        {
+            "postCode": "9942",
+            "name": "Obertilliach"
+        },
+        {
+            "postCode": "4831",
+            "name": "Obertraun"
+        },
+        {
+            "postCode": "5162",
+            "name": "Obertrum am See"
+        },
+        {
+            "postCode": "9821",
+            "name": "Obervellach"
+        },
+        {
+            "postCode": "2522",
+            "name": "Oberwaltersdorf"
+        },
+        {
+            "postCode": "4882",
+            "name": "Oberwang"
+        },
+        {
+            "postCode": "7400",
+            "name": "Oberwart"
+        },
+        {
+            "postCode": "8832",
+            "name": "Oberwölz"
+        },
+        {
+            "postCode": "8960",
+            "name": "Öblarn"
+        },
+        {
+            "postCode": "3123",
+            "name": "Obritzberg-Rust"
+        },
+        {
+            "postCode": "6416",
+            "name": "Obsteig"
+        },
+        {
+            "postCode": "3362",
+            "name": "Oed-Oehling"
+        },
+        {
+            "postCode": "4151",
+            "name": "Oepping"
+        },
+        {
+            "postCode": "6433",
+            "name": "Oetz"
+        },
+        {
+            "postCode": "4625",
+            "name": "Offenhausen"
+        },
+        {
+            "postCode": "4064",
+            "name": "Oftering"
+        },
+        {
+            "postCode": "7063",
+            "name": "Oggau am Neusiedler See"
+        },
+        {
+            "postCode": "4694",
+            "name": "Ohlsdorf"
+        },
+        {
+            "postCode": "7534",
+            "name": "Olbendorf"
+        },
+        {
+            "postCode": "7533",
+            "name": "Ollersdorf im Burgenland"
+        },
+        {
+            "postCode": "3342",
+            "name": "Opponitz"
+        },
+        {
+            "postCode": "4974",
+            "name": "Ort im Innkreis"
+        },
+        {
+            "postCode": "2304",
+            "name": "Orth an der Donau"
+        },
+        {
+            "postCode": "7064",
+            "name": "Oslip"
+        },
+        {
+            "postCode": "9570",
+            "name": "Ossiach"
+        },
+        {
+            "postCode": "5121",
+            "name": "Ostermiething"
+        },
+        {
+            "postCode": "8312",
+            "name": "Ottendorf an der Rittschein"
+        },
+        {
+            "postCode": "3631",
+            "name": "Ottenschlag"
+        },
+        {
+            "postCode": "4204",
+            "name": "Ottenschlag im Mühlkreis"
+        },
+        {
+            "postCode": "4100",
+            "name": "Ottensheim"
+        },
+        {
+            "postCode": "2163",
+            "name": "Ottenthal"
+        },
+        {
+            "postCode": "2880",
+            "name": "Otterthal"
+        },
+        {
+            "postCode": "4901",
+            "name": "Ottnang am Hausruck"
+        },
+        {
+            "postCode": "4363",
+            "name": "Pabneukirchen"
+        },
+        {
+            "postCode": "8341",
+            "name": "Paldau"
+        },
+        {
+            "postCode": "2181",
+            "name": "Palterndorf-Dobermannsdorf"
+        },
+        {
+            "postCode": "5163",
+            "name": "Palting"
+        },
+        {
+            "postCode": "2422",
+            "name": "Pama"
+        },
+        {
+            "postCode": "7152",
+            "name": "Pamhagen"
+        },
+        {
+            "postCode": "2232",
+            "name": "Parbasdorf"
+        },
+        {
+            "postCode": "7111",
+            "name": "Parndorf"
+        },
+        {
+            "postCode": "4061",
+            "name": "Pasching"
+        },
+        {
+            "postCode": "8162",
+            "name": "Passail"
+        },
+        {
+            "postCode": "9711",
+            "name": "Paternion"
+        },
+        {
+            "postCode": "6082",
+            "name": "Patsch"
+        },
+        {
+            "postCode": "4910",
+            "name": "Pattigham"
+        },
+        {
+            "postCode": "3508",
+            "name": "Paudorf"
+        },
+        {
+            "postCode": "2650",
+            "name": "Payerbach"
+        },
+        {
+            "postCode": "8120",
+            "name": "Peggau"
+        },
+        {
+            "postCode": "4153",
+            "name": "Peilstein im Mühlviertel"
+        },
+        {
+            "postCode": "4624",
+            "name": "Pennewang"
+        },
+        {
+            "postCode": "2380",
+            "name": "Perchtoldsdorf"
+        },
+        {
+            "postCode": "4320",
+            "name": "Perg"
+        },
+        {
+            "postCode": "3753",
+            "name": "Pernegg"
+        },
+        {
+            "postCode": "8132",
+            "name": "Pernegg an der Mur"
+        },
+        {
+            "postCode": "2052",
+            "name": "Pernersdorf"
+        },
+        {
+            "postCode": "2763",
+            "name": "Pernitz"
+        },
+        {
+            "postCode": "3142",
+            "name": "Perschling"
+        },
+        {
+            "postCode": "3680",
+            "name": "Persenbeug-Gottsdorf"
+        },
+        {
+            "postCode": "5166",
+            "name": "Perwang am Grabensee"
+        },
+        {
+            "postCode": "4743",
+            "name": "Peterskirchen"
+        },
+        {
+            "postCode": "2404",
+            "name": "Petronell-Carnuntum"
+        },
+        {
+            "postCode": "4643",
+            "name": "Pettenbach"
+        },
+        {
+            "postCode": "6408",
+            "name": "Pettnau"
+        },
+        {
+            "postCode": "6574",
+            "name": "Pettneu am Arlberg"
+        },
+        {
+            "postCode": "3252",
+            "name": "Petzenkirchen"
+        },
+        {
+            "postCode": "4722",
+            "name": "Peuerbach"
+        },
+        {
+            "postCode": "6405",
+            "name": "Pfaffenhofen"
+        },
+        {
+            "postCode": "3834",
+            "name": "Pfaffenschlag bei Waidhofen a.d.Thaya"
+        },
+        {
+            "postCode": "4870",
+            "name": "Pfaffing"
+        },
+        {
+            "postCode": "6647",
+            "name": "Pfafflar"
+        },
+        {
+            "postCode": "5223",
+            "name": "Pfaffstätt"
+        },
+        {
+            "postCode": "2511",
+            "name": "Pfaffstätten"
+        },
+        {
+            "postCode": "4540",
+            "name": "Pfarrkirchen bei Bad Hall"
+        },
+        {
+            "postCode": "4141",
+            "name": "Pfarrkirchen im Mühlkreis"
+        },
+        {
+            "postCode": "5452",
+            "name": "Pfarrwerfen"
+        },
+        {
+            "postCode": "6600",
+            "name": "Pflach"
+        },
+        {
+            "postCode": "6143",
+            "name": "Pfons"
+        },
+        {
+            "postCode": "6542",
+            "name": "Pfunds"
+        },
+        {
+            "postCode": "6551",
+            "name": "Pians"
+        },
+        {
+            "postCode": "4533",
+            "name": "Piberbach"
+        },
+        {
+            "postCode": "4632",
+            "name": "Pichl bei Wels"
+        },
+        {
+            "postCode": "4282",
+            "name": "Pierbach"
+        },
+        {
+            "postCode": "5721",
+            "name": "Piesendorf"
+        },
+        {
+            "postCode": "7441",
+            "name": "Pilgersdorf"
+        },
+        {
+            "postCode": "6136",
+            "name": "Pill"
+        },
+        {
+            "postCode": "2211",
+            "name": "Pillichsdorf"
+        },
+        {
+            "postCode": "4840",
+            "name": "Pilsbach"
+        },
+        {
+            "postCode": "8243",
+            "name": "Pinggau"
+        },
+        {
+            "postCode": "7423",
+            "name": "Pinkafeld"
+        },
+        {
+            "postCode": "4812",
+            "name": "Pinsdorf"
+        },
+        {
+            "postCode": "6600",
+            "name": "Pinswang"
+        },
+        {
+            "postCode": "8081",
+            "name": "Pirching am Traubenberg"
+        },
+        {
+            "postCode": "7373",
+            "name": "Piringsdorf"
+        },
+        {
+            "postCode": "5233",
+            "name": "Pischelsdorf am Engelbach"
+        },
+        {
+            "postCode": "8212",
+            "name": "Pischelsdorf am Kulm"
+        },
+        {
+            "postCode": "2823",
+            "name": "Pitten"
+        },
+        {
+            "postCode": "4690",
+            "name": "Pitzenberg"
+        },
+        {
+            "postCode": "5325",
+            "name": "Plainfeld"
+        },
+        {
+            "postCode": "3380",
+            "name": "Pöchlarn"
+        },
+        {
+            "postCode": "7141",
+            "name": "Podersdorf am See"
+        },
+        {
+            "postCode": "9130",
+            "name": "Poggersdorf"
+        },
+        {
+            "postCode": "3650",
+            "name": "Pöggstall"
+        },
+        {
+            "postCode": "8544",
+            "name": "Pölfing-Brunn"
+        },
+        {
+            "postCode": "3593",
+            "name": "Pölla"
+        },
+        {
+            "postCode": "8225",
+            "name": "Pöllau"
+        },
+        {
+            "postCode": "8225",
+            "name": "Pöllauberg"
+        },
+        {
+            "postCode": "4710",
+            "name": "Pollham"
+        },
+        {
+            "postCode": "4951",
+            "name": "Polling im Innkreis"
+        },
+        {
+            "postCode": "6404",
+            "name": "Polling in Tirol"
+        },
+        {
+            "postCode": "8761",
+            "name": "Pöls-Oberkurzheim"
+        },
+        {
+            "postCode": "8763",
+            "name": "Pölstal"
+        },
+        {
+            "postCode": "4891",
+            "name": "Pöndorf"
+        },
+        {
+            "postCode": "9210",
+            "name": "Pörtschach am Wörther See"
+        },
+        {
+            "postCode": "7023",
+            "name": "Pöttelsdorf"
+        },
+        {
+            "postCode": "2486",
+            "name": "Pottendorf"
+        },
+        {
+            "postCode": "2563",
+            "name": "Pottenstein"
+        },
+        {
+            "postCode": "4720",
+            "name": "Pötting"
+        },
+        {
+            "postCode": "7033",
+            "name": "Pöttsching"
+        },
+        {
+            "postCode": "2473",
+            "name": "Potzneusiedl"
+        },
+        {
+            "postCode": "2170",
+            "name": "Poysdorf"
+        },
+        {
+            "postCode": "9974",
+            "name": "Prägraten am Großvenediger"
+        },
+        {
+            "postCode": "4742",
+            "name": "Pram"
+        },
+        {
+            "postCode": "4731",
+            "name": "Prambachkirchen"
+        },
+        {
+            "postCode": "4925",
+            "name": "Pramet"
+        },
+        {
+            "postCode": "8504",
+            "name": "Preding"
+        },
+        {
+            "postCode": "4230",
+            "name": "Pregarten"
+        },
+        {
+            "postCode": "9451",
+            "name": "Preitenegg"
+        },
+        {
+            "postCode": "2472",
+            "name": "Prellenkirchen"
+        },
+        {
+            "postCode": "8141",
+            "name": "Premstätten"
+        },
+        {
+            "postCode": "3021",
+            "name": "Pressbaum"
+        },
+        {
+            "postCode": "2640",
+            "name": "Prigglitz"
+        },
+        {
+            "postCode": "3385",
+            "name": "Prinzersdorf"
+        },
+        {
+            "postCode": "8712",
+            "name": "Proleb"
+        },
+        {
+            "postCode": "2242",
+            "name": "Prottes"
+        },
+        {
+            "postCode": "6522",
+            "name": "Prutz"
+        },
+        {
+            "postCode": "5412",
+            "name": "Puch bei Hallein"
+        },
+        {
+            "postCode": "8182",
+            "name": "Puch bei Weiz"
+        },
+        {
+            "postCode": "2734",
+            "name": "Puchberg am Schneeberg"
+        },
+        {
+            "postCode": "4048",
+            "name": "Puchenau"
+        },
+        {
+            "postCode": "3214",
+            "name": "Puchenstuben"
+        },
+        {
+            "postCode": "4849",
+            "name": "Puchkirchen am Trattberg"
+        },
+        {
+            "postCode": "4055",
+            "name": "Pucking"
+        },
+        {
+            "postCode": "4690",
+            "name": "Pühret"
+        },
+        {
+            "postCode": "3741",
+            "name": "Pulkau"
+        },
+        {
+            "postCode": "4070",
+            "name": "Pupping"
+        },
+        {
+            "postCode": "7083",
+            "name": "Purbach am Neusiedler See"
+        },
+        {
+            "postCode": "3251",
+            "name": "Purgstall an der Erlauf"
+        },
+        {
+            "postCode": "3002",
+            "name": "Purkersdorf"
+        },
+        {
+            "postCode": "8764",
+            "name": "Pusterwald"
+        },
+        {
+            "postCode": "4134",
+            "name": "Putzleinsdorf"
+        },
+        {
+            "postCode": "3143",
+            "name": "Pyhra"
+        },
+        {
+            "postCode": "4760",
+            "name": "Raab"
+        },
+        {
+            "postCode": "8074",
+            "name": "Raaba-Grambach"
+        },
+        {
+            "postCode": "3820",
+            "name": "Raabs an der Thaya"
+        },
+        {
+            "postCode": "2640",
+            "name": "Raach am Hochgebirge"
+        },
+        {
+            "postCode": "2281",
+            "name": "Raasdorf"
+        },
+        {
+            "postCode": "2274",
+            "name": "Rabensburg"
+        },
+        {
+            "postCode": "3203",
+            "name": "Rabenstein an der Pielach"
+        },
+        {
+            "postCode": "9545",
+            "name": "Radenthein"
+        },
+        {
+            "postCode": "6241",
+            "name": "Radfeld"
+        },
+        {
+            "postCode": "8795",
+            "name": "Radmer"
+        },
+        {
+            "postCode": "5550",
+            "name": "Radstadt"
+        },
+        {
+            "postCode": "6741",
+            "name": "Raggal"
+        },
+        {
+            "postCode": "8413",
+            "name": "Ragnitz"
+        },
+        {
+            "postCode": "7321",
+            "name": "Raiding"
+        },
+        {
+            "postCode": "4791",
+            "name": "Rainbach im Innkreis"
+        },
+        {
+            "postCode": "4261",
+            "name": "Rainbach im Mühlkreis"
+        },
+        {
+            "postCode": "5591",
+            "name": "Ramingstein"
+        },
+        {
+            "postCode": "3172",
+            "name": "Ramsau"
+        },
+        {
+            "postCode": "8972",
+            "name": "Ramsau am Dachstein"
+        },
+        {
+            "postCode": "6284",
+            "name": "Ramsau im Zillertal"
+        },
+        {
+            "postCode": "3263",
+            "name": "Randegg"
+        },
+        {
+            "postCode": "9833",
+            "name": "Rangersdorf"
+        },
+        {
+            "postCode": "6179",
+            "name": "Ranggen"
+        },
+        {
+            "postCode": "6830",
+            "name": "Rankweil"
+        },
+        {
+            "postCode": "8853",
+            "name": "Ranten"
+        },
+        {
+            "postCode": "3911",
+            "name": "Rappottenstein"
+        },
+        {
+            "postCode": "3532",
+            "name": "Rastenfeld"
+        },
+        {
+            "postCode": "8673",
+            "name": "Ratten"
+        },
+        {
+            "postCode": "6240",
+            "name": "Rattenberg"
+        },
+        {
+            "postCode": "2320",
+            "name": "Rauchenwarth"
+        },
+        {
+            "postCode": "7535",
+            "name": "Rauchwart"
+        },
+        {
+            "postCode": "5661",
+            "name": "Rauris"
+        },
+        {
+            "postCode": "3720",
+            "name": "Ravelsbach"
+        },
+        {
+            "postCode": "3654",
+            "name": "Raxendorf"
+        },
+        {
+            "postCode": "4324",
+            "name": "Rechberg"
+        },
+        {
+            "postCode": "7471",
+            "name": "Rechnitz"
+        },
+        {
+            "postCode": "4873",
+            "name": "Redleiten"
+        },
+        {
+            "postCode": "4846",
+            "name": "Redlham"
+        },
+        {
+            "postCode": "4844",
+            "name": "Regau"
+        },
+        {
+            "postCode": "9565",
+            "name": "Reichenau"
+        },
+        {
+            "postCode": "2651",
+            "name": "Reichenau an der Rax"
+        },
+        {
+            "postCode": "4204",
+            "name": "Reichenau im Mühlkreis"
+        },
+        {
+            "postCode": "9463",
+            "name": "Reichenfels"
+        },
+        {
+            "postCode": "4193",
+            "name": "Reichenthal"
+        },
+        {
+            "postCode": "4981",
+            "name": "Reichersberg"
+        },
+        {
+            "postCode": "4462",
+            "name": "Reichraming"
+        },
+        {
+            "postCode": "3863",
+            "name": "Reingers"
+        },
+        {
+            "postCode": "3264",
+            "name": "Reinsberg"
+        },
+        {
+            "postCode": "2440",
+            "name": "Reisenberg"
+        },
+        {
+            "postCode": "6370",
+            "name": "Reith bei Kitzbühel"
+        },
+        {
+            "postCode": "6103",
+            "name": "Reith bei Seefeld"
+        },
+        {
+            "postCode": "6235",
+            "name": "Reith im Alpbachtal"
+        },
+        {
+            "postCode": "9815",
+            "name": "Reißeck"
+        },
+        {
+            "postCode": "9863",
+            "name": "Rennweg am Katschberg"
+        },
+        {
+            "postCode": "8674",
+            "name": "Rettenegg"
+        },
+        {
+            "postCode": "6347",
+            "name": "Rettenschöss"
+        },
+        {
+            "postCode": "2070",
+            "name": "Retz"
+        },
+        {
+            "postCode": "2074",
+            "name": "Retzbach"
+        },
+        {
+            "postCode": "6870",
+            "name": "Reuthe"
+        },
+        {
+            "postCode": "6600",
+            "name": "Reutte"
+        },
+        {
+            "postCode": "4910",
+            "name": "Ried im Innkreis"
+        },
+        {
+            "postCode": "6531",
+            "name": "Ried im Oberinntal"
+        },
+        {
+            "postCode": "4551",
+            "name": "Ried im Traunkreis"
+        },
+        {
+            "postCode": "6273",
+            "name": "Ried im Zillertal"
+        },
+        {
+            "postCode": "4312",
+            "name": "Ried in der Riedmark"
+        },
+        {
+            "postCode": "4752",
+            "name": "Riedau"
+        },
+        {
+            "postCode": "7422",
+            "name": "Riedlingsdorf"
+        },
+        {
+            "postCode": "6943",
+            "name": "Riefensberg"
+        },
+        {
+            "postCode": "8333",
+            "name": "Riegersburg"
+        },
+        {
+            "postCode": "6421",
+            "name": "Rietz"
+        },
+        {
+            "postCode": "2272",
+            "name": "Ringelsdorf-Niederabsdorf"
+        },
+        {
+            "postCode": "6074",
+            "name": "Rinn"
+        },
+        {
+            "postCode": "7323",
+            "name": "Ritzing"
+        },
+        {
+            "postCode": "8294",
+            "name": "Rohr bei Hartberg"
+        },
+        {
+            "postCode": "7551",
+            "name": "Rohr im Burgenland"
+        },
+        {
+            "postCode": "2663",
+            "name": "Rohr im Gebirge"
+        },
+        {
+            "postCode": "4532",
+            "name": "Rohr im Kremstal"
+        },
+        {
+            "postCode": "2471",
+            "name": "Rohrau"
+        },
+        {
+            "postCode": "3163",
+            "name": "Rohrbach an der Gölsen"
+        },
+        {
+            "postCode": "8234",
+            "name": "Rohrbach an der Lafnitz"
+        },
+        {
+            "postCode": "7222",
+            "name": "Rohrbach bei Mattersburg"
+        },
+        {
+            "postCode": "4150",
+            "name": "Rohrbach-Berg"
+        },
+        {
+            "postCode": "6280",
+            "name": "Rohrberg"
+        },
+        {
+            "postCode": "3592",
+            "name": "Röhrenbach"
+        },
+        {
+            "postCode": "3495",
+            "name": "Rohrendorf bei Krems"
+        },
+        {
+            "postCode": "4661",
+            "name": "Roitham am Traunfall"
+        },
+        {
+            "postCode": "6822",
+            "name": "Röns"
+        },
+        {
+            "postCode": "6426",
+            "name": "Roppen"
+        },
+        {
+            "postCode": "3743",
+            "name": "Röschitz"
+        },
+        {
+            "postCode": "9232",
+            "name": "Rosegg"
+        },
+        {
+            "postCode": "4581",
+            "name": "Rosenau am Hengstpaß"
+        },
+        {
+            "postCode": "3573",
+            "name": "Rosenburg-Mold"
+        },
+        {
+            "postCode": "8582",
+            "name": "Rosental an der Kainach"
+        },
+        {
+            "postCode": "3602",
+            "name": "Rossatz-Arnsdorf"
+        },
+        {
+            "postCode": "7501",
+            "name": "Rotenturm an der Pinka"
+        },
+        {
+            "postCode": "6832",
+            "name": "Röthis"
+        },
+        {
+            "postCode": "4681",
+            "name": "Rottenbach"
+        },
+        {
+            "postCode": "8786",
+            "name": "Rottenmann"
+        },
+        {
+            "postCode": "5273",
+            "name": "Roßbach"
+        },
+        {
+            "postCode": "4575",
+            "name": "Roßleithen"
+        },
+        {
+            "postCode": "9113",
+            "name": "Ruden"
+        },
+        {
+            "postCode": "7571",
+            "name": "Rudersdorf"
+        },
+        {
+            "postCode": "6063",
+            "name": "Rum"
+        },
+        {
+            "postCode": "3244",
+            "name": "Ruprechtshofen"
+        },
+        {
+            "postCode": "7071",
+            "name": "Rust"
+        },
+        {
+            "postCode": "4690",
+            "name": "Rüstorf"
+        },
+        {
+            "postCode": "4690",
+            "name": "Rutzenham"
+        },
+        {
+            "postCode": "3702",
+            "name": "Rußbach"
+        },
+        {
+            "postCode": "5442",
+            "name": "Rußbach am Paß Gschütt"
+        },
+        {
+            "postCode": "5753",
+            "name": "Saalbach-Hinterglemm"
+        },
+        {
+            "postCode": "5760",
+            "name": "Saalfelden am Steinernen Meer"
+        },
+        {
+            "postCode": "9751",
+            "name": "Sachsenburg"
+        },
+        {
+            "postCode": "3525",
+            "name": "Sallingberg"
+        },
+        {
+            "postCode": "5020",
+            "name": "Salzburg"
+        },
+        {
+            "postCode": "4251",
+            "name": "Sandl"
+        },
+        {
+            "postCode": "4725",
+            "name": "St. Aegidi"
+        },
+        {
+            "postCode": "3193",
+            "name": "St. Aegyd am Neuwalde"
+        },
+        {
+            "postCode": "4084",
+            "name": "St. Agatha"
+        },
+        {
+            "postCode": "9433",
+            "name": "St. Andrä"
+        },
+        {
+            "postCode": "7161",
+            "name": "Sankt Andrä am Zicksee"
+        },
+        {
+            "postCode": "5572",
+            "name": "Sankt Andrä im Lungau"
+        },
+        {
+            "postCode": "8444",
+            "name": "Sankt Andrä-Höch"
+        },
+        {
+            "postCode": "3423",
+            "name": "St. Andrä-Wördern"
+        },
+        {
+            "postCode": "8354",
+            "name": "Sankt Anna am Aigen"
+        },
+        {
+            "postCode": "6580",
+            "name": "St. Anton am Arlberg"
+        },
+        {
+            "postCode": "3283",
+            "name": "St. Anton an der Jeßnitz"
+        },
+        {
+            "postCode": "6771",
+            "name": "St. Anton im Montafon"
+        },
+        {
+            "postCode": "8662",
+            "name": "Sankt Barbara im Mürztal"
+        },
+        {
+            "postCode": "8113",
+            "name": "Sankt Bartholomä"
+        },
+        {
+            "postCode": "3580",
+            "name": "St. Bernhard-Frauenhofen"
+        },
+        {
+            "postCode": "2880",
+            "name": "St. Corona am Wechsel"
+        },
+        {
+            "postCode": "2731",
+            "name": "St. Egyden am Steinfeld"
+        },
+        {
+            "postCode": "4490",
+            "name": "St. Florian"
+        },
+        {
+            "postCode": "4782",
+            "name": "St. Florian am Inn"
+        },
+        {
+            "postCode": "8933",
+            "name": "Sankt Gallen"
+        },
+        {
+            "postCode": "6791",
+            "name": "St. Gallenkirch"
+        },
+        {
+            "postCode": "5144",
+            "name": "St. Georgen am Fillmannsbach"
+        },
+        {
+            "postCode": "8861",
+            "name": "Sankt Georgen am Kreischberg"
+        },
+        {
+            "postCode": "9314",
+            "name": "St. Georgen am Längsee"
+        },
+        {
+            "postCode": "3344",
+            "name": "St. Georgen am Reith"
+        },
+        {
+            "postCode": "4372",
+            "name": "St. Georgen am Walde"
+        },
+        {
+            "postCode": "3304",
+            "name": "St. Georgen am Ybbsfelde"
+        },
+        {
+            "postCode": "4222",
+            "name": "St. Georgen an der Gusen"
+        },
+        {
+            "postCode": "3282",
+            "name": "St. Georgen an der Leys"
+        },
+        {
+            "postCode": "8413",
+            "name": "Sankt Georgen an der Stiefing"
+        },
+        {
+            "postCode": "4710",
+            "name": "St. Georgen bei Grieskirchen"
+        },
+        {
+            "postCode": "4983",
+            "name": "St. Georgen bei Obernberg am Inn"
+        },
+        {
+            "postCode": "5113",
+            "name": "Sankt Georgen bei Salzburg"
+        },
+        {
+            "postCode": "4880",
+            "name": "St. Georgen im Attergau"
+        },
+        {
+            "postCode": "9423",
+            "name": "St. Georgen im Lavanttal"
+        },
+        {
+            "postCode": "8756",
+            "name": "Sankt Georgen ob Judenburg"
+        },
+        {
+            "postCode": "6722",
+            "name": "St. Gerold"
+        },
+        {
+            "postCode": "5340",
+            "name": "Sankt Gilgen"
+        },
+        {
+            "postCode": "4112",
+            "name": "St. Gotthard im Mühlkreis"
+        },
+        {
+            "postCode": "9184",
+            "name": "St. Jakob im Rosental"
+        },
+        {
+            "postCode": "8255",
+            "name": "Sankt Jakob im Walde"
+        },
+        {
+            "postCode": "9963",
+            "name": "St. Jakob in Defereggen"
+        },
+        {
+            "postCode": "6392",
+            "name": "St. Jakob in Haus"
+        },
+        {
+            "postCode": "5242",
+            "name": "St. Johann am Walde"
+        },
+        {
+            "postCode": "4172",
+            "name": "St. Johann am Wimberg"
+        },
+        {
+            "postCode": "5600",
+            "name": "Sankt Johann im Pongau"
+        },
+        {
+            "postCode": "8453",
+            "name": "Sankt Johann im Saggautal"
+        },
+        {
+            "postCode": "9952",
+            "name": "St. Johann im Walde"
+        },
+        {
+            "postCode": "6380",
+            "name": "St. Johann in Tirol"
+        },
+        {
+            "postCode": "8295",
+            "name": "Sankt Johann in der Haide"
+        },
+        {
+            "postCode": "8503",
+            "name": "Sankt Josef (Weststeiermark)"
+        },
+        {
+            "postCode": "9122",
+            "name": "St. Kanzian am Klopeiner See"
+        },
+        {
+            "postCode": "8672",
+            "name": "St. Kathrein am Hauenstein"
+        },
+        {
+            "postCode": "8171",
+            "name": "Sankt Kathrein am Offenegg"
+        },
+        {
+            "postCode": "5423",
+            "name": "Sankt Koloman"
+        },
+        {
+            "postCode": "4817",
+            "name": "St. Konrad"
+        },
+        {
+            "postCode": "8813",
+            "name": "Sankt Lambrecht"
+        },
+        {
+            "postCode": "3243",
+            "name": "St. Leonhard am Forst"
+        },
+        {
+            "postCode": "3572",
+            "name": "St. Leonhard am Hornerwald"
+        },
+        {
+            "postCode": "4294",
+            "name": "St. Leonhard bei Freistadt"
+        },
+        {
+            "postCode": "6481",
+            "name": "St. Leonhard im Pitztal"
+        },
+        {
+            "postCode": "5310",
+            "name": "St. Lorenz"
+        },
+        {
+            "postCode": "8242",
+            "name": "Sankt Lorenzen am Wechsel"
+        },
+        {
+            "postCode": "8642",
+            "name": "Sankt Lorenzen im Mürztal"
+        },
+        {
+            "postCode": "8323",
+            "name": "Sankt Marein bei Graz"
+        },
+        {
+            "postCode": "8641",
+            "name": "Sankt Marein im Mürztal"
+        },
+        {
+            "postCode": "8733",
+            "name": "Sankt Marein-Feistritz"
+        },
+        {
+            "postCode": "9173",
+            "name": "St. Margareten im Rosental"
+        },
+        {
+            "postCode": "8321",
+            "name": "St. Margarethen an der Raab"
+        },
+        {
+            "postCode": "3231",
+            "name": "St. Margarethen an der Sierning"
+        },
+        {
+            "postCode": "8720",
+            "name": "Sankt Margarethen bei Knittelfeld"
+        },
+        {
+            "postCode": "7062",
+            "name": "Sankt Margarethen im Burgenland"
+        },
+        {
+            "postCode": "5581",
+            "name": "Sankt Margarethen im Lungau"
+        },
+        {
+            "postCode": "4502",
+            "name": "St. Marien"
+        },
+        {
+            "postCode": "4926",
+            "name": "St. Marienkirchen am Hausruck"
+        },
+        {
+            "postCode": "4076",
+            "name": "St. Marienkirchen an der Polsenz"
+        },
+        {
+            "postCode": "4774",
+            "name": "St. Marienkirchen bei Schärding"
+        },
+        {
+            "postCode": "3971",
+            "name": "St. Martin"
+        },
+        {
+            "postCode": "5522",
+            "name": "Sankt Martin am Tennengebirge"
+        },
+        {
+            "postCode": "8580",
+            "name": "Sankt Martin am Wöllmißberg"
+        },
+        {
+            "postCode": "8383",
+            "name": "Sankt Martin an der Raab"
+        },
+        {
+            "postCode": "5092",
+            "name": "Sankt Martin bei Lofer"
+        },
+        {
+            "postCode": "4973",
+            "name": "St. Martin im Innkreis"
+        },
+        {
+            "postCode": "4113",
+            "name": "St. Martin im Mühlkreis"
+        },
+        {
+            "postCode": "8543",
+            "name": "Sankt Martin im Sulmtal"
+        },
+        {
+            "postCode": "3376",
+            "name": "St. Martin-Karlsbach"
+        },
+        {
+            "postCode": "7535",
+            "name": "Sankt Michael im Burgenland"
+        },
+        {
+            "postCode": "5582",
+            "name": "Sankt Michael im Lungau"
+        },
+        {
+            "postCode": "8770",
+            "name": "Sankt Michael in Obersteiermark"
+        },
+        {
+            "postCode": "4381",
+            "name": "St. Nikola an der Donau"
+        },
+        {
+            "postCode": "8505",
+            "name": "Sankt Nikolai im Sausal"
+        },
+        {
+            "postCode": "3684",
+            "name": "St. Oswald"
+        },
+        {
+            "postCode": "4271",
+            "name": "St. Oswald bei Freistadt"
+        },
+        {
+            "postCode": "4170",
+            "name": "St. Oswald bei Haslach"
+        },
+        {
+            "postCode": "8113",
+            "name": "Sankt Oswald bei Plankenwarth"
+        },
+        {
+            "postCode": "4572",
+            "name": "St. Pankraz"
+        },
+        {
+            "postCode": "5120",
+            "name": "St. Pantaleon"
+        },
+        {
+            "postCode": "4303",
+            "name": "St. Pantaleon-Erla"
+        },
+        {
+            "postCode": "9470",
+            "name": "St. Paul im Lavanttal"
+        },
+        {
+            "postCode": "4963",
+            "name": "St. Peter am Hart"
+        },
+        {
+            "postCode": "8843",
+            "name": "St. Peter am Kammersberg"
+        },
+        {
+            "postCode": "8093",
+            "name": "Sankt Peter am Ottersbach"
+        },
+        {
+            "postCode": "4171",
+            "name": "St. Peter am Wimberg"
+        },
+        {
+            "postCode": "8542",
+            "name": "Sankt Peter im Sulmtal"
+        },
+        {
+            "postCode": "3352",
+            "name": "St. Peter in der Au"
+        },
+        {
+            "postCode": "8755",
+            "name": "Sankt Peter ob Judenburg"
+        },
+        {
+            "postCode": "8792",
+            "name": "Sankt Peter-Freienstein"
+        },
+        {
+            "postCode": "3100",
+            "name": "St. Pölten"
+        },
+        {
+            "postCode": "5121",
+            "name": "St. Radegund"
+        },
+        {
+            "postCode": "8061",
+            "name": "Sankt Radegund bei Graz"
+        },
+        {
+            "postCode": "4793",
+            "name": "St. Roman"
+        },
+        {
+            "postCode": "8181",
+            "name": "Sankt Ruprecht an der Raab"
+        },
+        {
+            "postCode": "6184",
+            "name": "St. Sigmund im Sellrain"
+        },
+        {
+            "postCode": "4170",
+            "name": "St. Stefan am Walde"
+        },
+        {
+            "postCode": "9623",
+            "name": "St. Stefan im Gailtal"
+        },
+        {
+            "postCode": "8083",
+            "name": "Sankt Stefan im Rosental"
+        },
+        {
+            "postCode": "8713",
+            "name": "Sankt Stefan ob Leoben"
+        },
+        {
+            "postCode": "8511",
+            "name": "Sankt Stefan ob Stainz"
+        },
+        {
+            "postCode": "4732",
+            "name": "St. Thomas"
+        },
+        {
+            "postCode": "4364",
+            "name": "St. Thomas am Blasenstein"
+        },
+        {
+            "postCode": "6393",
+            "name": "St. Ulrich am Pillersee"
+        },
+        {
+            "postCode": "4400",
+            "name": "St. Ulrich bei Steyr"
+        },
+        {
+            "postCode": "4116",
+            "name": "St. Ulrich im Mühlkreis"
+        },
+        {
+            "postCode": "9554",
+            "name": "St. Urban"
+        },
+        {
+            "postCode": "4300",
+            "name": "St. Valentin"
+        },
+        {
+            "postCode": "9300",
+            "name": "St. Veit an der Glan"
+        },
+        {
+            "postCode": "3161",
+            "name": "St. Veit an der Gölsen"
+        },
+        {
+            "postCode": "5273",
+            "name": "St. Veit im Innkreis"
+        },
+        {
+            "postCode": "4173",
+            "name": "St. Veit im Mühlkreis"
+        },
+        {
+            "postCode": "5621",
+            "name": "Sankt Veit im Pongau"
+        },
+        {
+            "postCode": "9962",
+            "name": "St. Veit in Defereggen"
+        },
+        {
+            "postCode": "8423",
+            "name": "Sankt Veit in der Südsteiermark"
+        },
+        {
+            "postCode": "4762",
+            "name": "St. Willibald"
+        },
+        {
+            "postCode": "5360",
+            "name": "St. Wolfgang im Salzkammergut"
+        },
+        {
+            "postCode": "4152",
+            "name": "Sarleinsbach"
+        },
+        {
+            "postCode": "6822",
+            "name": "Satteins"
+        },
+        {
+            "postCode": "4642",
+            "name": "Sattledt"
+        },
+        {
+            "postCode": "6432",
+            "name": "Sautens"
+        },
+        {
+            "postCode": "4351",
+            "name": "Saxen"
+        },
+        {
+            "postCode": "7472",
+            "name": "Schachendorf"
+        },
+        {
+            "postCode": "8244",
+            "name": "Schäffern"
+        },
+        {
+            "postCode": "5231",
+            "name": "Schalchen"
+        },
+        {
+            "postCode": "7472",
+            "name": "Schandorf"
+        },
+        {
+            "postCode": "4784",
+            "name": "Schardenberg"
+        },
+        {
+            "postCode": "4780",
+            "name": "Schärding"
+        },
+        {
+            "postCode": "2403",
+            "name": "Scharndorf"
+        },
+        {
+            "postCode": "6108",
+            "name": "Scharnitz"
+        },
+        {
+            "postCode": "4644",
+            "name": "Scharnstein"
+        },
+        {
+            "postCode": "4612",
+            "name": "Scharten"
+        },
+        {
+            "postCode": "7022",
+            "name": "Schattendorf"
+        },
+        {
+            "postCode": "6677",
+            "name": "Schattwald"
+        },
+        {
+            "postCode": "5440",
+            "name": "Scheffau am Tennengebirge"
+        },
+        {
+            "postCode": "6351",
+            "name": "Scheffau am Wilden Kaiser"
+        },
+        {
+            "postCode": "3270",
+            "name": "Scheibbs"
+        },
+        {
+            "postCode": "2831",
+            "name": "Scheiblingkirchen-Thernberg"
+        },
+        {
+            "postCode": "8811",
+            "name": "Scheifling"
+        },
+        {
+            "postCode": "4192",
+            "name": "Schenkenfelden"
+        },
+        {
+            "postCode": "4521",
+            "name": "Schiedlberg"
+        },
+        {
+            "postCode": "9535",
+            "name": "Schiefling am Wörthersee"
+        },
+        {
+            "postCode": "4920",
+            "name": "Schildorn"
+        },
+        {
+            "postCode": "8970",
+            "name": "Schladming"
+        },
+        {
+            "postCode": "9954",
+            "name": "Schlaiten"
+        },
+        {
+            "postCode": "4690",
+            "name": "Schlatt"
+        },
+        {
+            "postCode": "5205",
+            "name": "Schleedorf"
+        },
+        {
+            "postCode": "4600",
+            "name": "Schleißheim"
+        },
+        {
+            "postCode": "4553",
+            "name": "Schlierbach"
+        },
+        {
+            "postCode": "6824",
+            "name": "Schlins"
+        },
+        {
+            "postCode": "6262",
+            "name": "Schlitters"
+        },
+        {
+            "postCode": "4707",
+            "name": "Schlüßlberg"
+        },
+        {
+            "postCode": "6154",
+            "name": "Schmirn"
+        },
+        {
+            "postCode": "6882",
+            "name": "Schnepfau"
+        },
+        {
+            "postCode": "6822",
+            "name": "Schnifis"
+        },
+        {
+            "postCode": "8844",
+            "name": "Schöder"
+        },
+        {
+            "postCode": "3382",
+            "name": "Schollach"
+        },
+        {
+            "postCode": "2525",
+            "name": "Schönau an der Triesting"
+        },
+        {
+            "postCode": "4274",
+            "name": "Schönau im Mühlkreis"
+        },
+        {
+            "postCode": "3633",
+            "name": "Schönbach"
+        },
+        {
+            "postCode": "3562",
+            "name": "Schönberg am Kamp"
+        },
+        {
+            "postCode": "6141",
+            "name": "Schönberg im Stubaital"
+        },
+        {
+            "postCode": "3642",
+            "name": "Schönbühel-Aggsbach"
+        },
+        {
+            "postCode": "2241",
+            "name": "Schönkirchen-Reyersdorf"
+        },
+        {
+            "postCode": "6491",
+            "name": "Schönwies"
+        },
+        {
+            "postCode": "6886",
+            "name": "Schoppernau"
+        },
+        {
+            "postCode": "4861",
+            "name": "Schörfling am Attersee"
+        },
+        {
+            "postCode": "2641",
+            "name": "Schottwien"
+        },
+        {
+            "postCode": "2733",
+            "name": "Schrattenbach"
+        },
+        {
+            "postCode": "2172",
+            "name": "Schrattenberg"
+        },
+        {
+            "postCode": "2073",
+            "name": "Schrattenthal"
+        },
+        {
+            "postCode": "3943",
+            "name": "Schrems"
+        },
+        {
+            "postCode": "6888",
+            "name": "Schröcken"
+        },
+        {
+            "postCode": "6780",
+            "name": "Schruns"
+        },
+        {
+            "postCode": "7081",
+            "name": "Schützen am Gebirge"
+        },
+        {
+            "postCode": "2432",
+            "name": "Schwadorf"
+        },
+        {
+            "postCode": "8541",
+            "name": "Schwanberg"
+        },
+        {
+            "postCode": "5134",
+            "name": "Schwand im Innkreis"
+        },
+        {
+            "postCode": "4690",
+            "name": "Schwanenstadt"
+        },
+        {
+            "postCode": "6858",
+            "name": "Schwarzach"
+        },
+        {
+            "postCode": "5620",
+            "name": "Schwarzach im Pongau"
+        },
+        {
+            "postCode": "2625",
+            "name": "Schwarzau am Steinfeld"
+        },
+        {
+            "postCode": "2662",
+            "name": "Schwarzau im Gebirge"
+        },
+        {
+            "postCode": "8421",
+            "name": "Schwarzautal"
+        },
+        {
+            "postCode": "3900",
+            "name": "Schwarzenau"
+        },
+        {
+            "postCode": "2803",
+            "name": "Schwarzenbach"
+        },
+        {
+            "postCode": "3212",
+            "name": "Schwarzenbach an der Pielach"
+        },
+        {
+            "postCode": "6867",
+            "name": "Schwarzenberg"
+        },
+        {
+            "postCode": "4164",
+            "name": "Schwarzenberg am Böhmerwald"
+        },
+        {
+            "postCode": "6130",
+            "name": "Schwaz"
+        },
+        {
+            "postCode": "2320",
+            "name": "Schwechat"
+        },
+        {
+            "postCode": "3931",
+            "name": "Schweiggers"
+        },
+        {
+            "postCode": "6283",
+            "name": "Schwendau"
+        },
+        {
+            "postCode": "6385",
+            "name": "Schwendt"
+        },
+        {
+            "postCode": "4311",
+            "name": "Schwertberg"
+        },
+        {
+            "postCode": "6334",
+            "name": "Schwoich"
+        },
+        {
+            "postCode": "8732",
+            "name": "Seckau"
+        },
+        {
+            "postCode": "6553",
+            "name": "See"
+        },
+        {
+            "postCode": "2824",
+            "name": "Seebenstein"
+        },
+        {
+            "postCode": "9871",
+            "name": "Seeboden am Millstätter See"
+        },
+        {
+            "postCode": "6100",
+            "name": "Seefeld in Tirol"
+        },
+        {
+            "postCode": "2062",
+            "name": "Seefeld-Kadolz"
+        },
+        {
+            "postCode": "5164",
+            "name": "Seeham"
+        },
+        {
+            "postCode": "5201",
+            "name": "Seekirchen am Wallersee"
+        },
+        {
+            "postCode": "4863",
+            "name": "Seewalchen am Attersee"
+        },
+        {
+            "postCode": "2443",
+            "name": "Seibersdorf"
+        },
+        {
+            "postCode": "8054",
+            "name": "Seiersberg-Pirka"
+        },
+        {
+            "postCode": "3353",
+            "name": "Seitenstetten"
+        },
+        {
+            "postCode": "6181",
+            "name": "Sellrain"
+        },
+        {
+            "postCode": "8900",
+            "name": "Selzthal"
+        },
+        {
+            "postCode": "2680",
+            "name": "Semmering"
+        },
+        {
+            "postCode": "8102",
+            "name": "Semriach"
+        },
+        {
+            "postCode": "4973",
+            "name": "Senftenbach"
+        },
+        {
+            "postCode": "3541",
+            "name": "Senftenberg"
+        },
+        {
+            "postCode": "6534",
+            "name": "Serfaus"
+        },
+        {
+            "postCode": "6952",
+            "name": "Sibratsgfäll"
+        },
+        {
+            "postCode": "7011",
+            "name": "Siegendorf"
+        },
+        {
+            "postCode": "7223",
+            "name": "Sieggraben"
+        },
+        {
+            "postCode": "3443",
+            "name": "Sieghartskirchen"
+        },
+        {
+            "postCode": "2011",
+            "name": "Sierndorf"
+        },
+        {
+            "postCode": "4522",
+            "name": "Sierning"
+        },
+        {
+            "postCode": "4771",
+            "name": "Sigharting"
+        },
+        {
+            "postCode": "7032",
+            "name": "Sigleß"
+        },
+        {
+            "postCode": "3751",
+            "name": "Sigmundsherberg"
+        },
+        {
+            "postCode": "6782",
+            "name": "Silbertal"
+        },
+        {
+            "postCode": "9920",
+            "name": "Sillian"
+        },
+        {
+            "postCode": "6424",
+            "name": "Silz"
+        },
+        {
+            "postCode": "8261",
+            "name": "Sinabelkirchen"
+        },
+        {
+            "postCode": "4621",
+            "name": "Sipbachzell"
+        },
+        {
+            "postCode": "6073",
+            "name": "Sistrans"
+        },
+        {
+            "postCode": "9133",
+            "name": "Sittersdorf"
+        },
+        {
+            "postCode": "3454",
+            "name": "Sitzenberg-Reidling"
+        },
+        {
+            "postCode": "3714",
+            "name": "Sitzendorf an der Schmida"
+        },
+        {
+            "postCode": "8362",
+            "name": "Söchau"
+        },
+        {
+            "postCode": "8561",
+            "name": "Söding-Sankt Johann"
+        },
+        {
+            "postCode": "6450",
+            "name": "Sölden"
+        },
+        {
+            "postCode": "8961",
+            "name": "Sölk"
+        },
+        {
+            "postCode": "6306",
+            "name": "Söll"
+        },
+        {
+            "postCode": "2601",
+            "name": "Sollenau"
+        },
+        {
+            "postCode": "2453",
+            "name": "Sommerein"
+        },
+        {
+            "postCode": "4180",
+            "name": "Sonnberg im Mühlkreis"
+        },
+        {
+            "postCode": "6731",
+            "name": "Sonntag"
+        },
+        {
+            "postCode": "3332",
+            "name": "Sonntagberg"
+        },
+        {
+            "postCode": "2504",
+            "name": "Sooß"
+        },
+        {
+            "postCode": "2244",
+            "name": "Spannberg"
+        },
+        {
+            "postCode": "8724",
+            "name": "Spielberg"
+        },
+        {
+            "postCode": "2104",
+            "name": "Spillern"
+        },
+        {
+            "postCode": "6544",
+            "name": "Spiss"
+        },
+        {
+            "postCode": "4582",
+            "name": "Spital am Pyhrn"
+        },
+        {
+            "postCode": "8684",
+            "name": "Spital am Semmering"
+        },
+        {
+            "postCode": "9800",
+            "name": "Spittal an der Drau"
+        },
+        {
+            "postCode": "3620",
+            "name": "Spitz"
+        },
+        {
+            "postCode": "2134",
+            "name": "Staatz"
+        },
+        {
+            "postCode": "4651",
+            "name": "Stadl-Paura"
+        },
+        {
+            "postCode": "8862",
+            "name": "Stadl-Predlitz"
+        },
+        {
+            "postCode": "7461",
+            "name": "Stadtschlaining"
+        },
+        {
+            "postCode": "8950",
+            "name": "Stainach-Pürgg"
+        },
+        {
+            "postCode": "8510",
+            "name": "Stainz"
+        },
+        {
+            "postCode": "9832",
+            "name": "Stall"
+        },
+        {
+            "postCode": "6700",
+            "name": "Stallehr"
+        },
+        {
+            "postCode": "8152",
+            "name": "Stallhofen"
+        },
+        {
+            "postCode": "6422",
+            "name": "Stams"
+        },
+        {
+            "postCode": "6135",
+            "name": "Stans"
+        },
+        {
+            "postCode": "6500",
+            "name": "Stanz bei Landeck"
+        },
+        {
+            "postCode": "8653",
+            "name": "Stanz im Mürztal"
+        },
+        {
+            "postCode": "6642",
+            "name": "Stanzach"
+        },
+        {
+            "postCode": "8046",
+            "name": "Stattegg"
+        },
+        {
+            "postCode": "3125",
+            "name": "Statzendorf"
+        },
+        {
+            "postCode": "6655",
+            "name": "Steeg"
+        },
+        {
+            "postCode": "4722",
+            "name": "Steegen"
+        },
+        {
+            "postCode": "7551",
+            "name": "Stegersbach"
+        },
+        {
+            "postCode": "6150",
+            "name": "Steinach am Brenner"
+        },
+        {
+            "postCode": "3261",
+            "name": "Steinakirchen am Forst"
+        },
+        {
+            "postCode": "4853",
+            "name": "Steinbach am Attersee"
+        },
+        {
+            "postCode": "4562",
+            "name": "Steinbach am Ziehberg"
+        },
+        {
+            "postCode": "4596",
+            "name": "Steinbach an der Steyr"
+        },
+        {
+            "postCode": "6215",
+            "name": "Steinberg am Rofan"
+        },
+        {
+            "postCode": "7453",
+            "name": "Steinberg-Dörfl"
+        },
+        {
+            "postCode": "7035",
+            "name": "Steinbrunn"
+        },
+        {
+            "postCode": "9551",
+            "name": "Steindorf am Ossiacher See"
+        },
+        {
+            "postCode": "4652",
+            "name": "Steinerkirchen an der Traun"
+        },
+        {
+            "postCode": "9754",
+            "name": "Steinfeld"
+        },
+        {
+            "postCode": "4641",
+            "name": "Steinhaus"
+        },
+        {
+            "postCode": "3463",
+            "name": "Stetteldorf am Wagram"
+        },
+        {
+            "postCode": "2100",
+            "name": "Stetten"
+        },
+        {
+            "postCode": "9560",
+            "name": "Steuerberg"
+        },
+        {
+            "postCode": "4400",
+            "name": "Steyr"
+        },
+        {
+            "postCode": "4221",
+            "name": "Steyregg"
+        },
+        {
+            "postCode": "7552",
+            "name": "Stinatz"
+        },
+        {
+            "postCode": "8113",
+            "name": "Stiwoll"
+        },
+        {
+            "postCode": "9713",
+            "name": "Stockenboi"
+        },
+        {
+            "postCode": "2000",
+            "name": "Stockerau"
+        },
+        {
+            "postCode": "7344",
+            "name": "Stoob"
+        },
+        {
+            "postCode": "3073",
+            "name": "Stössing"
+        },
+        {
+            "postCode": "2443",
+            "name": "Stotzing"
+        },
+        {
+            "postCode": "8345",
+            "name": "Straden"
+        },
+        {
+            "postCode": "8192",
+            "name": "Strallegg"
+        },
+        {
+            "postCode": "3722",
+            "name": "Straning-Grafenberg"
+        },
+        {
+            "postCode": "6261",
+            "name": "Strass im Zillertal"
+        },
+        {
+            "postCode": "9918",
+            "name": "Strassen"
+        },
+        {
+            "postCode": "2231",
+            "name": "Strasshof an der Nordbahn"
+        },
+        {
+            "postCode": "3552",
+            "name": "Stratzing"
+        },
+        {
+            "postCode": "4881",
+            "name": "Straß im Attergau"
+        },
+        {
+            "postCode": "3491",
+            "name": "Straß im Straßertale"
+        },
+        {
+            "postCode": "8472",
+            "name": "Straß in Steiermark"
+        },
+        {
+            "postCode": "9341",
+            "name": "Straßburg"
+        },
+        {
+            "postCode": "5204",
+            "name": "Straßwalchen"
+        },
+        {
+            "postCode": "7522",
+            "name": "Strem"
+        },
+        {
+            "postCode": "3314",
+            "name": "Strengberg"
+        },
+        {
+            "postCode": "6571",
+            "name": "Strengen"
+        },
+        {
+            "postCode": "5350",
+            "name": "Strobl"
+        },
+        {
+            "postCode": "4074",
+            "name": "Stroheim"
+        },
+        {
+            "postCode": "2153",
+            "name": "Stronsdorf"
+        },
+        {
+            "postCode": "8223",
+            "name": "Stubenberg"
+        },
+        {
+            "postCode": "5724",
+            "name": "Stuhlfelden"
+        },
+        {
+            "postCode": "6275",
+            "name": "Stumm"
+        },
+        {
+            "postCode": "6275",
+            "name": "Stummerberg"
+        },
+        {
+            "postCode": "4975",
+            "name": "Suben"
+        },
+        {
+            "postCode": "6832",
+            "name": "Sulz"
+        },
+        {
+            "postCode": "2224",
+            "name": "Sulz im Weinviertel"
+        },
+        {
+            "postCode": "6934",
+            "name": "Sulzberg"
+        },
+        {
+            "postCode": "7162",
+            "name": "Tadten"
+        },
+        {
+            "postCode": "4753",
+            "name": "Taiskirchen im Innkreis"
+        },
+        {
+            "postCode": "5580",
+            "name": "Tamsweg"
+        },
+        {
+            "postCode": "6675",
+            "name": "Tannheim"
+        },
+        {
+            "postCode": "6464",
+            "name": "Tarrenz"
+        },
+        {
+            "postCode": "5121",
+            "name": "Tarsdorf"
+        },
+        {
+            "postCode": "2523",
+            "name": "Tattendorf"
+        },
+        {
+            "postCode": "4775",
+            "name": "Taufkirchen an der Pram"
+        },
+        {
+            "postCode": "4715",
+            "name": "Taufkirchen an der Trattnach"
+        },
+        {
+            "postCode": "5660",
+            "name": "Taxenbach"
+        },
+        {
+            "postCode": "9212",
+            "name": "Techelsberg am Wörther See"
+        },
+        {
+            "postCode": "2524",
+            "name": "Teesdorf"
+        },
+        {
+            "postCode": "6165",
+            "name": "Telfes im Stubai"
+        },
+        {
+            "postCode": "6410",
+            "name": "Telfs"
+        },
+        {
+            "postCode": "6123",
+            "name": "Terfens"
+        },
+        {
+            "postCode": "4452",
+            "name": "Ternberg"
+        },
+        {
+            "postCode": "2630",
+            "name": "Ternitz"
+        },
+        {
+            "postCode": "8833",
+            "name": "Teufenbach-Katsch"
+        },
+        {
+            "postCode": "3242",
+            "name": "Texingtal"
+        },
+        {
+            "postCode": "8051",
+            "name": "Thal"
+        },
+        {
+            "postCode": "5303",
+            "name": "Thalgau"
+        },
+        {
+            "postCode": "4600",
+            "name": "Thalheim bei Wels"
+        },
+        {
+            "postCode": "8160",
+            "name": "Thannhausen"
+        },
+        {
+            "postCode": "6065",
+            "name": "Thaur"
+        },
+        {
+            "postCode": "3842",
+            "name": "Thaya"
+        },
+        {
+            "postCode": "2604",
+            "name": "Theresienfeld"
+        },
+        {
+            "postCode": "6335",
+            "name": "Thiersee"
+        },
+        {
+            "postCode": "2842",
+            "name": "Thomasberg"
+        },
+        {
+            "postCode": "5592",
+            "name": "Thomatal"
+        },
+        {
+            "postCode": "8621",
+            "name": "Thörl"
+        },
+        {
+            "postCode": "6712",
+            "name": "Thüringen"
+        },
+        {
+            "postCode": "6721",
+            "name": "Thüringerberg"
+        },
+        {
+            "postCode": "9904",
+            "name": "Thurn"
+        },
+        {
+            "postCode": "5310",
+            "name": "Tiefgraben"
+        },
+        {
+            "postCode": "8355",
+            "name": "Tieschen"
+        },
+        {
+            "postCode": "8430",
+            "name": "Tillmitsch"
+        },
+        {
+            "postCode": "4850",
+            "name": "Timelkam"
+        },
+        {
+            "postCode": "6552",
+            "name": "Tobadill"
+        },
+        {
+            "postCode": "7544",
+            "name": "Tobaj"
+        },
+        {
+            "postCode": "4710",
+            "name": "Tollet"
+        },
+        {
+            "postCode": "6541",
+            "name": "Tösens"
+        },
+        {
+            "postCode": "8772",
+            "name": "Traboch"
+        },
+        {
+            "postCode": "8611",
+            "name": "Tragöß-Sankt Katharein"
+        },
+        {
+            "postCode": "4284",
+            "name": "Tragwein"
+        },
+        {
+            "postCode": "3160",
+            "name": "Traisen"
+        },
+        {
+            "postCode": "2514",
+            "name": "Traiskirchen"
+        },
+        {
+            "postCode": "3133",
+            "name": "Traismauer"
+        },
+        {
+            "postCode": "2881",
+            "name": "Trattenbach"
+        },
+        {
+            "postCode": "4050",
+            "name": "Traun"
+        },
+        {
+            "postCode": "4801",
+            "name": "Traunkirchen"
+        },
+        {
+            "postCode": "7061",
+            "name": "Trausdorf an der Wulka"
+        },
+        {
+            "postCode": "2454",
+            "name": "Trautmannsdorf an der Leitha"
+        },
+        {
+            "postCode": "9852",
+            "name": "Trebesing"
+        },
+        {
+            "postCode": "9521",
+            "name": "Treffen am Ossiacher See"
+        },
+        {
+            "postCode": "5272",
+            "name": "Treubach"
+        },
+        {
+            "postCode": "8784",
+            "name": "Trieben"
+        },
+        {
+            "postCode": "6152",
+            "name": "Trins"
+        },
+        {
+            "postCode": "9907",
+            "name": "Tristach"
+        },
+        {
+            "postCode": "8793",
+            "name": "Trofaiach"
+        },
+        {
+            "postCode": "2521",
+            "name": "Trumau"
+        },
+        {
+            "postCode": "6774",
+            "name": "Tschagguns"
+        },
+        {
+            "postCode": "7540",
+            "name": "Tschanigraben"
+        },
+        {
+            "postCode": "3434",
+            "name": "Tulbing"
+        },
+        {
+            "postCode": "6075",
+            "name": "Tulfes"
+        },
+        {
+            "postCode": "3430",
+            "name": "Tulln an der Donau"
+        },
+        {
+            "postCode": "3013",
+            "name": "Tullnerbach"
+        },
+        {
+            "postCode": "4911",
+            "name": "Tumeltsham"
+        },
+        {
+            "postCode": "8625",
+            "name": "Turnau"
+        },
+        {
+            "postCode": "3184",
+            "name": "Türnitz"
+        },
+        {
+            "postCode": "6293",
+            "name": "Tux"
+        },
+        {
+            "postCode": "5563",
+            "name": "Tweng"
+        },
+        {
+            "postCode": "8124",
+            "name": "Übelbach"
+        },
+        {
+            "postCode": "5122",
+            "name": "Überackern"
+        },
+        {
+            "postCode": "6834",
+            "name": "Übersaxen"
+        },
+        {
+            "postCode": "6271",
+            "name": "Uderns"
+        },
+        {
+            "postCode": "4161",
+            "name": "Ulrichsberg"
+        },
+        {
+            "postCode": "2122",
+            "name": "Ulrichskirchen-Schleinbach"
+        },
+        {
+            "postCode": "6441",
+            "name": "Umhausen"
+        },
+        {
+            "postCode": "4841",
+            "name": "Ungenach"
+        },
+        {
+            "postCode": "5091",
+            "name": "Unken"
+        },
+        {
+            "postCode": "3970",
+            "name": "Unserfrau-Altweitra"
+        },
+        {
+            "postCode": "4866",
+            "name": "Unterach am Attersee"
+        },
+        {
+            "postCode": "7321",
+            "name": "Unterfrauenhaid"
+        },
+        {
+            "postCode": "7435",
+            "name": "Unterkohlstätten"
+        },
+        {
+            "postCode": "8352",
+            "name": "Unterlamm"
+        },
+        {
+            "postCode": "5585",
+            "name": "Unternberg"
+        },
+        {
+            "postCode": "6178",
+            "name": "Unterperfuss"
+        },
+        {
+            "postCode": "7371",
+            "name": "Unterrabnitz-Schwendgraben"
+        },
+        {
+            "postCode": "2284",
+            "name": "Untersiebenbrunn"
+        },
+        {
+            "postCode": "2154",
+            "name": "Unterstinkenbrunn"
+        },
+        {
+            "postCode": "5561",
+            "name": "Untertauern"
+        },
+        {
+            "postCode": "9943",
+            "name": "Untertilliach"
+        },
+        {
+            "postCode": "7501",
+            "name": "Unterwart"
+        },
+        {
+            "postCode": "4210",
+            "name": "Unterweitersdorf"
+        },
+        {
+            "postCode": "4273",
+            "name": "Unterweißenbach"
+        },
+        {
+            "postCode": "8800",
+            "name": "Unzmarkt-Frauenburg"
+        },
+        {
+            "postCode": "5723",
+            "name": "Uttendorf"
+        },
+        {
+            "postCode": "4972",
+            "name": "Utzenaich"
+        },
+        {
+            "postCode": "6154",
+            "name": "Vals"
+        },
+        {
+            "postCode": "6773",
+            "name": "Vandans"
+        },
+        {
+            "postCode": "8076",
+            "name": "Vasoldsberg"
+        },
+        {
+            "postCode": "9220",
+            "name": "Velden am Wörther See"
+        },
+        {
+            "postCode": "2245",
+            "name": "Velm-Götzendorf"
+        },
+        {
+            "postCode": "4091",
+            "name": "Vichtenstein"
+        },
+        {
+            "postCode": "3322",
+            "name": "Viehdorf"
+        },
+        {
+            "postCode": "5752",
+            "name": "Viehhofen"
+        },
+        {
+            "postCode": "6836",
+            "name": "Viktorsberg"
+        },
+        {
+            "postCode": "9500",
+            "name": "Villach"
+        },
+        {
+            "postCode": "6682",
+            "name": "Vils"
+        },
+        {
+            "postCode": "9972",
+            "name": "Virgen"
+        },
+        {
+            "postCode": "3902",
+            "name": "Vitis"
+        },
+        {
+            "postCode": "4840",
+            "name": "Vöcklabruck"
+        },
+        {
+            "postCode": "4870",
+            "name": "Vöcklamarkt"
+        },
+        {
+            "postCode": "8570",
+            "name": "Voitsberg"
+        },
+        {
+            "postCode": "6111",
+            "name": "Volders"
+        },
+        {
+            "postCode": "9100",
+            "name": "Völkermarkt"
+        },
+        {
+            "postCode": "6176",
+            "name": "Völs"
+        },
+        {
+            "postCode": "6134",
+            "name": "Vomp"
+        },
+        {
+            "postCode": "8250",
+            "name": "Vorau"
+        },
+        {
+            "postCode": "4655",
+            "name": "Vorchdorf"
+        },
+        {
+            "postCode": "6645",
+            "name": "Vorderhornbach"
+        },
+        {
+            "postCode": "8794",
+            "name": "Vordernberg"
+        },
+        {
+            "postCode": "4574",
+            "name": "Vorderstoder"
+        },
+        {
+            "postCode": "4191",
+            "name": "Vorderweißenbach"
+        },
+        {
+            "postCode": "2331",
+            "name": "Vösendorf"
+        },
+        {
+            "postCode": "8435",
+            "name": "Wagna"
+        },
+        {
+            "postCode": "5602",
+            "name": "Wagrain"
+        },
+        {
+            "postCode": "3830",
+            "name": "Waidhofen an der Thaya"
+        },
+        {
+            "postCode": "3830",
+            "name": "Waidhofen an der Thaya-Land"
+        },
+        {
+            "postCode": "3340",
+            "name": "Waidhofen an der Ybbs"
+        },
+        {
+            "postCode": "2763",
+            "name": "Waidmannsfeld"
+        },
+        {
+            "postCode": "6384",
+            "name": "Waidring"
+        },
+        {
+            "postCode": "4730",
+            "name": "Waizenkirchen"
+        },
+        {
+            "postCode": "6344",
+            "name": "Walchsee"
+        },
+        {
+            "postCode": "8781",
+            "name": "Wald am Schoberpaß"
+        },
+        {
+            "postCode": "5742",
+            "name": "Wald im Pinzgau"
+        },
+        {
+            "postCode": "8252",
+            "name": "Waldbach-Mönichwald"
+        },
+        {
+            "postCode": "4240",
+            "name": "Waldburg"
+        },
+        {
+            "postCode": "2754",
+            "name": "Waldegg"
+        },
+        {
+            "postCode": "3961",
+            "name": "Waldenstein"
+        },
+        {
+            "postCode": "3914",
+            "name": "Waldhausen"
+        },
+        {
+            "postCode": "4391",
+            "name": "Waldhausen im Strudengau"
+        },
+        {
+            "postCode": "4111",
+            "name": "Walding"
+        },
+        {
+            "postCode": "4085",
+            "name": "Waldkirchen am Wesen"
+        },
+        {
+            "postCode": "3844",
+            "name": "Waldkirchen an der Thaya"
+        },
+        {
+            "postCode": "4595",
+            "name": "Waldneukirchen"
+        },
+        {
+            "postCode": "4924",
+            "name": "Waldzell"
+        },
+        {
+            "postCode": "4702",
+            "name": "Wallern an der Trattnach"
+        },
+        {
+            "postCode": "7151",
+            "name": "Wallern im Burgenland"
+        },
+        {
+            "postCode": "3313",
+            "name": "Wallsee-Sindelburg"
+        },
+        {
+            "postCode": "2822",
+            "name": "Walpersbach"
+        },
+        {
+            "postCode": "5071",
+            "name": "Wals-Siezenheim"
+        },
+        {
+            "postCode": "3262",
+            "name": "Wang"
+        },
+        {
+            "postCode": "6610",
+            "name": "Wängle"
+        },
+        {
+            "postCode": "4552",
+            "name": "Wartberg an der Krems"
+        },
+        {
+            "postCode": "4224",
+            "name": "Wartberg ob der Aist"
+        },
+        {
+            "postCode": "2831",
+            "name": "Warth"
+        },
+        {
+            "postCode": "6767",
+            "name": "Warth"
+        },
+        {
+            "postCode": "2620",
+            "name": "Wartmannstetten"
+        },
+        {
+            "postCode": "6113",
+            "name": "Wattenberg"
+        },
+        {
+            "postCode": "6112",
+            "name": "Wattens"
+        },
+        {
+            "postCode": "6116",
+            "name": "Weer"
+        },
+        {
+            "postCode": "6133",
+            "name": "Weerberg"
+        },
+        {
+            "postCode": "4675",
+            "name": "Weibern"
+        },
+        {
+            "postCode": "8382",
+            "name": "Weichselbaum"
+        },
+        {
+            "postCode": "7121",
+            "name": "Weiden am See"
+        },
+        {
+            "postCode": "2295",
+            "name": "Weiden an der March"
+        },
+        {
+            "postCode": "7463",
+            "name": "Weiden bei Rechnitz"
+        },
+        {
+            "postCode": "2253",
+            "name": "Weikendorf"
+        },
+        {
+            "postCode": "2722",
+            "name": "Weikersdorf am Steinfelde"
+        },
+        {
+            "postCode": "4984",
+            "name": "Weilbach"
+        },
+        {
+            "postCode": "6833",
+            "name": "Weiler"
+        },
+        {
+            "postCode": "3205",
+            "name": "Weinburg"
+        },
+        {
+            "postCode": "7374",
+            "name": "Weingraben"
+        },
+        {
+            "postCode": "8044",
+            "name": "Weinitzen"
+        },
+        {
+            "postCode": "3521",
+            "name": "Weinzierl am Walde"
+        },
+        {
+            "postCode": "2564",
+            "name": "Weissenbach an der Triesting"
+        },
+        {
+            "postCode": "3351",
+            "name": "Weistrach"
+        },
+        {
+            "postCode": "3653",
+            "name": "Weiten"
+        },
+        {
+            "postCode": "9344",
+            "name": "Weitensfeld im Gurktal"
+        },
+        {
+            "postCode": "2084",
+            "name": "Weitersfeld"
+        },
+        {
+            "postCode": "4272",
+            "name": "Weitersfelden"
+        },
+        {
+            "postCode": "3970",
+            "name": "Weitra"
+        },
+        {
+            "postCode": "8160",
+            "name": "Weiz"
+        },
+        {
+            "postCode": "5093",
+            "name": "Weißbach bei Lofer"
+        },
+        {
+            "postCode": "6671",
+            "name": "Weißenbach am Lech"
+        },
+        {
+            "postCode": "4890",
+            "name": "Weißenkirchen im Attergau"
+        },
+        {
+            "postCode": "3610",
+            "name": "Weißenkirchen in der Wachau"
+        },
+        {
+            "postCode": "9762",
+            "name": "Weißensee"
+        },
+        {
+            "postCode": "9721",
+            "name": "Weißenstein"
+        },
+        {
+            "postCode": "4616",
+            "name": "Weißkirchen an der Traun"
+        },
+        {
+            "postCode": "8741",
+            "name": "Weißkirchen in Steiermark"
+        },
+        {
+            "postCode": "5573",
+            "name": "Weißpriach"
+        },
+        {
+            "postCode": "4600",
+            "name": "Wels"
+        },
+        {
+            "postCode": "4741",
+            "name": "Wendling"
+        },
+        {
+            "postCode": "4952",
+            "name": "Weng im Innkreis"
+        },
+        {
+            "postCode": "8254",
+            "name": "Wenigzell"
+        },
+        {
+            "postCode": "6473",
+            "name": "Wenns"
+        },
+        {
+            "postCode": "7331",
+            "name": "Weppersdorf"
+        },
+        {
+            "postCode": "5450",
+            "name": "Werfen"
+        },
+        {
+            "postCode": "5453",
+            "name": "Werfenweng"
+        },
+        {
+            "postCode": "9241",
+            "name": "Wernberg"
+        },
+        {
+            "postCode": "8402",
+            "name": "Werndorf"
+        },
+        {
+            "postCode": "4783",
+            "name": "Wernstein am Inn"
+        },
+        {
+            "postCode": "6363",
+            "name": "Westendorf"
+        },
+        {
+            "postCode": "8521",
+            "name": "Wettmannstätten"
+        },
+        {
+            "postCode": "3335",
+            "name": "Weyer"
+        },
+        {
+            "postCode": "4852",
+            "name": "Weyregg am Attersee"
+        },
+        {
+            "postCode": "1010",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1020",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1030",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1040",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1050",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1060",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1070",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1080",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1090",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1100",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1110",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1120",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1130",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1140",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1150",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1160",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1170",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1180",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1190",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1200",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1210",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1220",
+            "name": "Wien"
+        },
+        {
+            "postCode": "1230",
+            "name": "Wien"
+        },
+        {
+            "postCode": "2351",
+            "name": "Wiener Neudorf"
+        },
+        {
+            "postCode": "2700",
+            "name": "Wiener Neustadt"
+        },
+        {
+            "postCode": "2392",
+            "name": "Wienerwald"
+        },
+        {
+            "postCode": "8551",
+            "name": "Wies"
+        },
+        {
+            "postCode": "3250",
+            "name": "Wieselburg"
+        },
+        {
+            "postCode": "3250",
+            "name": "Wieselburg-Land"
+        },
+        {
+            "postCode": "7203",
+            "name": "Wiesen"
+        },
+        {
+            "postCode": "7423",
+            "name": "Wiesfleck"
+        },
+        {
+            "postCode": "6210",
+            "name": "Wiesing"
+        },
+        {
+            "postCode": "2811",
+            "name": "Wiesmath"
+        },
+        {
+            "postCode": "8924",
+            "name": "Wildalpen"
+        },
+        {
+            "postCode": "2164",
+            "name": "Wildendürnbach"
+        },
+        {
+            "postCode": "6413",
+            "name": "Wildermieming"
+        },
+        {
+            "postCode": "8410",
+            "name": "Wildon"
+        },
+        {
+            "postCode": "6311",
+            "name": "Wildschönau"
+        },
+        {
+            "postCode": "2193",
+            "name": "Wilfersdorf"
+        },
+        {
+            "postCode": "3150",
+            "name": "Wilhelmsburg"
+        },
+        {
+            "postCode": "4073",
+            "name": "Wilhering"
+        },
+        {
+            "postCode": "2732",
+            "name": "Willendorf"
+        },
+        {
+            "postCode": "2485",
+            "name": "Wimpassing an der Leitha"
+        },
+        {
+            "postCode": "2632",
+            "name": "Wimpassing im Schwarzatale"
+        },
+        {
+            "postCode": "7092",
+            "name": "Winden am See"
+        },
+        {
+            "postCode": "4263",
+            "name": "Windhaag bei Freistadt"
+        },
+        {
+            "postCode": "4322",
+            "name": "Windhaag bei Perg"
+        },
+        {
+            "postCode": "3841",
+            "name": "Windigsteig"
+        },
+        {
+            "postCode": "4580",
+            "name": "Windischgarsten"
+        },
+        {
+            "postCode": "3300",
+            "name": "Winklarn"
+        },
+        {
+            "postCode": "9841",
+            "name": "Winklern"
+        },
+        {
+            "postCode": "2722",
+            "name": "Winzendorf-Muthmannsdorf"
+        },
+        {
+            "postCode": "4942",
+            "name": "Wippenham"
+        },
+        {
+            "postCode": "3124",
+            "name": "Wölbling"
+        },
+        {
+            "postCode": "7412",
+            "name": "Wolfau"
+        },
+        {
+            "postCode": "4493",
+            "name": "Wolfern"
+        },
+        {
+            "postCode": "3261",
+            "name": "Wolfpassing"
+        },
+        {
+            "postCode": "3354",
+            "name": "Wolfsbach"
+        },
+        {
+            "postCode": "9400",
+            "name": "Wolfsberg"
+        },
+        {
+            "postCode": "4902",
+            "name": "Wolfsegg am Hausruck"
+        },
+        {
+            "postCode": "3012",
+            "name": "Wolfsgraben"
+        },
+        {
+            "postCode": "2412",
+            "name": "Wolfsthal"
+        },
+        {
+            "postCode": "6922",
+            "name": "Wolfurt"
+        },
+        {
+            "postCode": "2120",
+            "name": "Wolkersdorf im Weinviertel"
+        },
+        {
+            "postCode": "2752",
+            "name": "Wöllersdorf-Steinabrückl"
+        },
+        {
+            "postCode": "6300",
+            "name": "Wörgl"
+        },
+        {
+            "postCode": "8942",
+            "name": "Wörschach"
+        },
+        {
+            "postCode": "8293",
+            "name": "Wörterberg"
+        },
+        {
+            "postCode": "7041",
+            "name": "Wulkaprodersdorf"
+        },
+        {
+            "postCode": "2041",
+            "name": "Wullersdorf"
+        },
+        {
+            "postCode": "8142",
+            "name": "Wundschuh"
+        },
+        {
+            "postCode": "2732",
+            "name": "Würflach"
+        },
+        {
+            "postCode": "3042",
+            "name": "Würmla"
+        },
+        {
+            "postCode": "3370",
+            "name": "Ybbs an der Donau"
+        },
+        {
+            "postCode": "3341",
+            "name": "Ybbsitz"
+        },
+        {
+            "postCode": "3683",
+            "name": "Yspertal"
+        },
+        {
+            "postCode": "7012",
+            "name": "Zagersdorf"
+        },
+        {
+            "postCode": "6511",
+            "name": "Zams"
+        },
+        {
+            "postCode": "5584",
+            "name": "Zederhaus"
+        },
+        {
+            "postCode": "3311",
+            "name": "Zeillern"
+        },
+        {
+            "postCode": "3424",
+            "name": "Zeiselmauer-Wolfpassing"
+        },
+        {
+            "postCode": "3393",
+            "name": "Zelking-Matzleinsdorf"
+        },
+        {
+            "postCode": "9170",
+            "name": "Zell"
+        },
+        {
+            "postCode": "4893",
+            "name": "Zell am Moos"
+        },
+        {
+            "postCode": "4842",
+            "name": "Zell am Pettenfirst"
+        },
+        {
+            "postCode": "5700",
+            "name": "Zell am See"
+        },
+        {
+            "postCode": "6280",
+            "name": "Zell am Ziller"
+        },
+        {
+            "postCode": "4755",
+            "name": "Zell an der Pram"
+        },
+        {
+            "postCode": "6277",
+            "name": "Zellberg"
+        },
+        {
+            "postCode": "2051",
+            "name": "Zellerndorf"
+        },
+        {
+            "postCode": "8740",
+            "name": "Zeltweg"
+        },
+        {
+            "postCode": "7023",
+            "name": "Zemendorf-Stöttera"
+        },
+        {
+            "postCode": "3710",
+            "name": "Ziersdorf"
+        },
+        {
+            "postCode": "2492",
+            "name": "Zillingdorf"
+        },
+        {
+            "postCode": "7034",
+            "name": "Zillingtal"
+        },
+        {
+            "postCode": "6170",
+            "name": "Zirl"
+        },
+        {
+            "postCode": "2225",
+            "name": "Zistersdorf"
+        },
+        {
+            "postCode": "2871",
+            "name": "Zöbern"
+        },
+        {
+            "postCode": "6677",
+            "name": "Zöblen"
+        },
+        {
+            "postCode": "2424",
+            "name": "Zurndorf"
+        },
+        {
+            "postCode": "3435",
+            "name": "Zwentendorf an der Donau"
+        },
+        {
+            "postCode": "4180",
+            "name": "Zwettl an der Rodl"
+        },
+        {
+            "postCode": "3910",
+            "name": "Zwettl-Niederösterreich"
+        },
+        {
+            "postCode": "6835",
+            "name": "Zwischenwasser"
+        },
+        {
+            "postCode": "2322",
+            "name": "Zwölfaxing"
+        }
+    ]
+}

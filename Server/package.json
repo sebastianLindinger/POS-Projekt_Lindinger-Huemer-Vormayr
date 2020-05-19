@@ -1,0 +1,22 @@
+{
+  "name": "sunfinder",
+  "version": "1.0.0",
+  "description": "server is saving weather data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianLindinger/POS-Projekt_Lindinger-Huemer-Vormayr.git"
+  },
+  "author": "huemer,lindinger,vormayr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianLindinger/POS-Projekt_Lindinger-Huemer-Vormayr/issues"
+  },
+  "homepage": "https://github.com/sebastianLindinger/POS-Projekt_Lindinger-Huemer-Vormayr#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
