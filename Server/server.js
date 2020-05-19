@@ -23,12 +23,14 @@ var gemeinden = gemeinden2Array(jsonGemeinden);
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   var dbo = db.db("sunfinderDB");
-  var myobj = { postCode: "4902", name: "Wolfsegg am Hausruck"};
-  dbo.collection("TEST").insertMany(jsonGemeinden, function(err, res) {
-      if(err) throw err;
-      console.log(res);
-      db.close();
+  
+  dbo.collection("l").find({}, {projection: {postCode: 0}}).toArray( function(err, result) {
+    if (err) throw err;
+    console.log(result);
+    db.close();
   });
+
+ 
 });
 
 app.get('/', function (req, res) {
