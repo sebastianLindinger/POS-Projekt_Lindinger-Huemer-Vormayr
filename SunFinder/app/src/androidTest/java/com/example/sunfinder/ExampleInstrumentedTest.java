@@ -1,6 +1,10 @@
 package com.example.sunfinder;
 
 import android.content.Context;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3d530716812a1c971492348ddfc47da6781bb388
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 

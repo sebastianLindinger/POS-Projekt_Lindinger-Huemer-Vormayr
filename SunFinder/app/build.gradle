@@ -2,7 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
+<<<<<<< HEAD
     buildToolsVersion "29.0.2"
+=======
+    buildToolsVersion "29.0.3"
+>>>>>>> 3d530716812a1c971492348ddfc47da6781bb388
     defaultConfig {
         applicationId "com.example.sunfinder"
         minSdkVersion 28
