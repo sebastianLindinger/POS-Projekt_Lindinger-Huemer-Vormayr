@@ -1,14 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment_Master">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#03A9F4"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView_Master_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="#288AE0"
+            android:padding="10dp"
+            android:text="Sonnenschein in Ihrer Umgebung" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Master_YourTown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Geboltskirchen"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:paddingLeft="60dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="30dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/Sonne" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Master_Clouds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Wolken:" />
+
+            <TextView
+                android:id="@+id/textView_Master_Wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Windstärke:" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Master_Temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Temperatur:" />
+
+            <TextView
+                android:id="@+id/textView_Master_TempMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Max. Temperatur:" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Master_TempFeels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Gefühlt:" />
+
+            <TextView
+                android:id="@+id/textView_Master_Humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:text="Feuchtigkeit:" />
+        </LinearLayout>
+
+        <ListView
+            android:background="#288AE0"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </FrameLayout>

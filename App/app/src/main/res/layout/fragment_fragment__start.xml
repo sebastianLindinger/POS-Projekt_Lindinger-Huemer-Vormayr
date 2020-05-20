@@ -5,10 +5,79 @@
     android:layout_height="match_parent"
     tools:context=".Fragment_Main">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#03A9F4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#288AE0"
+            android:text="SunFinder"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="70dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_Start_Town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#288AE0"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            tools:text="Gemeinde:" />
+
+        <EditText
+            android:id="@+id/editText_Start_PLZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#288AE0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            tools:text="PLZ:" />
+
+        <Button
+            android:id="@+id/button_Start_UseGPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:background="#288AE0"
+            android:text="Standort per GPS ermitteln"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView_Start_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:text="Klicken Sie anschließend auf die Sonne!" />
+
+        <ImageButton
+            android:id="@+id/button_Start_FindSun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40dp"
+            android:background="#03A9F4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/Sonne" />
+
+    </LinearLayout>
 
 </FrameLayout>
