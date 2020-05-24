@@ -43,7 +43,7 @@ async function getWeatherData() {
 
 
     if (hours <= 21 && hours >= 5) {
-        if (i = 1582) i = 0;
+        if (i == 1582) i = 0;
 
         dbo.collection("gemeinden1").find({}).toArray(function (err, result) {
             if (err) throw err;
@@ -51,7 +51,7 @@ async function getWeatherData() {
 
             actualName = result[i].name;
             urlAPI = urlAPI.replace("<municipality>", actualName);
-
+            console.log(actualName);
 
             fetch(urlAPI)
                 .then(response => response.json())
@@ -73,8 +73,11 @@ async function getWeatherData() {
 }
 
 app.get('/', function (req, res) {
-    res.send(
-        gemeinden
+    res.send( "fef"
+      // dbo.collection("gemeinden1").find({}).toArray(function (err, result) {
+        //    if (err) throw err;
+         //   console.log(result);
+        //})
     );
 });
 
