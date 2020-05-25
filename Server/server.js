@@ -3,26 +3,28 @@ var app = express();
 var fs = require('fs');
 var mongo = require('mongodb');
 var MongoClient = require('mongodb').MongoClient;
-const url = "mongodb://localhost:27017/";
+const url = 'mongodb://localhost:27017/';
 var fetch = require('node-fetch');
 
 var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
-const collectionName = "newestData222";
+const collectionName = 'newestData222';
+const dbSize = 1555;
 
 var dbo;
+var i = 0;
 
 function initCollection() {
     //create collection
     dbo.createCollection(collectionName, function (err, res) {
         if (err) throw err;
-        console.log("Collection created!");
+        console.log('Collection created!');
 
         //insert data into collection
         dbo.collection(collectionName).insertMany(jsonMunicipalities, function (err, res) {
             if (err) throw err;
-            console.log("collection was filled up!");
+            console.log('Collection was filled up!');
 
             //fill collection with weather data
             getWeatherData();
@@ -32,17 +34,15 @@ function initCollection() {
 
 MongoClient.connect(url, function (err, db) {
     if (err) throw err;
-    dbo = db.db("sunfinderDB");
+    dbo = db.db('sunfinderDB');
 
-    //check if collection exists
+    //check if collection exists and create one if not
     dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
         if (err) throw err;
         else if (items.length == 1) getWeatherData();
         else initCollection();
     });
 });
-
-var i = 0;
 
 async function getWeatherData() {
     var date = new Date();
@@ -51,14 +51,14 @@ async function getWeatherData() {
     var currentName;
 
     //update weatherData only between 5.00 a.m. to 9.59 p.m
-    if (hours <= 24 && hours >= 5) {
-        if (i == 1555) i = 0;
+    if (hours >= 5 && hours <= 23) {
+        if (i == dbSize) i = 0;
 
         dbo.collection(collectionName).find({}).toArray(function (err, result) {
             if (err) throw err;
 
             currentName = result[i].name;
-            urlAPI = urlAPI.replace("<name>", currentName);
+            urlAPI = urlAPI.replace('<name>', currentName);
             console.log(currentName);
 
             fetch(urlAPI)
@@ -74,52 +74,55 @@ async function getWeatherData() {
             i++;
         });
     }
-    setTimeout(getWeatherData, 1020);
+
+    //repeat this every 1.87 seconds
+    setTimeout(getWeatherData, 1870);
 }
 
+//GET method to receive all places in the database
+//url looks like this: 'http://localhost:3000/db'
 app.get('/db', function (req, res) {
+    console.log('Recieved GET-Request...')
     dbo.collection(collectionName).find({}).toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
     })
-
 });
 
+//GET method to receive all SUNNY places in the database
+//url looks like this: 'http://localhost:3000/sunFinder?lat=24&lon=42'
 app.get('/sunFinder', function (req, res) {
+    console.log('Recieved GET-Request...')
     var query = req.query;
+
+    //variables are needed for distance calculation
     var lat = query.lat;
     var lon = query.lon;
 
-    var sunnyPlacesArr = [];
-    sunnyPlacesArr = getSunnyPlaces(lat, lon);
+    dbo.collection(collectionName).find({}).toArray(function (err, result) {
+        if (err) throw err;
+        sunnyPlacesArr = [];
+        for (var j = 0; j < dbSize; j++) {
+            var resultObj = result[j];
+            if (resultObj.weatherData.clouds.all <= 20) {
+                //variables are needed for distance calculation
+                var latJ = resultObj.weatherData.coord.lat;
+                var lonJ = resultObj.weatherData.coord.lon;
 
-    res.send(sunnyPlacesArr);
+                //calc Distance
 
+                sunnyPlacesArr.push(resultObj);
+            }
+        }
+        res.json(sunnyPlacesArr);
+    });
 });
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });
 
-function getSunnyPlaces(lat, lon) {
-    dbo.collection(collectionName).find({}).toArray(function (err, result) {
-        sunnyPlacesArr = [];
-        if (err) throw err;
-        for (var j = 0; j <= 1564; j++) {
-            //console.log(result[j]);
-            var resultObject = result[j];
-            var gotWeather = resultObject.weatherData;
-            if (gotWeather.clouds.all <= 35) {
-                var latJ = resultObject.weatherData.coord.lat;
-                var lonJ = resultObject.weatherData.coord.lon;
-
-                sunnyPlacesArr.push(resultObject);
-            }
-        }
-        return sunPlaceArr;
-    });
-}
-
+//method for distance calculation
 function getDistance(lat1, lon1, lat2, lon2) {
     var radlat1 = Math.PI * lat1 / 180
     var radlat2 = Math.PI * lat2 / 180
@@ -131,8 +134,7 @@ function getDistance(lat1, lon1, lat2, lon2) {
     var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
     dist = Math.acos(dist)
 
-    dist = dist * 180 / Math.PI
-    dist = dist * 60 * 1.1515
-    dist = dist * 1.609344
+    dist = (dist * 180 / Math.PI) * 60 * 1.853159616;
+    
     return dist
 }
