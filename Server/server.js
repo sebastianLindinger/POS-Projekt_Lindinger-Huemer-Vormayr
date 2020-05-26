@@ -10,16 +10,16 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 
 var bodyParser = require('body-parser')
-app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
-})); 
+    extended: true
+}));
 
 var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
-const collectionName = 'newestData222';
-const dbSize = 1555;
+const collectionName = 'jonnyIsSooBled';
+const dbSize = 1567;
 
 var dbo;
 var i = 0;
@@ -98,27 +98,18 @@ app.get('/db', function (req, res) {
     })
 });
 
-//PUT method write facts about the place in the databas
-//url looks like this: 'http://localhost:3000/sunFinder/put?id=234&fact=coolaWirt'
-app.put('/sunfinder/put', function(req, res) {
+//PUT method writes fact about the place in the database
+//url looks like this: 'http://localhost:3000/sunFinder/put?id=1'
+app.put('/sunfinder/put', function (req, res) {
     console.log('Recieved PUT-Request...')
 
     var id = req.query.id;
     var newFact = req.body.fact;
 
-    console.log(newFact)
-    
-    var factArr = [];
-    /*dbo.collection(collectionName).find({}).toArray(function (err, result) {
-        factArr = result[id].facts;
-    });*/
-
-
     var myQuery = { _id: id.toString() };
-    var newValues = { $set: { facts: factArr } };
+    var newValues = { $addToSet: { facts: newFact } };
     dbo.collection(collectionName).updateOne(myQuery, newValues, function (err, result) {
         if (err) throw err;
-        
         res.send('succesfully updated')
     });
 });
@@ -138,6 +129,7 @@ app.get('/sunFinder/get', function (req, res) {
         sunnyPlacesArr = [];
         for (var j = 0; j < dbSize; j++) {
             var resultObj = result[j];
+            console.log(resultObj);
             if (resultObj.weatherData.weather[0].icon == '01d' && resultObj.weatherData.weather[0].id == 800) {
                 //variables are needed for distance calculation
                 var latObj = resultObj.weatherData.coord.lat;
