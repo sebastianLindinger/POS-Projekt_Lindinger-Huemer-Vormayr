@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sebastianLindinger/POS-Projekt_Lindinger-Huemer-Vormayr#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongodb": "^3.5.7"
+    "mongodb": "^3.5.7",
+    "node-fetch": "^2.6.0"
   }
 }
