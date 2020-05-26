@@ -18,11 +18,11 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
-const collectionName = 'jonnyIsSooBled';
-const dbSize = 1567;
+const collectionName = 'jonny';
+const dbSize = 1565;
 
 var dbo;
-var i = 0;
+var i = 1560;
 
 function initCollection() {
     //create collection
@@ -85,7 +85,7 @@ async function getWeatherData() {
     }
 
     //repeat this every 1.87 seconds
-    setTimeout(getWeatherData, 1870);
+    setTimeout(getWeatherData, 1000);
 }
 
 //GET method to receive all places in the database
