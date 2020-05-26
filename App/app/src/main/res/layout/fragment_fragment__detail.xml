@@ -237,6 +237,26 @@
             android:gravity="bottom"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView_Detail_LocationMessage"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Informationen und Kommentare zu diesem Ort werden hier angezeigt" />
+
+            <Button
+                android:id="@+id/button_Detail_WriteMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#288AE0"
+                android:text="Nachricht zu diesem Ort schreiben"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:padding="20dp"
+                android:textStyle="bold" />
             <Button
                 android:id="@+id/button_Detail_OpenMap"
                 android:layout_width="match_parent"
