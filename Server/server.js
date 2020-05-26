@@ -6,11 +6,20 @@ var MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017/';
 var fetch = require('node-fetch');
 
+app.use(express.json());       // to support JSON-encoded bodies
+app.use(express.urlencoded()); // to support URL-encoded bodies
+
+var bodyParser = require('body-parser')
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+}));
+
 var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
-const collectionName = 'newestData222';
-const dbSize = 1555;
+const collectionName = 'jonnyIsSooBled';
+const dbSize = 1567;
 
 var dbo;
 var i = 0;
@@ -47,7 +56,7 @@ MongoClient.connect(url, function (err, db) {
 async function getWeatherData() {
     var date = new Date();
     var hours = date.getHours();
-    var urlAPI = 'http://api.openweathermap.org/data/2.5/weather?q=<name>,at&appid=e612c50567b28c47bd1e1d25d43fe21e';
+    var urlAPI = 'http://api.openweathermap.org/data/2.5/weather?q=<name>,at&lang=de&appid=e612c50567b28c47bd1e1d25d43fe21e';
     var currentName;
 
     //update weatherData only between 5.00 a.m. to 9.59 p.m
@@ -89,9 +98,25 @@ app.get('/db', function (req, res) {
     })
 });
 
+//PUT method writes fact about the place in the database
+//url looks like this: 'http://localhost:3000/sunFinder/put?id=1'
+app.put('/sunfinder/put', function (req, res) {
+    console.log('Recieved PUT-Request...')
+
+    var id = req.query.id;
+    var newFact = req.body.fact;
+
+    var myQuery = { _id: id.toString() };
+    var newValues = { $addToSet: { facts: newFact } };
+    dbo.collection(collectionName).updateOne(myQuery, newValues, function (err, result) {
+        if (err) throw err;
+        res.send('succesfully updated')
+    });
+});
+
 //GET method to receive all SUNNY places in the database
-//url looks like this: 'http://localhost:3000/sunFinder?lat=24&lon=42'
-app.get('/sunFinder', function (req, res) {
+//url looks like this: 'http://localhost:3000/sunFinder/get?lat=24&lon=42'
+app.get('/sunFinder/get', function (req, res) {
     console.log('Recieved GET-Request...')
     var query = req.query;
 
@@ -104,17 +129,26 @@ app.get('/sunFinder', function (req, res) {
         sunnyPlacesArr = [];
         for (var j = 0; j < dbSize; j++) {
             var resultObj = result[j];
-            if (resultObj.weatherData.clouds.all <= 20) {
+            console.log(resultObj);
+            if (resultObj.weatherData.weather[0].icon == '01d' && resultObj.weatherData.weather[0].id == 800) {
                 //variables are needed for distance calculation
-                var latJ = resultObj.weatherData.coord.lat;
-                var lonJ = resultObj.weatherData.coord.lon;
+                var latObj = resultObj.weatherData.coord.lat;
+                var lonObj = resultObj.weatherData.coord.lon;
 
                 //calc Distance
+                resultObj.distance = getDistance(lat, lon, latObj, lonObj);
 
                 sunnyPlacesArr.push(resultObj);
             }
         }
-        res.json(sunnyPlacesArr);
+
+        //take only the first 30 elements
+        var sunnyPlacesSubarray = sunnyPlacesArr.slice(0, 30);
+
+        //sort array
+        sunnyPlacesSubarray = sortJSON(sunnyPlacesSubarray, 'distance');
+
+        res.json(sunnyPlacesSubarray);
     });
 });
 
@@ -124,17 +158,26 @@ app.listen(3000, function () {
 
 //method for distance calculation
 function getDistance(lat1, lon1, lat2, lon2) {
-    var radlat1 = Math.PI * lat1 / 180
-    var radlat2 = Math.PI * lat2 / 180
-    var radlon1 = Math.PI * lon1 / 180
-    var radlon2 = Math.PI * lon2 / 180
+    var R = 6371; // Radius of the earth in km
+    var dLat = degToRad(lat2 - lat1);  // deg2rad below
+    var dLon = degToRad(lon2 - lon1);
+    var a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(degToRad(lat1)) * Math.cos(degToRad(lat2)) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2)
+        ;
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    var d = R * c; // Distance in km
+    return d;
+}
 
-    var theta = lon1 - lon2
-    var radtheta = Math.PI * theta / 180
-    var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
-    dist = Math.acos(dist)
+function degToRad(deg) {
+    return deg * (Math.PI / 180)
+}
 
-    dist = (dist * 180 / Math.PI) * 60 * 1.853159616;
-    
-    return dist
+function sortJSON(data, key) {
+    return data.sort(function (a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    });
 }
