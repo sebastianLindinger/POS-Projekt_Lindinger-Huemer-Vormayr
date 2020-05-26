@@ -51,7 +51,7 @@ async function getWeatherData() {
     var currentName;
 
     //update weatherData only between 5.00 a.m. to 9.59 p.m
-    if (hours >= 5 && hours <= 23) {
+    if (hours >= 5 && hours <= 21) {
         if (i == dbSize) i = 0;
 
         dbo.collection(collectionName).find({}).toArray(function (err, result) {
