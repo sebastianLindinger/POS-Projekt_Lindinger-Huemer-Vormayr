@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Main">
+    tools:context=".Fragment_Start">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,11 +26,12 @@
             android:id="@+id/editText_Start_Town"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@color/DarkBlue"
             android:layout_margin="20dp"
+            android:background="@color/DarkBlue"
             android:ems="10"
+            android:hint="Gemeinde"
             android:inputType="textPersonName"
+            android:padding="10dp"
             android:singleLine="false"
             android:textColor="@android:color/white"
             tools:text="Gemeinde:" />
@@ -39,12 +40,13 @@
             android:id="@+id/editText_Start_PLZ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:background="@color/DarkBlue"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:background="@color/DarkBlue"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:hint="PLZ"
+            android:inputType="none|number"
+            android:padding="10dp"
             android:singleLine="false"
             android:textColor="@android:color/white"
             tools:text="PLZ:" />
@@ -73,10 +75,10 @@
             android:id="@+id/button_Start_FindSun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="40dp"
+            android:padding="60dp"
             android:background="@color/LightBlue"
             android:scaleType="centerCrop"
-            android:src="@drawable/Sonne" />
+            android:src="@drawable/sonne" />
 
     </LinearLayout>
 

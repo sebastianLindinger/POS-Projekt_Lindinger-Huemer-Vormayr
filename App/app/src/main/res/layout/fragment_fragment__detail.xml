@@ -42,7 +42,7 @@
                 android:paddingRight="30dp"
                 android:paddingBottom="20dp"
                 android:scaleType="fitStart"
-                android:src="@drawable/Sonne" />
+                android:src="@drawable/sonne" />
         </LinearLayout>
 
         <TableLayout
