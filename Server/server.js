@@ -18,11 +18,11 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
-const collectionName = 'jonny';
-const dbSize = 1565;
+const collectionName = 'collection';
+const dbSize = 1556;
 
 var dbo;
-var i = 1560;
+var i = 0;
 
 function initCollection() {
     //create collection
@@ -85,7 +85,7 @@ async function getWeatherData() {
     }
 
     //repeat this every 1.87 seconds
-    setTimeout(getWeatherData, 1000);
+    setTimeout(getWeatherData, 1870);
 }
 
 //GET method to receive all places in the database
@@ -126,29 +126,29 @@ app.get('/sunFinder/get', function (req, res) {
 
     dbo.collection(collectionName).find({}).toArray(function (err, result) {
         if (err) throw err;
-        sunnyPlacesArr = [];
+        placesArr = [];
+
         for (var j = 0; j < dbSize; j++) {
             var resultObj = result[j];
-            console.log(resultObj);
-            if (resultObj.weatherData.weather[0].icon == '01d' && resultObj.weatherData.weather[0].id == 800) {
-                //variables are needed for distance calculation
-                var latObj = resultObj.weatherData.coord.lat;
-                var lonObj = resultObj.weatherData.coord.lon;
 
-                //calc Distance
-                resultObj.distance = getDistance(lat, lon, latObj, lonObj);
+            //variables are needed for distance calculation
+            var latObj = resultObj.weatherData.coord.lat;
+            var lonObj = resultObj.weatherData.coord.lon;
 
-                sunnyPlacesArr.push(resultObj);
-            }
+            //calc Distance
+            resultObj.distance = getDistance(lat, lon, latObj, lonObj);
+
+            placesArr.push(resultObj);
         }
 
-        //take only the first 30 elements
-        var sunnyPlacesSubarray = sunnyPlacesArr.slice(0, 30);
-
         //sort array
-        sunnyPlacesSubarray = sortJSON(sunnyPlacesSubarray, 'distance');
+        placesArr = sortJSON(placesArr, 'distance');
 
-        res.json(sunnyPlacesSubarray);
+        //remove places with bad weather and show only first x places
+        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
+
+        console.log(sunnyPlacesArr)
+        res.json(sunnyPlacesArr);
     });
 });
 
@@ -180,4 +180,25 @@ function sortJSON(data, key) {
         var x = a[key]; var y = b[key];
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
+}
+
+//function gets array of places and count
+//returns the place where you are and count-1 places near you where sun shines
+function removeBadWeatherPlaces(placesArr, count) {
+    var sunnyPlacesArr = [];
+
+    //first index = your current place
+    sunnyPlacesArr[0] = placesArr[0];
+
+    for(var j = 1; j < dbSize; j++) {
+        var resultObj = placesArr[j];
+
+        //check if sun shines
+        //if sun shines -> push to array
+        if(resultObj.weatherData.weather[0].icon == '01d' && resultObj.weatherData.weather[0].id == 800) {
+            sunnyPlacesArr.push(resultObj);
+            if(count == sunnyPlacesArr.length) return sunnyPlacesArr;
+        }
+    }
+    return sunnyPlacesArr;
 }
