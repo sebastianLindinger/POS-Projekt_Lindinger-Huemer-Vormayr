@@ -156,19 +156,19 @@ app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });
 
-//method for distance calculation
+//function for distance calculation
+//returns distance of to places in km
 function getDistance(lat1, lon1, lat2, lon2) {
-    var R = 6371; // Radius of the earth in km
+    const RADIUS = 6371; // Radius of the earth in km
     var dLat = degToRad(lat2 - lat1);  // deg2rad below
     var dLon = degToRad(lon2 - lon1);
     var a =
         Math.sin(dLat / 2) * Math.sin(dLat / 2) +
         Math.cos(degToRad(lat1)) * Math.cos(degToRad(lat2)) *
-        Math.sin(dLon / 2) * Math.sin(dLon / 2)
-        ;
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    var d = R * c; // Distance in km
-    return d;
+    var distance = RADIUS * c; 
+    return distance;
 }
 
 function degToRad(deg) {
@@ -190,14 +190,13 @@ function removeBadWeatherPlaces(placesArr, count) {
     //first index = your current place
     sunnyPlacesArr[0] = placesArr[0];
 
-    for(var j = 1; j < dbSize; j++) {
+    for (var j = 1; j < dbSize; j++) {
         var resultObj = placesArr[j];
 
         //check if sun shines
-        //if sun shines -> push to array
-        if(resultObj.weatherData.weather[0].icon == '01d' && resultObj.weatherData.weather[0].id == 800) {
+        if (resultObj.weatherData.weather[0].icon == '01d' && resultObj.weatherData.weather[0].id == 800) {
             sunnyPlacesArr.push(resultObj);
-            if(count == sunnyPlacesArr.length) return sunnyPlacesArr;
+            if (count == sunnyPlacesArr.length) return sunnyPlacesArr;
         }
     }
     return sunnyPlacesArr;
