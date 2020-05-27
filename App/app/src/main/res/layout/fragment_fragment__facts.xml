@@ -31,7 +31,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ListView
@@ -39,17 +39,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:layout_weight="1">
-            </ListView>
+                android:layout_weight="1"></ListView>
+
             <Button
                 android:id="@+id/button_Facts_WriteFact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
                 android:layout_weight="0"
-                android:textSize="20dp"
                 android:background="@color/DarkBlue"
-                android:text="Kommentar schreiben" />
+                android:text="Kommentar schreiben"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
 
         </LinearLayout>
 

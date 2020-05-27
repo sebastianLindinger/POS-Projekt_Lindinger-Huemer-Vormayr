@@ -15,18 +15,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/DetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Detail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Facts.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Facts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +39,20 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="230" column="36" lean-forward="true" selection-start-line="230" selection-start-column="36" selection-end-line="230" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml">
           <provider selected="true" editor-type-id="android-designer2" />
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="254" column="51" selection-start-line="254" selection-start-column="51" selection-end-line="254" selection-end-column="51" />
+            <state relative-caret-position="391">
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/DetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="115">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Detail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+            <state relative-caret-position="115">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Facts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,9 +131,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Main.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
@@ -154,6 +152,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/DetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Detail.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Facts.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml" />
       </list>
     </option>
   </component>
@@ -375,14 +375,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -486,25 +478,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="254" column="51" selection-start-line="254" selection-start-column="51" selection-end-line="254" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/OnViewFactsListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/FactsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -515,17 +492,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/DetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Facts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Detail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+        <state relative-caret-position="115">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
@@ -537,13 +524,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/Fragment_Facts.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__detail.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="230" column="36" lean-forward="true" selection-start-line="230" selection-start-column="36" selection-end-line="230" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/sunfinder/FactsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__facts.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
