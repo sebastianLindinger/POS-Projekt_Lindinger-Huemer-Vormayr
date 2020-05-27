@@ -195,9 +195,10 @@
         </TableLayout>
 
         <ListView
-            android:background="@color/DarkBlue"
-            android:padding="10dp"
+            android:id="@+id/listView_Master"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@color/DarkBlue"
+            android:padding="10dp" />
     </LinearLayout>
 </FrameLayout>

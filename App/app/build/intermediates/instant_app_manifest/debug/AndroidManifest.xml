@@ -19,6 +19,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.sunfinder.DetailActivity" />
+        <activity android:name="com.example.sunfinder.MasterAcitvity" />
         <activity android:name="com.example.sunfinder.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
