@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/fragment3"
-        android:name="com.example.sunfinder.Fragment_Detail"
+        android:name="com.example.sunfinder.DetailActivity.Fragment_Detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

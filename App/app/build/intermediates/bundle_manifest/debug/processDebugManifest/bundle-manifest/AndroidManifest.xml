@@ -18,11 +18,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.sunfinder.SettingsActivity" />
-        <activity android:name="com.example.sunfinder.FactsActivity" />
-        <activity android:name="com.example.sunfinder.DetailActivity" />
-        <activity android:name="com.example.sunfinder.MasterAcitvity" />
-        <activity android:name="com.example.sunfinder.MainActivity" >
+        <activity android:name="com.example.sunfinder.Preferences.SettingsActivity" />
+        <activity android:name="com.example.sunfinder.FactsActivity.FactsActivity" />
+        <activity android:name="com.example.sunfinder.DetailActivity.DetailActivity" />
+        <activity android:name="com.example.sunfinder.MasterActivity.MasterActivity" />
+        <activity android:name="com.example.sunfinder.MainActivity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

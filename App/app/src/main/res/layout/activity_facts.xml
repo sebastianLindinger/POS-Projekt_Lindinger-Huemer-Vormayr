@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FactsActivity">
+    tools:context=".FactsActivity.FactsActivity">
 
     <fragment
         android:id="@+id/fragment4"
-        android:name="com.example.sunfinder.Fragment_Facts"
+        android:name="com.example.sunfinder.FactsActivity.Fragment_Facts"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

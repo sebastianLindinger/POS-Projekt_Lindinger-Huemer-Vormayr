@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity.DetailActivity">
 
     <fragment
         android:id="@+id/fragment_detail"
-        android:name="com.example.sunfinder.Fragment_Detail"
+        android:name="com.example.sunfinder.DetailActivity.Fragment_Detail"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent" />
 
     <fragment
         android:id="@+id/fragment_facts"
-        android:name="com.example.sunfinder.Fragment_Facts"
+        android:name="com.example.sunfinder.FactsActivity.Fragment_Facts"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
