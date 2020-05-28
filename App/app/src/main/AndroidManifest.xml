@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingsActivity"></activity>
-        <activity android:name=".FactsActivity" />
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".MasterAcitvity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.sunfinder.Preferences.SettingsActivity"></activity>
+        <activity android:name="com.example.sunfinder.FactsActivity.FactsActivity" />
+        <activity android:name="com.example.sunfinder.DetailActivity.DetailActivity" />
+        <activity android:name="com.example.sunfinder.MasterActivity.MasterActivity" />
+        <activity android:name="com.example.sunfinder.MainActivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

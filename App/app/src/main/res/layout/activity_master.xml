@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MasterAcitvity">
+    tools:context=".MasterActivity.MasterActivity">
 
     <fragment
         android:id="@+id/fragment_master"
-        android:name="com.example.sunfinder.Fragment_Master"
+        android:name="com.example.sunfinder.MasterActivity.Fragment_Master"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
