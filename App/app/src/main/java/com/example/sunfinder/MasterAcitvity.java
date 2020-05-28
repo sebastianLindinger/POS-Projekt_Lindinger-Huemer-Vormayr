@@ -5,6 +5,7 @@ import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -20,6 +21,7 @@ public class MasterAcitvity extends AppCompatActivity implements OnTownSelectedL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_master);
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         preferenceChangeListener =  new SharedPreferences.OnSharedPreferenceChangeListener() {
