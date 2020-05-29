@@ -23,6 +23,7 @@ const dbSize = 1556;
 
 var dbo;
 var i = 0;
+var op = 0;
 
 function initCollection() {
     //create collection
@@ -45,12 +46,13 @@ MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     dbo = db.db('sunfinderDB');
 
+    fillAlPlacesWithLatLong();
     //check if collection exists and create one if not
-    dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
-        if (err) throw err;
-        else if (items.length == 1) getWeatherData();
-        else initCollection();
-    });
+    //dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
+    //    if (err) throw err;
+    //    else if (items.length == 1) getWeatherData();
+    //    else initCollection();
+    //});
 });
 
 async function getWeatherData() {
@@ -85,7 +87,7 @@ async function getWeatherData() {
     }
 
     //repeat this every 1.87 seconds
-    setTimeout(getWeatherData, 1870);
+    setTimeout(getWeatherData, 1000);
 }
 
 //GET method to receive all places in the database
@@ -156,13 +158,13 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
 
             //calc distance for all entries in database
             var placesArr = calcDistanceArr(result, myPlace.weatherData.coord.lat, myPlace.weatherData.coord.lon);
-    
+
             //sort array
             placesArr = sortJSON(placesArr, 'distance');
-    
+
             //remove places with bad weather and show only first x places
             var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
-    
+
             res.json(sunnyPlacesArr);
         }
     });
@@ -250,4 +252,50 @@ function removeBadWeatherPlaces(placesArr, count) {
         }
     }
     return sunnyPlacesArr;
+}
+
+function fillAlPlacesWithLatLong() {
+    dbo.collection("test").find({}).toArray(function (err, result) {
+        if (err) throw err;
+        var locationURL = "https://eu1.locationiq.com/v1/search.php?key=a22bb0cf158da3&q=<Place>&format=json"
+        var place = result[op].name;
+        place = place.split(' ').join('%20');
+        place = place.split('ä').join('ae');
+        place = place.split('ö').join('oe');
+        place = place.split('ü').join('ue');
+        place = place.split('ß').join('ss');
+        var useURL = locationURL.replace('<Place>', place);
+        console.log("");
+        console.log(useURL);
+
+        fetch(useURL)
+            .then(response => response.json())
+            .then(data => {
+                //console.log(op);
+                var myQuery = { _id: op.toString() };
+                console.log(myQuery);
+                if(data == undefined){
+                    console.log(useURL);
+                }
+                
+                var newValues = { $set: { latitude: data[0].lat, longitude: data[0].lon } };
+                //console.log(newValues);
+                dbo.collection("test").updateOne(myQuery, newValues, function (err, res) {
+                    if (err) {
+                        console.log(data);
+                        console.log(useURL);
+                        console.log(op);
+                        throw err;
+                    }
+                    setTimeout(fillAlPlacesWithLatLong, 1200);
+                    op++;
+                });
+
+
+            })
+
+
+    });
+  
+    
 }
