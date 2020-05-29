@@ -25,34 +25,35 @@
 17-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:11:9-40
-20        <activity android:name="com.example.sunfinder.Preferences.SettingsActivity" />
-20-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:12:9-96
-20-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:12:19-84
-21        <activity android:name="com.example.sunfinder.FactsActivity.FactsActivity" />
-21-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:13:9-86
-21-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:13:19-83
-22        <activity android:name="com.example.sunfinder.DetailActivity.DetailActivity" />
-22-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:14:9-88
-22-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:14:19-85
-23        <activity android:name="com.example.sunfinder.MasterActivity.MasterActivity" />
-23-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:15:9-88
-23-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:15:19-85
-24        <activity android:name="com.example.sunfinder.MainActivity.MainActivity" >
-24-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:16:9-22:20
-24-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:16:19-81
-25            <intent-filter>
-25-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:17:13-21:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:17-69
-26-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:17-77
-28-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:27-74
-29            </intent-filter>
-30        </activity>
-31    </application>
-32
-33</manifest>
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity android:name="com.example.sunfinder.Preferences.SettingsActivity" />
+21-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:12:9-96
+21-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:12:19-84
+22        <activity android:name="com.example.sunfinder.FactsActivity.FactsActivity" />
+22-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:13:9-86
+22-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:13:19-83
+23        <activity android:name="com.example.sunfinder.DetailActivity.DetailActivity" />
+23-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:14:9-88
+23-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:14:19-85
+24        <activity android:name="com.example.sunfinder.MasterActivity.MasterActivity" />
+24-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:15:9-88
+24-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:15:19-85
+25        <activity android:name="com.example.sunfinder.MainActivity.MainActivity" >
+25-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:16:9-22:20
+25-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:16:19-81
+26            <intent-filter>
+26-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:17-69
+27-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:17-77
+29-->D:\Desktop\jhuemer17\POS3\2. Semester\POS-Projekt_Lindinger-Huemer-Vormayr\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>
