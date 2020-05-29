@@ -23,7 +23,7 @@ const dbSize = 1556;
 
 var dbo;
 var i = 0;
-var op = 0;
+var op = 1460;
 
 function initCollection() {
     //create collection
@@ -46,13 +46,15 @@ MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     dbo = db.db('sunfinderDB');
 
-    fillAlPlacesWithLatLong();
+    //fillAlPlacesWithLatLong() is just a temporary function
+    //fillAlPlacesWithLatLong();
+
     //check if collection exists and create one if not
-    //dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
-    //    if (err) throw err;
-    //    else if (items.length == 1) getWeatherData();
-    //    else initCollection();
-    //});
+    dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
+        if (err) throw err;
+        else if (items.length == 1) getWeatherData();
+        else initCollection();
+    });
 });
 
 async function getWeatherData() {
@@ -254,6 +256,8 @@ function removeBadWeatherPlaces(placesArr, count) {
     return sunnyPlacesArr;
 }
 
+//function that fills up a Collection, where all AUstrian cities are in,
+//with better location data then the openWeatherMap has to get a more exactly distance
 function fillAlPlacesWithLatLong() {
     dbo.collection("test").find({}).toArray(function (err, result) {
         if (err) throw err;
@@ -263,6 +267,9 @@ function fillAlPlacesWithLatLong() {
         place = place.split('ä').join('ae');
         place = place.split('ö').join('oe');
         place = place.split('ü').join('ue');
+        place = place.split('Ä').join('Ae');
+        place = place.split('Ö').join('Oe');
+        place = place.split('Ü').join('Ue');
         place = place.split('ß').join('ss');
         var useURL = locationURL.replace('<Place>', place);
         console.log("");
@@ -272,7 +279,7 @@ function fillAlPlacesWithLatLong() {
             .then(response => response.json())
             .then(data => {
                 //console.log(op);
-                var myQuery = { _id: op.toString() };
+                var myQuery = { _id: (op+1).toString() };
                 console.log(myQuery);
                 if(data == undefined){
                     console.log(useURL);
