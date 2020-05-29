@@ -87,9 +87,8 @@ async function getWeatherData() {
             i++;
         });
     }
-
     //repeat this every 1.87 seconds
-    setTimeout(getWeatherData, 1000);
+    setTimeout(getWeatherData, 1875);
 }
 
 //GET method to receive all places in the database
@@ -105,7 +104,7 @@ app.get('/db', function (req, res) {
 //GET method to receive all SUNNY places in the database by Coordinates
 //url looks like this: 'http://localhost:3000/sunFinder/getByCoord?lat=48.18&lon=13.79'
 app.get('/sunFinder/getByCoord', function (req, res) {
-    console.log('Recieved GET-Request...')
+    console.log('Recieved GET by Coord-Request...')
 
     //variables are needed for distance calculation
     var lat = req.query.lat;
@@ -121,7 +120,7 @@ app.get('/sunFinder/getByCoord', function (req, res) {
         placesArr = sortJSON(placesArr, 'distance');
 
         //remove places with bad weather and show only first x places
-        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
+        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 20);
 
         res.json(sunnyPlacesArr);
     });
@@ -130,15 +129,15 @@ app.get('/sunFinder/getByCoord', function (req, res) {
 //GET method to receive all SUNNY places in the database by name and postcode
 //url looks like this: 'http://localhost:3000/sunFinder/getByNameAndPostcode?name=Meggenhofen&postcode=4714'
 app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
-    console.log('Recieved GET-Request...')
+    console.log('Recieved GET ByNameAndPostcode -Request...')
 
     //variables are needed for distance calculation
     var nameOfPlace = req.query.name;
     var postcodeOfPlace = req.query.postcode;
 
-    dbo.collection(collectionName).find({}).toArray(function (err, result) {
+    dbo.collection("test").find({}).toArray(function (err, result) {
         if (err) throw err;
-
+        
         //get place for distance calculation
         var myPlace;
         for (var j = 0; j < dbSize; j++) {
@@ -159,7 +158,7 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
             if (err) throw err;
 
             //calc distance for all entries in database
-            var placesArr = calcDistanceArr(result, myPlace.weatherData.coord.lat, myPlace.weatherData.coord.lon);
+            var placesArr = calcDistanceArr(result, myPlace.latitude, myPlace.longitude);
 
             //sort array
             placesArr = sortJSON(placesArr, 'distance');
@@ -199,8 +198,8 @@ function calcDistanceArr(result, lat, lon) {
         var resultObj = result[j];
 
         //variables are needed for distance calculation
-        var latObj = resultObj.weatherData.coord.lat;
-        var lonObj = resultObj.weatherData.coord.lon;
+        var latObj = resultObj.latitude;
+        var lonObj = resultObj.longitude;
 
         //calc Distance
         resultObj.distance = calcDistance(lat, lon, latObj, lonObj);
@@ -297,12 +296,6 @@ function fillAlPlacesWithLatLong() {
                     setTimeout(fillAlPlacesWithLatLong, 1200);
                     op++;
                 });
-
-
             })
-
-
     });
-  
-    
 }
