@@ -19,6 +19,7 @@ var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
 const collectionName = 'collection';
+const nameCollection = "test";
 const dbSize = 1556;
 
 var dbo;
@@ -135,13 +136,13 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
     var nameOfPlace = req.query.name;
     var postcodeOfPlace = req.query.postcode;
 
-    dbo.collection("test").find({}).toArray(function (err, result) {
+    dbo.collection(nameCollection).find({}).toArray(function (err, nameCollectionResult) {
         if (err) throw err;
         
         //get place for distance calculation
         var myPlace;
         for (var j = 0; j < dbSize; j++) {
-            var resultObj = result[j];
+            var resultObj = nameCollectionResult[j];
             if (nameOfPlace == resultObj.name) {
                 myPlace = resultObj;
                 break;
@@ -157,16 +158,22 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
         } else {
             if (err) throw err;
 
-            //calc distance for all entries in database
-            var placesArr = calcDistanceArr(result, myPlace.latitude, myPlace.longitude);
+            dbo.collection(collectionName).find({}).toArray(function (err, weahterCollectionResult) {
+               
+                //calc distance for all entries in database
+                var placesArr = calcDistanceArr(weahterCollectionResult, myPlace.latitude, myPlace.longitude);
 
-            //sort array
-            placesArr = sortJSON(placesArr, 'distance');
+                //sort array
+                placesArr = sortJSON(placesArr, 'distance');
+                placesArr[0].name = myPlace.name;
+                placesArr[0].postCode = myPlace.postCode;
+            
 
-            //remove places with bad weather and show only first x places
-            var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
+                //remove places with bad weather and show only first x places
+                var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
 
-            res.json(sunnyPlacesArr);
+                res.json(sunnyPlacesArr);
+            });
         }
     });
 });
@@ -194,13 +201,14 @@ app.listen(3000, function () {
 //function calculates distance for all entries in result
 function calcDistanceArr(result, lat, lon) {
     var placesArr = [];
+    
     for (var j = 0; j < dbSize; j++) {
         var resultObj = result[j];
-
+       
         //variables are needed for distance calculation
-        var latObj = resultObj.latitude;
-        var lonObj = resultObj.longitude;
-
+        var latObj = resultObj.weatherData.coord.lat;
+        var lonObj = resultObj.weatherData.coord.lon;
+        
         //calc Distance
         resultObj.distance = calcDistance(lat, lon, latObj, lonObj);
 
@@ -239,7 +247,7 @@ function sortJSON(data, key) {
 //returns count places near you where sun shines (first index in array is always the place where you are)
 function removeBadWeatherPlaces(placesArr, count) {
     var sunnyPlacesArr = [];
-
+    
     //first index = your current place
     sunnyPlacesArr[0] = placesArr[0];
 
@@ -258,7 +266,7 @@ function removeBadWeatherPlaces(placesArr, count) {
 //function that fills up a Collection, where all AUstrian cities are in,
 //with better location data then the openWeatherMap has to get a more exactly distance
 function fillAlPlacesWithLatLong() {
-    dbo.collection("test").find({}).toArray(function (err, result) {
+    dbo.collection(nameCollection).find({}).toArray(function (err, result) {
         if (err) throw err;
         var locationURL = "https://eu1.locationiq.com/v1/search.php?key=a22bb0cf158da3&q=<Place>&format=json"
         var place = result[op].name;
@@ -286,7 +294,7 @@ function fillAlPlacesWithLatLong() {
                 
                 var newValues = { $set: { latitude: data[0].lat, longitude: data[0].lon } };
                 //console.log(newValues);
-                dbo.collection("test").updateOne(myQuery, newValues, function (err, res) {
+                dbo.collection(nameCollection).updateOne(myQuery, newValues, function (err, res) {
                     if (err) {
                         console.log(data);
                         console.log(useURL);
