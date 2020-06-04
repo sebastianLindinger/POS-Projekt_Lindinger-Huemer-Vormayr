@@ -8,29 +8,57 @@ public class City {
     WeatherData weatherData;
     double distance;
 
+    public String get_id() {
+        return _id;
+    }
+
+    public String getPostCode() {
+        return postCode;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String[] getFacts() {
+        return facts;
+    }
+
+    public WeatherData getWeatherData() {
+        return weatherData;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public class WeatherData{
-        Coord coord;
-        Weather[] weather;
-        String base;
-        Main main;
-        int visibility;
-        Wind wind;
-        Clouds clouds;
-        long dt;
-        Sys sys;
-        int timezone;
-        long id;
-        String name;
-        int cod;
+        public Coord coord;
+        public Weather[] weather;
+        public String base;
+        public Main main;
+        public int visibility;
+        public Wind wind;
+        public Clouds clouds;
+        public long dt;
+        public Sys sys;
+        public int timezone;
+        public long id;
+        public String name;
+        public int cod;
     }
     public class Wind
     {
-        double speed;
-        int deg;
+        public double speed;
+        public int deg;
     }
     public class Clouds
     {
-        int all;
+        public int all;
     }
     public class Sys
     {
@@ -53,11 +81,11 @@ public class City {
         String icon;
     }
     public class Main{
-        double temp;
-        double feels_like;
-        double temp_min;
-        double temp_max;
-        int pressure;
-        int humidity;
+        public double temp;
+        public double feels_like;
+        public double temp_min;
+        public double temp_max;
+        public int pressure;
+        public int humidity;
     }
 }
