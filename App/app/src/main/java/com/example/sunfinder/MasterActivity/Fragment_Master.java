@@ -14,10 +14,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.sunfinder.DataAdministration.City;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Fragment_Master extends Fragment {
@@ -31,8 +33,9 @@ public class Fragment_Master extends Fragment {
     private TextView textView_tempMin;
     private ListView listView;
     private OnTownSelectedListener mListener;
-    private ArrayAdapter adapter;
-
+    private ItemListAdapter adapter;
+    private List<City>cities = new ArrayList<>();
+    private Context ctx;
 
    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,10 +50,26 @@ public class Fragment_Master extends Fragment {
         super.onAttach(context);
         if (context instanceof OnTownSelectedListener) {
             mListener = (OnTownSelectedListener) context;
+            ctx = context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
+    }
+    private void setAdapter(Context context)
+    {
+        adapter = new ItemListAdapter(cities, R.layout.listview_item_master, context);
+        listView.setAdapter(adapter);
+    }
+    private void setTextViews(City city)
+    {
+        textView_yourTown.setText(city.getName());
+        textView_clouds.setText(city.getWeatherData().clouds.all);
+        textView_wind.setText(city.getWeatherData().wind.speed+" Km/h");
+        textView_temp.setText(city.getWeatherData().main.temp+"°C");
+        textView_tempFeels.setText(city.getWeatherData().main.feels_like+"°C");
+        textView_tempMax.setText(city.getWeatherData().main.temp_max+"°C");
+        textView_tempMin.setText(city.getWeatherData().main.temp_min+"°C");
     }
     private void initializeViews(View view)
     {
@@ -70,15 +89,13 @@ public class Fragment_Master extends Fragment {
             }
         });
 
+        //this is for testing----
+        City tempCity = new City();
+        tempCity.setName("Meggenhofen");
+        cities.add(tempCity);
+        //----
 
-        //Implemented this for testing
-        ArrayList<String>list = new ArrayList<>();
-        list.add("Geboltskirchen");
-        adapter = new ArrayAdapter<>(getActivity(),
-                android.R.layout.simple_list_item_1, list);
-        listView.setAdapter(adapter);
-        //.......
-
+        setAdapter(ctx);
     }
 
 
