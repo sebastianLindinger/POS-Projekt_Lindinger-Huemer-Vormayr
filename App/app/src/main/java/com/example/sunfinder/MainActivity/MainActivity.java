@@ -67,10 +67,12 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
             }
         });
 
-        if (fragment_start.useGPS && lon != 0.0 && lat != 0.0) {
-            getDataFromServer.execute("GET", URL_geo.replace("<lat>", String.valueOf(lat)).replace("<lon>", String.valueOf(lon)));
-        } else {
+        if (fragment_start.useGPS) {
+            if(lon != 0.0 && lat != 0.0) getDataFromServer.execute("GET", URL_geo.replace("<lat>", String.valueOf(lat)).replace("<lon>", String.valueOf(lon)));
+        } else if(!city.equals("") || !postcode.equals("")){
             getDataFromServer.execute("GET", URL_nameAndPostcode.replace("<name>", city).replace("<postcode>", postcode));
+        } else {
+            Toast.makeText(MainActivity.this, "Kein Ort eingegeben!", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -111,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
             } else {
                 Log.d(TAG, "granted - 2");
                 fragment_start.useGPS = true;
+                fragment_start.button_useGPS.setText("STANDORT PER EINGABE ERMITTELN");
                 fragment_start.createLocationListener();
             }
         }

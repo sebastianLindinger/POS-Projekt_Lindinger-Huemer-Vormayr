@@ -38,7 +38,7 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
 
     private EditText editText_town;
     private EditText editText_plz;
-    private Button button_useGPS;
+    Button button_useGPS;
     private ImageButton button_findSun;
 
     private OnSunClickedListener mListener;
@@ -84,9 +84,17 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == button_findSun.getId()) {
             mListener.onSunClicked(lon, lat, editText_town.getText().toString(), editText_plz.getText().toString());
-        } else if (v.getId() == button_useGPS.getId()) checkPermissionGPS();
+        } else if (v.getId() == button_useGPS.getId()) useGPS();
     }
 
+    public void useGPS() {
+        if(!useGPS) {
+            checkPermissionGPS();
+        } else {
+            useGPS = false;
+            button_useGPS.setText("STANDORT PER GPS ERMITTELN");
+        }
+    }
     public void checkPermissionGPS() {
         String permission = Manifest.permission.ACCESS_FINE_LOCATION;
         if (ActivityCompat.checkSelfPermission(getContext(), permission) != PackageManager.PERMISSION_GRANTED) {
@@ -95,6 +103,7 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
         } else {
             //permission granted
             useGPS = true;
+            button_useGPS.setText("STANDORT PER EINGABE ERMITTELN");
             createLocationListener();
         }
     }
