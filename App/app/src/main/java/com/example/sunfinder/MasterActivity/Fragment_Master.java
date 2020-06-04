@@ -34,17 +34,18 @@ public class Fragment_Master extends Fragment {
     private ListView listView;
     private OnTownSelectedListener mListener;
     private ItemListAdapter adapter;
-    private List<City>cities = new ArrayList<>();
+    private List<City> cities = new ArrayList<>();
     private Context ctx;
 
-   @Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-       Log.d(TAG, "onCreateView: entered");
-       View view = inflater.inflate(R.layout.fragment_fragment__master, container, false);
-       initializeViews(view);
-       return view;
+        Log.d(TAG, "onCreateView: entered");
+        View view = inflater.inflate(R.layout.fragment_fragment__master, container, false);
+        initializeViews(view);
+        return view;
     }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -56,23 +57,23 @@ public class Fragment_Master extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
-    private void setAdapter(Context context)
-    {
+
+    private void setAdapter(Context context) {
         adapter = new ItemListAdapter(cities, R.layout.listview_item_master, context);
         listView.setAdapter(adapter);
     }
-    private void setTextViews(City city)
-    {
+
+    private void setTextViews(City city) {
         textView_yourTown.setText(city.getName());
         textView_clouds.setText(city.getWeatherData().clouds.all);
-        textView_wind.setText(city.getWeatherData().wind.speed+" Km/h");
-        textView_temp.setText(city.getWeatherData().main.temp+"°C");
-        textView_tempFeels.setText(city.getWeatherData().main.feels_like+"°C");
-        textView_tempMax.setText(city.getWeatherData().main.temp_max+"°C");
-        textView_tempMin.setText(city.getWeatherData().main.temp_min+"°C");
+        textView_wind.setText(city.getWeatherData().wind.speed + " Km/h");
+        textView_temp.setText(city.getWeatherData().main.temp + "°C");
+        textView_tempFeels.setText(city.getWeatherData().main.feels_like + "°C");
+        textView_tempMax.setText(city.getWeatherData().main.temp_max + "°C");
+        textView_tempMin.setText(city.getWeatherData().main.temp_min + "°C");
     }
-    private void initializeViews(View view)
-    {
+
+    private void initializeViews(View view) {
         textView_yourTown = view.findViewById(R.id.textView_Master_YourTown);
         textView_clouds = view.findViewById(R.id.textView_Master_Clouds);
         textView_wind = view.findViewById(R.id.textView_Master_Wind);
