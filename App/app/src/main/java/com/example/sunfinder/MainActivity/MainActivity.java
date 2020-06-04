@@ -1,9 +1,12 @@
 package com.example.sunfinder.MainActivity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -27,15 +30,18 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements OnSunClickedListener {
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private final String URL_geo = "not implemented yet";
+    private final String URL_geo = "http://varchar42.me:3000/sunFinder/getByCoord?lat=<lat>&lon=<lon>";
     private final String URL_nameAndPostcode = "http://varchar42.me:3000/sunFinder/getByNameAndPostcode?name=<name>&postcode=<postcode>";
+
+    Fragment_Start fragment_start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
-    }
+        fragment_start = (Fragment_Start) getSupportFragmentManager().findFragmentById(R.id.fragment_start);
+   }
 
     @Override
     public void onSunClicked(double lon, double lat, String city, String postcode) {
@@ -61,8 +67,9 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
             }
         });
 
-        if (lon != 0.0 && lat != 0.0) getDataFromServer.execute("GET", URL_geo);
-        else {
+        if (fragment_start.useGPS && lon != 0.0 && lat != 0.0) {
+            getDataFromServer.execute("GET", URL_geo.replace("<lat>", String.valueOf(lat)).replace("<lon>", String.valueOf(lon)));
+        } else {
             getDataFromServer.execute("GET", URL_nameAndPostcode.replace("<name>", city).replace("<postcode>", postcode));
         }
     }
@@ -93,5 +100,19 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == fragment_start.LOCATION_PERMISSION_REQUEST_CODE) {
+            if (grantResults.length > 0 && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Log.d(TAG, "not granted");
+            } else {
+                Log.d(TAG, "granted - 2");
+                fragment_start.useGPS = true;
+                fragment_start.createLocationListener();
+            }
+        }
     }
 }
