@@ -36,7 +36,7 @@ public class City {
         this.name = name;
     }
 
-    public class WeatherData{
+    public class WeatherData {
         public Coord coord;
         public Weather[] weather;
         public String base;
@@ -51,36 +51,37 @@ public class City {
         public String name;
         public int cod;
     }
-    public class Wind
-    {
+
+    public class Wind {
         public double speed;
         public int deg;
     }
-    public class Clouds
-    {
+
+    public class Clouds {
         public int all;
     }
-    public class Sys
-    {
+
+    public class Sys {
         int type;
         int id;
         String country;
         long sunrise;
         long sunset;
     }
-    public class Coord
-    {
+
+    public class Coord {
         double lat;
         double lon;
     }
-    public class Weather
-    {
+
+    public class Weather {
         int id;
         String main;
         String description;
         String icon;
     }
-    public class Main{
+
+    public class Main {
         public double temp;
         public double feels_like;
         public double temp_min;

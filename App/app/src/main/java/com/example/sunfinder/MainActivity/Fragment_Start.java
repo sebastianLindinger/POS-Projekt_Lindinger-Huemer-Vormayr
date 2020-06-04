@@ -1,6 +1,8 @@
 package com.example.sunfinder.MainActivity;
+
 import android.content.Context;
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -22,8 +24,8 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
     private Button button_useGPS;
     private ImageButton button_findSun;
     private OnSunClickedListener mListener;
-    private Double lon = null;
-    private Double lat = null;
+    private double lon = 0.0;
+    private double lat = 0.0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -34,8 +36,7 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
         return view;
     }
 
-    private void initializeViews(View view)
-    {
+    private void initializeViews(View view) {
         Log.d(TAG, "initializeViews: entered");
         editText_town = view.findViewById(R.id.editText_Start_Town);
         editText_plz = view.findViewById(R.id.editText_Start_PLZ);
@@ -44,6 +45,7 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
         button_useGPS.setOnClickListener(this);
         button_findSun.setOnClickListener(this);
     }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -57,18 +59,15 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == button_findSun.getId()) {
-            convertAddressToCoordinates(editText_town.getText().toString(), editText_plz.getText().toString());
-            mListener.onSunClicked(lon, lat);
+        if (v.getId() == button_findSun.getId()) {
+            mListener.onSunClicked(lon, lat, editText_town.getText().toString(), editText_plz.getText().toString());
         }
-        else if(v.getId() == button_useGPS.getId())useGPS();
+
+        else if (v.getId() == button_useGPS.getId()) useGPS();
     }
-    private void useGPS()
-    {
+
+    private void useGPS() {
         //implement this..
     }
-    private void convertAddressToCoordinates(String town, String plz)
-    {
-        //implement this..
-    }
+
 }

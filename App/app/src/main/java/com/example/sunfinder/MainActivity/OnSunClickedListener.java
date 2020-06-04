@@ -1,5 +1,5 @@
 package com.example.sunfinder.MainActivity;
 
 public interface OnSunClickedListener {
-    void onSunClicked(Double lon, Double lat);
+    void onSunClicked(double lon, double lat, String city, String postcode);
 }

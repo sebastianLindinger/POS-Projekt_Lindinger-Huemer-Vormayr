@@ -12,11 +12,17 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.example.sunfinder.DataAdministration.City;
+import com.example.sunfinder.DataAdministration.DataStorage;
 import com.example.sunfinder.MasterActivity.MasterActivity;
 import com.example.sunfinder.R;
 import com.example.sunfinder.Preferences.SettingsActivity;
 import com.example.sunfinder.ServerCommunication.OnTaskFinishedListener;
 import com.example.sunfinder.ServerCommunication.ServerTask;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnSunClickedListener {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -32,23 +38,35 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
     }
 
     @Override
-    public void onSunClicked(Double lon, Double lat) {
+    public void onSunClicked(double lon, double lat, String city, String postcode) {
         Log.d(TAG, "onSunClicked: entered");
-        Log.d(TAG, "lon="+lon+" lat="+lat);
 
         ServerTask getDataFromServer = new ServerTask(new OnTaskFinishedListener() {
             @Override
             public void onTaskFinished(String response) {
-                //do something when task is finished...
-                Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();
+                //parse responseJsonArray
+                Gson gson = new Gson();
+                TypeToken<List<City>> token = new TypeToken<List<City>>() {
+                };
+                try {
+                    DataStorage storage = new DataStorage((List<City>) gson.fromJson(response, token.getType()));
+                    Toast.makeText(MainActivity.this, storage.getCityByIndex(0).getName(), Toast.LENGTH_LONG).show();
+
+                    callMasterActivity();
+                } catch (Exception e) {
+                    //city was not found
+                    Log.e(TAG, response);
+                    Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();
+                }
             }
         });
 
-        if(checkGeoPermission()) getDataFromServer.execute("GET", URL_geo);
-        else getDataFromServer.execute("GET", URL_nameAndPostcode.replace("<name>", "Meggenhofen").replace("<postcoe>", "4714"));
-
-        //callMasterActivity();
+        if (lon != 0.0 && lat != 0.0) getDataFromServer.execute("GET", URL_geo);
+        else {
+            getDataFromServer.execute("GET", URL_nameAndPostcode.replace("<name>", city).replace("<postcode>", postcode));
+        }
     }
+
     private void callMasterActivity() {
         Intent intent = new Intent(this, MasterActivity.class);
         //Implement this --> intent.putExtra();
@@ -75,10 +93,5 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private boolean checkGeoPermission() {
-        //not implemented yet
-        return false;
     }
 }

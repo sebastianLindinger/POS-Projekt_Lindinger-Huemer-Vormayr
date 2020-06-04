@@ -7,14 +7,22 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DataStorage {
-    ArrayList<City>cities;
-    public DataStorage(ArrayList<City>cities)
-    {
+    private List<City> cities;
+
+    public DataStorage(List<City> cities) {
         this.cities = cities;
     }
-    public List<City> getCitiesSortedBy(int amount, Comparator comparator)
-    {
+
+    public List<City> getCitiesSortedBy(int amount, Comparator comparator) {
         Collections.sort(cities, comparator);
         return cities.stream().limit(amount).collect(Collectors.<City>toList());
+    }
+
+    public List<City> getCities() {
+        return cities;
+    }
+
+    public City getCityByIndex(int index) {
+        return cities.get(index);
     }
 }
