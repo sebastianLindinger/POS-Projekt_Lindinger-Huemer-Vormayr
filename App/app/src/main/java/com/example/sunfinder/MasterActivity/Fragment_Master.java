@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.sunfinder.DataAdministration.City;
+import com.example.sunfinder.DataAdministration.Functions;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
 
@@ -63,14 +64,14 @@ public class Fragment_Master extends Fragment {
         listView.setAdapter(adapter);
     }
 
-    private void setTextViews(City city) {
+    public void setTextViews(City city) {
         textView_yourTown.setText(city.getName());
-        textView_clouds.setText(city.getWeatherData().clouds.all);
+        textView_clouds.setText(city.getWeatherData().clouds.all + "%");
         textView_wind.setText(city.getWeatherData().wind.speed + " Km/h");
-        textView_temp.setText(city.getWeatherData().main.temp + "°C");
-        textView_tempFeels.setText(city.getWeatherData().main.feels_like + "°C");
-        textView_tempMax.setText(city.getWeatherData().main.temp_max + "°C");
-        textView_tempMin.setText(city.getWeatherData().main.temp_min + "°C");
+        textView_temp.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp) + "°C");
+        textView_tempFeels.setText(Functions.kelvinToDegrees(city.getWeatherData().main.feels_like) + "°C");
+        textView_tempMax.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_max) + "°C");
+        textView_tempMin.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_min) + "°C");
     }
 
     private void initializeViews(View view) {

@@ -88,13 +88,13 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
     }
 
     public void useGPS() {
-        if(!useGPS) {
-            checkPermissionGPS();
-        } else {
+        if (!useGPS) checkPermissionGPS();
+        else {
             useGPS = false;
             button_useGPS.setText("STANDORT PER GPS ERMITTELN");
         }
     }
+
     public void checkPermissionGPS() {
         String permission = Manifest.permission.ACCESS_FINE_LOCATION;
         if (ActivityCompat.checkSelfPermission(getContext(), permission) != PackageManager.PERMISSION_GRANTED) {
@@ -112,7 +112,7 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                if(location != null) {
+                if (location != null) {
                     lat = location.getLatitude();
                     lon = location.getLongitude();
                 }

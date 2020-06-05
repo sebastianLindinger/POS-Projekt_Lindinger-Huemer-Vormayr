@@ -25,6 +25,7 @@ import com.example.sunfinder.ServerCommunication.ServerTask;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnSunClickedListener {
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         ServerTask getDataFromServer = new ServerTask(new OnTaskFinishedListener() {
             @Override
             public void onTaskFinished(String response) {
-                //parse responseJsonArray
+                //parse responseJsonArray (do this in a method) (hob grod kan bock dase oa klasse dafir erstö)
                 Gson gson = new Gson();
                 TypeToken<List<City>> token = new TypeToken<List<City>>() {
                 };
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
                     DataStorage storage = new DataStorage((List<City>) gson.fromJson(response, token.getType()));
                     Toast.makeText(MainActivity.this, storage.getCityByIndex(0).getName(), Toast.LENGTH_LONG).show();
 
-                    callMasterActivity();
+                    callMasterActivity(storage);
                 } catch (Exception e) {
                     //city was not found
                     Log.e(TAG, response);
@@ -76,9 +77,9 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         }
     }
 
-    private void callMasterActivity() {
+    private void callMasterActivity(DataStorage storage) {
         Intent intent = new Intent(this, MasterActivity.class);
-        //Implement this --> intent.putExtra();
+        intent.putExtra("storage", storage);
         startActivity(intent);
     }
 
