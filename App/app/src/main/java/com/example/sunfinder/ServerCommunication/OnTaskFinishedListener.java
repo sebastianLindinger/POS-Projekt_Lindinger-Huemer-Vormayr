@@ -1,5 +1,5 @@
 package com.example.sunfinder.ServerCommunication;
 
 public interface OnTaskFinishedListener {
-    void onTaskFinished();
+    void onTaskFinished(String response);
 }
