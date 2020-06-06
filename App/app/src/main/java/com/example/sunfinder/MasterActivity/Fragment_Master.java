@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -25,6 +26,8 @@ import java.util.List;
 
 public class Fragment_Master extends Fragment {
     private static final String TAG = Fragment_Start.class.getSimpleName();
+
+    private ImageView imageView_weatherIcon;
     private TextView textView_yourTown;
     private TextView textView_clouds;
     private TextView textView_wind;
@@ -33,6 +36,7 @@ public class Fragment_Master extends Fragment {
     private TextView textView_tempMax;
     private TextView textView_tempMin;
     private ListView listView;
+
     private OnTownSelectedListener mListener;
     private ItemListAdapter adapter;
     private List<City> cities = new ArrayList<>();
@@ -65,6 +69,26 @@ public class Fragment_Master extends Fragment {
     }
 
     public void setTextViews(City city) {
+        switch (Functions.getWeather(city)) {
+            case SUN:
+                imageView_weatherIcon.setImageResource(R.drawable.sun);
+                break;
+
+            case RAIN:
+                //TODO: use other icon
+                imageView_weatherIcon.setImageResource(R.drawable.cloud);
+                break;
+
+            case THUNDERSTORM:
+                //TODO: use other icon
+                imageView_weatherIcon.setImageResource(R.drawable.cloud);
+                break;
+
+            case CLOUD:
+                imageView_weatherIcon.setImageResource(R.drawable.cloud);
+                break;
+        }
+
         textView_yourTown.setText(city.getName());
         textView_clouds.setText(city.getWeatherData().clouds.all + "%");
         textView_wind.setText(city.getWeatherData().wind.speed + " Km/h");
@@ -75,6 +99,7 @@ public class Fragment_Master extends Fragment {
     }
 
     private void initializeViews(View view) {
+        imageView_weatherIcon = view.findViewById(R.id.imageView_weatherIcon);
         textView_yourTown = view.findViewById(R.id.textView_Master_YourTown);
         textView_clouds = view.findViewById(R.id.textView_Master_Clouds);
         textView_wind = view.findViewById(R.id.textView_Master_Wind);
