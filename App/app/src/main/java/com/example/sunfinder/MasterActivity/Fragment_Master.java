@@ -121,6 +121,8 @@ public class Fragment_Master extends Fragment {
             }
         });
 
+        View header = getLayoutInflater().inflate(R.layout.listview_header, null);
+        listView.addHeaderView(header, null, false);
     }
 
     public void setStorage(DataStorage storage) {

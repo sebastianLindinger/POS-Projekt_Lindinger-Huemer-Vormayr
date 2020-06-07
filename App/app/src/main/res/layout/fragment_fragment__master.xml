@@ -16,13 +16,13 @@
             android:id="@+id/textView_Master_Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
             android:background="@color/DarkBlue"
             android:padding="10dp"
-            android:text="Sonnenschein in Ihrer Umgebung" />
+            android:text="Wetter in Ihrem Ort"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -199,8 +199,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/DarkBlue"
-            android:padding="10dp"
             android:divider="#FFF"
-            android:dividerHeight="1dp"/>
+            android:dividerHeight="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
     </LinearLayout>
 </FrameLayout>
