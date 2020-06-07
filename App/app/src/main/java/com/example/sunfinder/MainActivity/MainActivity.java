@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         ServerTask getDataFromServer = new ServerTask(new OnTaskFinishedListener() {
             @Override
             public void onTaskFinished(String response) {
+                Log.d(TAG, response);
                 //parse responseJsonArray (do this in a method) (hob grod kan bock dase oa klasse dafir erstö)
                 Gson gson = new Gson();
                 TypeToken<List<City>> token = new TypeToken<List<City>>() {

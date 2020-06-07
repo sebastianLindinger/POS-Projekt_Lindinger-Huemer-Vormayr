@@ -10,12 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.sunfinder.DataAdministration.City;
+import com.example.sunfinder.DataAdministration.DataStorage;
 import com.example.sunfinder.DataAdministration.Functions;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
@@ -41,6 +41,7 @@ public class Fragment_Master extends Fragment {
     private ItemListAdapter adapter;
     private List<City> cities = new ArrayList<>();
     private Context ctx;
+    private DataStorage storage;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,11 +65,13 @@ public class Fragment_Master extends Fragment {
     }
 
     private void setAdapter(Context context) {
-        adapter = new ItemListAdapter(cities, R.layout.listview_item_master, context);
+        adapter = new ItemListAdapter(storage.getSunnyCities(), R.layout.listview_item_master, context);
         listView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
-    public void setTextViews(City city) {
+    public void setTextViews() {
+        City city = storage.getCityByIndex(0);
         switch (Functions.getWeather(city)) {
             case SUN:
                 imageView_weatherIcon.setImageResource(R.drawable.sun);
@@ -96,6 +99,8 @@ public class Fragment_Master extends Fragment {
         textView_tempFeels.setText(Functions.kelvinToDegrees(city.getWeatherData().main.feels_like) + "°C");
         textView_tempMax.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_max) + "°C");
         textView_tempMin.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_min) + "°C");
+
+        setAdapter(ctx);
     }
 
     private void initializeViews(View view) {
@@ -116,13 +121,10 @@ public class Fragment_Master extends Fragment {
             }
         });
 
-        //this is for testing----
-        City tempCity = new City();
-        tempCity.setName("Meggenhofen");
-        cities.add(tempCity);
-        //----
+    }
 
-        setAdapter(ctx);
+    public void setStorage(DataStorage storage) {
+        this.storage = storage;
     }
 
 

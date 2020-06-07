@@ -42,10 +42,11 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
         prefs.registerOnSharedPreferenceChangeListener(preferenceChangeListener);
         loadPreferences();
 
-        fragment_master = (Fragment_Master) getSupportFragmentManager().findFragmentById(R.id.fragment_master);
         storage = (DataStorage) getIntent().getSerializableExtra("storage");
 
-        fragment_master.setTextViews(storage.getCityByIndex(0));
+        fragment_master = (Fragment_Master) getSupportFragmentManager().findFragmentById(R.id.fragment_master);
+        fragment_master.setStorage(storage);
+        fragment_master.setTextViews();
     }
 
     @Override

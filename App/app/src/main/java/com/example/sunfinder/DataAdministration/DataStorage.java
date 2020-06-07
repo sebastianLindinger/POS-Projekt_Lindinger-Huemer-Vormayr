@@ -19,8 +19,12 @@ public class DataStorage implements Serializable {
         return cities.stream().limit(amount).collect(Collectors.<City>toList());
     }
 
-    public List<City> getCities() {
+    public List<City> getAllCities() {
         return cities;
+    }
+
+    public List<City> getSunnyCities() {
+        return cities.subList(1, cities.size());
     }
 
     public City getCityByIndex(int index) {
