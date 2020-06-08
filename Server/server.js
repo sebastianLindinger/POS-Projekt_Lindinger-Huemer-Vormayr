@@ -19,11 +19,12 @@ var content = fs.readFileSync('municipalities.json');
 var jsonMunicipalities = JSON.parse(content);
 
 const collectionName = 'collection';
+const nameCollection = "test";
 const dbSize = 1556;
 
 var dbo;
 var i = 0;
-var op = 0;
+var op = 1460;
 
 function initCollection() {
     //create collection
@@ -46,13 +47,15 @@ MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     dbo = db.db('sunfinderDB');
 
-    fillAlPlacesWithLatLong();
+    //fillAlPlacesWithLatLong() is just a temporary function
+    //fillAlPlacesWithLatLong();
+
     //check if collection exists and create one if not
-    //dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
-    //    if (err) throw err;
-    //    else if (items.length == 1) getWeatherData();
-    //    else initCollection();
-    //});
+    dbo.listCollections({ name: collectionName }).toArray(function (err, items) {
+        if (err) throw err;
+        else if (items.length == 1) getWeatherData();
+        else initCollection();
+    });
 });
 
 async function getWeatherData() {
@@ -85,9 +88,8 @@ async function getWeatherData() {
             i++;
         });
     }
-
     //repeat this every 1.87 seconds
-    setTimeout(getWeatherData, 1000);
+    setTimeout(getWeatherData, 1875);
 }
 
 //GET method to receive all places in the database
@@ -103,7 +105,7 @@ app.get('/db', function (req, res) {
 //GET method to receive all SUNNY places in the database by Coordinates
 //url looks like this: 'http://localhost:3000/sunFinder/getByCoord?lat=48.18&lon=13.79'
 app.get('/sunFinder/getByCoord', function (req, res) {
-    console.log('Recieved GET-Request...')
+    console.log('Recieved GET by Coord-Request...')
 
     //variables are needed for distance calculation
     var lat = req.query.lat;
@@ -119,7 +121,7 @@ app.get('/sunFinder/getByCoord', function (req, res) {
         placesArr = sortJSON(placesArr, 'distance');
 
         //remove places with bad weather and show only first x places
-        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
+        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 20);
 
         res.json(sunnyPlacesArr);
     });
@@ -128,19 +130,19 @@ app.get('/sunFinder/getByCoord', function (req, res) {
 //GET method to receive all SUNNY places in the database by name and postcode
 //url looks like this: 'http://localhost:3000/sunFinder/getByNameAndPostcode?name=Meggenhofen&postcode=4714'
 app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
-    console.log('Recieved GET-Request...')
+    console.log('Recieved GET ByNameAndPostcode -Request...')
 
     //variables are needed for distance calculation
     var nameOfPlace = req.query.name;
     var postcodeOfPlace = req.query.postcode;
 
-    dbo.collection(collectionName).find({}).toArray(function (err, result) {
+    dbo.collection(nameCollection).find({}).toArray(function (err, nameCollectionResult) {
         if (err) throw err;
-
+        
         //get place for distance calculation
         var myPlace;
         for (var j = 0; j < dbSize; j++) {
-            var resultObj = result[j];
+            var resultObj = nameCollectionResult[j];
             if (nameOfPlace == resultObj.name) {
                 myPlace = resultObj;
                 break;
@@ -156,16 +158,22 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
         } else {
             if (err) throw err;
 
-            //calc distance for all entries in database
-            var placesArr = calcDistanceArr(result, myPlace.weatherData.coord.lat, myPlace.weatherData.coord.lon);
+            dbo.collection(collectionName).find({}).toArray(function (err, weahterCollectionResult) {
+               
+                //calc distance for all entries in database
+                var placesArr = calcDistanceArr(weahterCollectionResult, myPlace.latitude, myPlace.longitude);
 
-            //sort array
-            placesArr = sortJSON(placesArr, 'distance');
+                //sort array
+                placesArr = sortJSON(placesArr, 'distance');
+                placesArr[0].name = myPlace.name;
+                placesArr[0].postCode = myPlace.postCode;
+            
 
-            //remove places with bad weather and show only first x places
-            var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
+                //remove places with bad weather and show only first x places
+                var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
 
-            res.json(sunnyPlacesArr);
+                res.json(sunnyPlacesArr);
+            });
         }
     });
 });
@@ -193,13 +201,14 @@ app.listen(3000, function () {
 //function calculates distance for all entries in result
 function calcDistanceArr(result, lat, lon) {
     var placesArr = [];
+    
     for (var j = 0; j < dbSize; j++) {
         var resultObj = result[j];
-
+       
         //variables are needed for distance calculation
         var latObj = resultObj.weatherData.coord.lat;
         var lonObj = resultObj.weatherData.coord.lon;
-
+        
         //calc Distance
         resultObj.distance = calcDistance(lat, lon, latObj, lonObj);
 
@@ -238,7 +247,7 @@ function sortJSON(data, key) {
 //returns count places near you where sun shines (first index in array is always the place where you are)
 function removeBadWeatherPlaces(placesArr, count) {
     var sunnyPlacesArr = [];
-
+    
     //first index = your current place
     sunnyPlacesArr[0] = placesArr[0];
 
@@ -254,8 +263,10 @@ function removeBadWeatherPlaces(placesArr, count) {
     return sunnyPlacesArr;
 }
 
+//function that fills up a Collection, where all AUstrian cities are in,
+//with better location data then the openWeatherMap has to get a more exactly distance
 function fillAlPlacesWithLatLong() {
-    dbo.collection("test").find({}).toArray(function (err, result) {
+    dbo.collection(nameCollection).find({}).toArray(function (err, result) {
         if (err) throw err;
         var locationURL = "https://eu1.locationiq.com/v1/search.php?key=a22bb0cf158da3&q=<Place>&format=json"
         var place = result[op].name;
@@ -263,6 +274,9 @@ function fillAlPlacesWithLatLong() {
         place = place.split('ä').join('ae');
         place = place.split('ö').join('oe');
         place = place.split('ü').join('ue');
+        place = place.split('Ä').join('Ae');
+        place = place.split('Ö').join('Oe');
+        place = place.split('Ü').join('Ue');
         place = place.split('ß').join('ss');
         var useURL = locationURL.replace('<Place>', place);
         console.log("");
@@ -272,7 +286,7 @@ function fillAlPlacesWithLatLong() {
             .then(response => response.json())
             .then(data => {
                 //console.log(op);
-                var myQuery = { _id: op.toString() };
+                var myQuery = { _id: (op+1).toString() };
                 console.log(myQuery);
                 if(data == undefined){
                     console.log(useURL);
@@ -280,7 +294,7 @@ function fillAlPlacesWithLatLong() {
                 
                 var newValues = { $set: { latitude: data[0].lat, longitude: data[0].lon } };
                 //console.log(newValues);
-                dbo.collection("test").updateOne(myQuery, newValues, function (err, res) {
+                dbo.collection(nameCollection).updateOne(myQuery, newValues, function (err, res) {
                     if (err) {
                         console.log(data);
                         console.log(useURL);
@@ -290,12 +304,6 @@ function fillAlPlacesWithLatLong() {
                     setTimeout(fillAlPlacesWithLatLong, 1200);
                     op++;
                 });
-
-
             })
-
-
     });
-  
-    
 }
