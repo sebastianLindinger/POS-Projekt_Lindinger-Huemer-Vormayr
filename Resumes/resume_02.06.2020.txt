@@ -1,0 +1,7 @@
+Resume 02.06.2020:
+- Server wurde fertig implementiert
+- ArrayAdapter wurde erstellt
+- Preferences wurden erstellt
+- Packages wurden für mehr Übersicht erstellt 
+
+Der Zeitaufwand wurde sehr gut eingeschätzt und der Server konnte ohne Probleme gehostet werden.

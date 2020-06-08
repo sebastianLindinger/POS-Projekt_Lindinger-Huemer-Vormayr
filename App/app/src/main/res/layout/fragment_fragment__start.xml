@@ -78,7 +78,7 @@
             android:padding="60dp"
             android:background="@color/LightBlue"
             android:scaleType="centerCrop"
-            android:src="@drawable/sonne" />
+            android:src="@drawable/sun" />
 
     </LinearLayout>
 

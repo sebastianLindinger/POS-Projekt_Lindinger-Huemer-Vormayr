@@ -1,0 +1,8 @@
+Resume 09.06.2020:
+- MainActivity wurde fertig implementiert
+- MasterAcitivity wurde fertig implementiert
+- Async Task wurde implementiert
+- Klasse zur Speicherung der Daten wurde erstellt
+
+Der AsyncTask konnte ohne groﬂe Probleme implementiert werden.
+Alles wurde gut organisiert und jeder wusste was er zu machen hat.

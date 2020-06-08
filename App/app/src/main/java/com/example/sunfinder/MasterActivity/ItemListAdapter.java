@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.example.sunfinder.DataAdministration.City;
 import com.example.sunfinder.R;
+
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class ItemListAdapter extends BaseAdapter {
@@ -39,10 +41,12 @@ public class ItemListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        DecimalFormat df = new DecimalFormat("#");
+
         City city = cities.get(position);
         View listItem = (convertView == null)? inflater.inflate(this.layoutId, null):convertView;
         ((TextView)listItem.findViewById(R.id.textView_listViewItem_master_city)).setText(city.getName());
-        ((TextView)listItem.findViewById(R.id.textView_listViewItem_master_distance)).setText(city.getDistance()+" KM");
+        ((TextView)listItem.findViewById(R.id.textView_listViewItem_master_distance)).setText(df.format(city.getDistance())+" KM");
         return listItem;
     }
 }
