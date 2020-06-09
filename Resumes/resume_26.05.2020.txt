@@ -1,0 +1,8 @@
+Resume 26.5.2020:
+- Design der Fragments wurde fast ganz erledigt.
+- Fragmentstruktur fehlt.
+- erster Teil(wetter daten) wurde erledigt
+zweiter Teil(Fact über Gemeinden) wird kommende Woche nachgeholt
+
+Probleme gab eigentlich keine nur wurde der Zeitaufwand für die
+Serverprogrammierung falsch eingeschätzt.

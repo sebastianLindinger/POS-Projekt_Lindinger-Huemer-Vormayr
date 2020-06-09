@@ -35,13 +35,13 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageView_weatherIcon"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
                 android:scaleType="fitStart"
-                android:src="@drawable/sonne" />
+                android:src="@drawable/sun" />
         </LinearLayout>
 
         <LinearLayout
