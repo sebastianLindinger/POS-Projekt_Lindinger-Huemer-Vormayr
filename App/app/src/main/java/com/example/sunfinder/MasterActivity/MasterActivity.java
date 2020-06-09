@@ -51,12 +51,12 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
 
     @Override
     public void townSelected(int position) {
-        callDetailActivity();
+        callDetailActivity(position);
     }
 
-    private void callDetailActivity() {
+    private void callDetailActivity(int position) {
         Intent intent = new Intent(this, DetailActivity.class);
-        //Implement this --> intent.putExtra();
+        intent.putExtra("city",storage.getCityByIndex(position));
         startActivity(intent);
     }
 
