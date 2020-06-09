@@ -187,7 +187,7 @@ app.get('/sunFinder/getNumberOfSunnyPlaces', function (req, res) {
         if (err) throw err;
 
         //get Number of sunny Places in database
-        var numberOfSunnyPlaces = removeBadWeatherPlaces(result, result.length).length;
+        var numberOfSunnyPlaces = removeBadWeatherPlaces(result, result.length).length - 1;
 
         res.json(numberOfSunnyPlaces);
     });
