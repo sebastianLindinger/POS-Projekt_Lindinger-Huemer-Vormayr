@@ -87,4 +87,5 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
             mListener.viewFactsClicked();
         }
     }
+
 }

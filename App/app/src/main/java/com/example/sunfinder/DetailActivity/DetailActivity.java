@@ -9,10 +9,11 @@ import android.view.View;
 
 import com.example.sunfinder.FactsActivity.FactsActivity;
 import com.example.sunfinder.FactsActivity.Fragment_Facts;
+import com.example.sunfinder.FactsActivity.OnAddFactListener;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
 
-public class DetailActivity extends AppCompatActivity implements OnViewFactsListener {
+public class DetailActivity extends AppCompatActivity implements OnViewFactsListener, OnAddFactListenerd {
 
     private boolean showFacts = false;
     private Fragment_Facts fragment_facts;
