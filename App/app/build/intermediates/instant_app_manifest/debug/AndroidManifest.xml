@@ -23,6 +23,10 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <service android:name="com.example.sunfinder.Service.NotificationService" />
+
+        <receiver android:name="com.example.sunfinder.Service.AlertReceiver" />
+
         <activity android:name="com.example.sunfinder.Preferences.SettingsActivity" />
         <activity android:name="com.example.sunfinder.FactsActivity.FactsActivity" />
         <activity android:name="com.example.sunfinder.DetailActivity.DetailActivity" />

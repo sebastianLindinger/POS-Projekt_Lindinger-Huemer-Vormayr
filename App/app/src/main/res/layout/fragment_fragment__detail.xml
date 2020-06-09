@@ -41,7 +41,7 @@
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
                 android:scaleType="fitStart"
-                android:src="@drawable/sun" />
+                android:src="@drawable/bigsun" />
         </LinearLayout>
 
         <LinearLayout

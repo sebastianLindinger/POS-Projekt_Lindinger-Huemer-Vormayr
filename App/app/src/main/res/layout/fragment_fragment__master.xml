@@ -6,202 +6,203 @@
     android:layout_height="match_parent"
     tools:context=".MasterActivity.Fragment_Master">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/LightBlue"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView_Master_Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/DarkBlue"
-            android:padding="10dp"
-            android:text="Wetter in Ihrem Ort"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+        android:background="@color/DarkBlue"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView_Master_YourTown"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:text="Geboltskirchen"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="25dp"
-                android:paddingLeft="60dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView_weatherIcon"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingRight="30dp"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
-                android:scaleType="fitStart"
-                android:src="@drawable/sun" />
-        </LinearLayout>
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Wolken:"
-                    android:textColor="@color/BlueText"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Windstärke:"
-                    android:textColor="@color/BlueText"
-                    android:textSize="18dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView_Master_Clouds"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="77"
-                    android:textColor="@android:color/white"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:id="@+id/textView_Master_Wind"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="70 Km/h"
-                    android:textColor="@android:color/white"
-                    android:textSize="25dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Temperatur:"
-                    android:textColor="@color/BlueText"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Gefühlt:"
-                    android:textColor="@color/BlueText"
-                    android:textSize="18dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView_Master_Temp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="24,5°C"
-                    android:textColor="@android:color/white"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:id="@+id/textView_Master_TempFeels"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="20,1°C"
-                    android:textColor="@android:color/white"
-                    android:textSize="25dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingTop="20dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Max. Temperatur:"
-                    android:textColor="@color/BlueText"
-                    android:textSize="18dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Min. Temperatur:"
-                    android:textColor="@color/BlueText"
-                    android:textSize="18dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView_Master_MaxTemp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="27,8°C"
-                    android:textColor="@android:color/white"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:id="@+id/textView_Master_MinTemp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="14,5°C"
-                    android:textColor="@android:color/white"
-                    android:textSize="25dp" />
-            </TableRow>
-
-        </TableLayout>
-
-        <ListView
-            android:id="@+id/listView_Master"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:background="@color/DarkBlue"
-            android:divider="#FFF"
-            android:dividerHeight="1dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp" />
-    </LinearLayout>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/LightBlue"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_Master_YourTown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="Geboltskirchen"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView_weatherIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="20dp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/sun" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Wolken:"
+                            android:textColor="@color/BlueText"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Windstärke:"
+                            android:textColor="@color/BlueText"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_Master_Clouds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="77"
+                            android:textColor="@android:color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView_Master_Wind"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="70 Km/h"
+                            android:textColor="@android:color/white"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Temperatur:"
+                            android:textColor="@color/BlueText"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gefühlt:"
+                            android:textColor="@color/BlueText"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_Master_Temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="24,5°C"
+                            android:textColor="@android:color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView_Master_TempFeels"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="20,1°C"
+                            android:textColor="@android:color/white"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Max. Temperatur:"
+                            android:textColor="@color/BlueText"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Min. Temperatur:"
+                            android:textColor="@color/BlueText"
+                            android:textSize="18dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_Master_MaxTemp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="27,8°C"
+                            android:textColor="@android:color/white"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/textView_Master_MinTemp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="14,5°C"
+                            android:textColor="@android:color/white"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <ListView
+                    android:id="@+id/listView_Master"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/DarkBlue"
+                    android:divider="#FFF"
+                    android:dividerHeight="1dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </FrameLayout>
