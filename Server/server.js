@@ -178,6 +178,21 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
     });
 });
 
+//GET method to receive Number of all SUNNY places in the database
+//url looks like this: 'http://localhost:3000/sunFinder/getNumberOfSunnyPlaces'
+app.get('/sunFinder/getNumberOfSunnyPlaces', function (req, res) {
+    console.log('Recieved GET NumberOfSunnyPlaces -Request...');
+
+    dbo.collection(collectionName).find({}).toArray(function (err, result) {
+        if (err) throw err;
+
+        //get Number of sunny Places in database
+        var numberOfSunnyPlaces = removeBadWeatherPlaces(result, result.length).length;
+
+        res.json(numberOfSunnyPlaces);
+    });
+});
+
 //PUT method writes fact about the place in the database
 //url looks like this: 'http://localhost:3000/sunFinder/put?id=1'
 app.put('/sunfinder/put', function (req, res) {
