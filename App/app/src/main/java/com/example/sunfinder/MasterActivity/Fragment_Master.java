@@ -78,13 +78,11 @@ public class Fragment_Master extends Fragment {
                 break;
 
             case RAIN:
-                //TODO: use other icon
-                imageView_weatherIcon.setImageResource(R.drawable.cloud);
+                imageView_weatherIcon.setImageResource(R.drawable.rain);
                 break;
 
             case THUNDERSTORM:
-                //TODO: use other icon
-                imageView_weatherIcon.setImageResource(R.drawable.cloud);
+                imageView_weatherIcon.setImageResource(R.drawable.thunderstorm);
                 break;
 
             case CLOUD:
