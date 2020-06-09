@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
@@ -22,6 +23,7 @@ import com.example.sunfinder.R;
 import com.example.sunfinder.Preferences.SettingsActivity;
 import com.example.sunfinder.ServerCommunication.OnTaskFinishedListener;
 import com.example.sunfinder.ServerCommunication.ServerTask;
+import com.example.sunfinder.Service.NotificationService;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -42,7 +44,8 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         fragment_start = (Fragment_Start) getSupportFragmentManager().findFragmentById(R.id.fragment_start);
-   }
+        startNotificationService();
+    }
 
     @Override
     public void onSunClicked(double lon, double lat, String city, String postcode) {
@@ -76,6 +79,12 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         } else {
             Toast.makeText(MainActivity.this, "Kein Ort eingegeben!", Toast.LENGTH_LONG).show();
         }
+    }
+    private void startNotificationService()
+    {
+        Log.d(TAG, "entered: startNotificationService");
+        Intent intent = new Intent(this, NotificationService.class);
+        startService(intent);
     }
 
     private void callMasterActivity(DataStorage storage) {
