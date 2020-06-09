@@ -6,21 +6,10 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.os.Build;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.sunfinder.DataAdministration.City;
-import com.example.sunfinder.DataAdministration.DataStorage;
-import com.example.sunfinder.MainActivity.MainActivity;
 import com.example.sunfinder.R;
-import com.example.sunfinder.ServerCommunication.OnTaskFinishedListener;
-import com.example.sunfinder.ServerCommunication.ServerTask;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.util.List;
 
 public class NotificationHelper extends ContextWrapper {
     public static final String channelID = "channelID";
@@ -30,9 +19,7 @@ public class NotificationHelper extends ContextWrapper {
 
     public NotificationHelper(Context base) {
         super(base);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            createChannel();
-        }
+        createChannel();
     }
 
     @TargetApi(Build.VERSION_CODES.O)
@@ -48,26 +35,19 @@ public class NotificationHelper extends ContextWrapper {
         return mManager;
     }
 
-    public NotificationCompat.Builder getChannelNotification() {
-        int cities = getAmountofSunnyCities();
-        NotificationCompat.Builder ncb= new NotificationCompat.Builder(getApplicationContext(), channelID)
+    public NotificationCompat.Builder getChannelNotification(int numberOfSunnyPlaces) {
+        NotificationCompat.Builder ncb = new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle("SunFinder");
-
-        if(cities == 0)
-        {
+        if (numberOfSunnyPlaces < 1) {
             ncb.setContentText("Es gibt momentan keinen Ort in Österreich, der Sonnenschein hat!");
             ncb.setSmallIcon(R.drawable.cloud);
-        }
-        else
-        {
-            ncb.setContentText("Momentan haben "+cities+" Orte in Österreich Sonnenschein!");
+        } else {
             ncb.setSmallIcon(R.drawable.sun);
+            if (numberOfSunnyPlaces > 1) ncb.setContentText("Momentan haben " + numberOfSunnyPlaces + " Orte in Österreich Sonnenschein!");
+            else ncb.setContentText("Momentan hat " + numberOfSunnyPlaces + " Ort in Österreich Sonnenschein!");
+
+
         }
         return ncb;
-    }
-    private int getAmountofSunnyCities()
-    {
-        //implement this
-        return 420;
     }
 }
