@@ -8,7 +8,7 @@
     tools:context=".FactsActivity.FactsActivity">
 
     <fragment
-        android:id="@+id/fragment4"
+        android:id="@+id/fragment_facts"
         android:name="com.example.sunfinder.FactsActivity.Fragment_Facts"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

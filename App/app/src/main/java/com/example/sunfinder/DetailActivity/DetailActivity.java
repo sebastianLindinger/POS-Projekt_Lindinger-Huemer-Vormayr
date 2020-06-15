@@ -1,11 +1,14 @@
 package com.example.sunfinder.DetailActivity;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 import com.example.sunfinder.DataAdministration.City;
 import com.example.sunfinder.DataAdministration.DataStorage;
@@ -15,12 +18,15 @@ import com.example.sunfinder.FactsActivity.OnAddFactListener;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
 
+import java.util.ArrayList;
+
 public class DetailActivity extends AppCompatActivity implements OnViewFactsListener, OnAddFactListener {
 
     private boolean showFacts = false;
     private Fragment_Facts fragment_facts;
     private Fragment_Detail fragment_detail;
     private static final String TAG = DetailActivity.class.getSimpleName();
+    private final String URL_AddFact = "http://varchar42.me:3000/sunFinder/put?id=<>";
 
     private City city;
 
@@ -39,24 +45,45 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
 
         city = (City) getIntent().getSerializableExtra("city");
         fragment_detail.setCity(city);
+
     }
     @Override
     public void viewFactsClicked() {
         Log.d(TAG, "vieFactsClicked: entered");
         if (showFacts){
-            fragment_facts.showinformation();
+            fragment_facts.showinformation(city);
         }
         else callFactsActivity();
     }
     private void callFactsActivity()
     {
         Intent intent = new Intent(this, FactsActivity.class);
-        //Implement this --> intent.putExtra();
+        intent.putExtra("city", city);
         startActivity(intent);
     }
 
     @Override
     public void addFactListener() {
+        final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact,null);
+        AlertDialog.Builder newNoteDialog = new AlertDialog.Builder(this);
+        newNoteDialog.setTitle("Neuen Fact verfassen");
+        newNoteDialog.setMessage("Beachten Sie das dieser Fact von jedem Benutzer gelesen werden kann!");
+        newNoteDialog.setView(vDialog);
+        newNoteDialog.setPositiveButton("Senden", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                EditText txtFact = vDialog.findViewById(R.id.editText_newFact);
+                if(!txtFact.getText().equals("") ){
+                    String fact = txtFact.getText().toString();
+                    city.addFact(fact);
 
+                    if (showFacts){
+                        fragment_facts.showinformation(city);
+                    }
+                    else callFactsActivity();
+                }
+            }});
+        newNoteDialog.setNegativeButton("Nicht Senden",null);
+        newNoteDialog.show();
     }
 }
