@@ -1,0 +1,9 @@
+Resume 15.06.2020:
+	- Fakten (über Gemeinden) implementiert, allerdings noch nicht voll funktionsfähig
+	- Einige Verschönderungen und Änderungen am User-Interface vorgenommen
+	- MasterFragment wurde abgeschlossen
+	- DetailFragment wurde abgeschlossen
+
+Gesamtübersicht:
+	Das Projekt liegt perfekt im Plan und es sind keine größeren Probleme aufgetreten.
+	
