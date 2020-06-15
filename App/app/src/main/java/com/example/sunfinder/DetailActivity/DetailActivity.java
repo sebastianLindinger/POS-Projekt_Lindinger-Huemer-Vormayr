@@ -26,7 +26,6 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
     private Fragment_Facts fragment_facts;
     private Fragment_Detail fragment_detail;
     private static final String TAG = DetailActivity.class.getSimpleName();
-    private final String URL_AddFact = "http://varchar42.me:3000/sunFinder/put?id=<>";
 
     private City city;
 
@@ -34,29 +33,30 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        fragment_facts = (Fragment_Facts)getSupportFragmentManager().findFragmentById(R.id.fragment_facts);
-        fragment_detail = (Fragment_Detail) getSupportFragmentManager().findFragmentById(R.id.fragment3);
-
-        showFacts = fragment_facts != null && fragment_facts.isInLayout();
-        if(showFacts){
-            viewFactsClicked();
-            findViewById(R.id.button_Detail_ViewFacs).setVisibility(View.GONE);
-        }
+        fragment_facts = (Fragment_Facts) getSupportFragmentManager().findFragmentById(R.id.fragment_facts);
+        fragment_detail = (Fragment_Detail) getSupportFragmentManager().findFragmentById(R.id.fragment_detail);
 
         city = (City) getIntent().getSerializableExtra("city");
         fragment_detail.setCity(city);
+        fragment_detail.setTextViews();
 
+        showFacts = fragment_facts != null && fragment_facts.isInLayout();
+        if (showFacts) {
+            viewFactsClicked();
+            findViewById(R.id.button_Detail_ViewFacs).setVisibility(View.GONE);
+        }
     }
+
     @Override
     public void viewFactsClicked() {
         Log.d(TAG, "vieFactsClicked: entered");
-        if (showFacts){
-            fragment_facts.showinformation(city);
-        }
+        Log.d(TAG, city.getName());
+
+        if (showFacts) fragment_facts.showinformation(city);
         else callFactsActivity();
     }
-    private void callFactsActivity()
-    {
+
+    private void callFactsActivity() {
         Intent intent = new Intent(this, FactsActivity.class);
         intent.putExtra("city", city);
         startActivity(intent);
@@ -64,7 +64,7 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
 
     @Override
     public void addFactListener() {
-        final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact,null);
+        final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact, null);
         AlertDialog.Builder newNoteDialog = new AlertDialog.Builder(this);
         newNoteDialog.setTitle("Neuen Fact verfassen");
         newNoteDialog.setMessage("Beachten Sie das dieser Fact von jedem Benutzer gelesen werden kann!");
@@ -73,17 +73,17 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 EditText txtFact = vDialog.findViewById(R.id.editText_newFact);
-                if(!txtFact.getText().equals("") ){
+                if (!txtFact.getText().equals("")) {
                     String fact = txtFact.getText().toString();
                     city.addFact(fact);
 
-                    if (showFacts){
+                    if (showFacts) {
                         fragment_facts.showinformation(city);
-                    }
-                    else callFactsActivity();
+                    } else callFactsActivity();
                 }
-            }});
-        newNoteDialog.setNegativeButton("Nicht Senden",null);
+            }
+        });
+        newNoteDialog.setNegativeButton("Nicht Senden", null);
         newNoteDialog.show();
     }
 }

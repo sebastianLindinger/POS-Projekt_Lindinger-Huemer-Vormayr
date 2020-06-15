@@ -26,14 +26,14 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
     private static final String TAG = FactsActivity.class.getSimpleName();
 
     Fragment_Facts fragment_facts;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_facts);
         int orientation = getResources().getConfiguration().orientation;
-        if(orientation!= Configuration.ORIENTATION_PORTRAIT)
-        {
+        if (orientation != Configuration.ORIENTATION_PORTRAIT) {
 
 
             finish();
@@ -47,7 +47,7 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
 
     @Override
     public void addFactListener() {
-        final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact,null);
+        final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact, null);
         AlertDialog.Builder newNoteDialog = new AlertDialog.Builder(this);
         newNoteDialog.setTitle("Neuen Fact verfassen");
         newNoteDialog.setMessage("Beachten Sie das dieser Fact von jedem Benutzer gelesen werden kann!");
@@ -56,7 +56,7 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 EditText txtFact = vDialog.findViewById(R.id.editText_newFact);
-                if(!txtFact.getText().equals("") ){
+                if (!txtFact.getText().equals("")) {
                     String fact = txtFact.getText().toString();
                     city.addFact(fact);
                     ServerTask serverTask = new ServerTask(new OnTaskFinishedListener() {
@@ -68,7 +68,7 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
                     //PUT the new Fact on the Server
                     JSONObject factData = new JSONObject();
                     try {
-                        factData.put("fact",fact);
+                        factData.put("fact", fact);
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -77,8 +77,9 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
 
                     fragment_facts.showinformation(city);
                 }
-            }});
-        newNoteDialog.setNegativeButton("Nicht Senden",null);
+            }
+        });
+        newNoteDialog.setNegativeButton("Nicht Senden", null);
         newNoteDialog.show();
     }
 }

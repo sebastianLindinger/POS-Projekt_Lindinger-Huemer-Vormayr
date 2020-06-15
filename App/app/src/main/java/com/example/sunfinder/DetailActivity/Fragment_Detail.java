@@ -40,7 +40,6 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
     OnViewFactsListener mListener;
 
     private City city;
-    private ArrayList<String> facts;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,15 +48,13 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
         Log.d(TAG, "onCreateView: entered");
         View view = inflater.inflate(R.layout.fragment_fragment__detail, container, false);
         initializeViews(view);
-
-
         return view;
     }
 
-    private void initializeViews(View view)
-    {
+    private void initializeViews(View view) {
         button_viewFacts = view.findViewById(R.id.button_Detail_ViewFacs);
         button_viewFacts.setOnClickListener(this);
+        button_openMap = view.findViewById(R.id.button_Detail_OpenMap);
         textView_yourTown = view.findViewById(R.id.textView_Detail_YourTown);
         textView_clouds = view.findViewById(R.id.textView_Detail_Clouds);
         textView_wind = view.findViewById(R.id.textView_Detail_Wind);
@@ -69,18 +66,17 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
         textView_pressure = view.findViewById(R.id.textView_Detail_Pressure);
     }
 
-    private void setTextViews(City pCity)
-    {
-
-        textView_yourTown.setText(pCity.getName());
-        textView_clouds.setText(pCity.getWeatherData().clouds.all + "%");
-        textView_wind.setText(pCity.getWeatherData().wind.speed+" Km/h");
-        textView_temp.setText(Functions.kelvinToDegrees(Double.parseDouble(pCity.getWeatherData().main.temp+""))+"°C");
-        textView_tempFeels.setText(Functions.kelvinToDegrees(Double.parseDouble(pCity.getWeatherData().main.feels_like+""))+"°C");
-        textView_tempMax.setText(Functions.kelvinToDegrees(Double.parseDouble(pCity.getWeatherData().main.temp_max+""))+"°C");
-        textView_tempMin.setText(Functions.kelvinToDegrees(Double.parseDouble(pCity.getWeatherData().main.temp_min+""))+"°C");
-        textView_humidity.setText(pCity.getWeatherData().main.humidity+"%");
-        textView_pressure.setText(pCity.getWeatherData().main.pressure+"μPa");
+    public void setTextViews() {
+        button_openMap.setText(city.getName() + " AUF DER KARTE ANZEIGEN");
+        textView_yourTown.setText(city.getName());
+        textView_clouds.setText(city.getWeatherData().clouds.all + "%");
+        textView_wind.setText(city.getWeatherData().wind.speed + " Km/h");
+        textView_temp.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp + "")) + "°C");
+        textView_tempFeels.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.feels_like + "")) + "°C");
+        textView_tempMax.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp_max + "")) + "°C");
+        textView_tempMin.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp_min + "")) + "°C");
+        textView_humidity.setText(city.getWeatherData().main.humidity + "%");
+        textView_pressure.setText(city.getWeatherData().main.pressure + "μPa");
     }
 
     @Override
@@ -96,17 +92,12 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == button_viewFacts.getId())
-        {
+        if (v.getId() == button_viewFacts.getId()) {
             mListener.viewFactsClicked();
         }
     }
 
     public void setCity(City city) {
         this.city = city;
-        facts = new ArrayList<>();
-        Collections.addAll(facts,city.getFacts());
-        setTextViews(city);
     }
-
 }

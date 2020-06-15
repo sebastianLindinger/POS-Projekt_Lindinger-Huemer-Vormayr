@@ -47,7 +47,6 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
 
             if (strings[0].equals("PUT")) {
                 connection = (HttpURLConnection) new URL(strings[1]).openConnection();
-                connection.setRequestMethod(strings[0]);
                 connection.setDoOutput(true);
                 byte[] data = strings[2].getBytes();
                 connection.setFixedLengthStreamingMode(data.length);

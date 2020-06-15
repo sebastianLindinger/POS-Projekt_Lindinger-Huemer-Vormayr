@@ -187,6 +187,8 @@ app.put('/sunfinder/put', function (req, res) {
     var id = req.query.id;
     var newFact = req.body.fact;
 
+    console.log(newFact);
+    
     var myQuery = { _id: id.toString() };
     var newValues = { $addToSet: { facts: newFact } };
     dbo.collection(collectionName).updateOne(myQuery, newValues, function (err, result) {
@@ -213,7 +215,7 @@ app.get('/sunFinder/getTestData', function (req, res) {
         //sort array
         placesArr = sortJSON(placesArr, 'distance');
 
-        //remove places with bad weather and show only first x places
+        //show only first x places
         var sunnyPlacesArr = placeArr.slice(0,30);
 
         res.json(sunnyPlacesArr);
