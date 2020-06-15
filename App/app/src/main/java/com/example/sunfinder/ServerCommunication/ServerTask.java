@@ -37,12 +37,23 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
 
     //strings[0] = request-method
     //strings[1] = URL
+    //strings[2] = fact data
     @Override
     protected String doInBackground(String... strings) {
         String responseJson = "";
         try {
-            HttpURLConnection connection = (HttpURLConnection) new URL(strings[1]).openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
             connection.setRequestMethod(strings[0]);
+
+            if (strings[0].equals("PUT")) {
+                connection = (HttpURLConnection) new URL(strings[1]).openConnection();
+                connection.setDoOutput(true);
+                byte[] data = strings[2].getBytes();
+                connection.setFixedLengthStreamingMode(data.length);
+                connection.getOutputStream().write(data);
+                connection.getOutputStream().flush();
+            }
+
             int responseCode = connection.getResponseCode();
             if (responseCode == HttpURLConnection.HTTP_OK) {
                 BufferedReader reader = new BufferedReader(

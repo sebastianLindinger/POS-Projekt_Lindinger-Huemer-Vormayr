@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sunfinder"
     android:targetSandboxVersion="2"
+    android:theme="@style/Theme.AppCompat.Light"
     android:versionCode="1"
     android:versionName="1.0" >
 

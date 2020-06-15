@@ -23,7 +23,21 @@ public class City implements Serializable {
     }
 
     public String[] getFacts() {
-        return facts;
+        if(facts != null){
+            return facts;
+        }
+        else{
+            return new String[0];
+        }
+    }
+
+    public void addFact(String fact) {
+       String[] factArr = new String[facts.length+1];
+       for(int i = 0; i < facts.length; i++){
+           factArr[i] = facts[i];
+       }
+       factArr[facts.length] = fact;
+       facts = factArr;
     }
 
     public WeatherData getWeatherData() {

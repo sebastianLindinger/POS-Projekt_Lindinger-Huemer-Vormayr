@@ -28,7 +28,6 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_master);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -51,12 +50,12 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
 
     @Override
     public void townSelected(int position) {
-        callDetailActivity();
+        callDetailActivity(position);
     }
 
-    private void callDetailActivity() {
+    private void callDetailActivity(int position) {
         Intent intent = new Intent(this, DetailActivity.class);
-        //Implement this --> intent.putExtra();
+        intent.putExtra("city",storage.getCityByIndex(position));
         startActivity(intent);
     }
 

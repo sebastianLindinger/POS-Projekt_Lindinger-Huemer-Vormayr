@@ -121,11 +121,12 @@ app.get('/sunFinder/getByCoord', function (req, res) {
         placesArr = sortJSON(placesArr, 'distance');
 
         //remove places with bad weather and show only first x places
-        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 20);
+        var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 30);
 
         res.json(sunnyPlacesArr);
     });
 });
+
 
 //GET method to receive all SUNNY places in the database by name and postcode
 //url looks like this: 'http://localhost:3000/sunFinder/getByNameAndPostcode?name=Meggenhofen&postcode=4714'
@@ -170,7 +171,7 @@ app.get('/sunFinder/getByNameAndPostcode', function (req, res) {
             
 
                 //remove places with bad weather and show only first x places
-                var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 5);
+                var sunnyPlacesArr = removeBadWeatherPlaces(placesArr, 30);
 
                 res.json(sunnyPlacesArr);
             });
@@ -226,6 +227,8 @@ app.put('/sunfinder/put', function (req, res) {
     var id = req.query.id;
     var newFact = req.body.fact;
 
+    console.log(newFact);
+    
     var myQuery = { _id: id.toString() };
     var newValues = { $addToSet: { facts: newFact } };
     dbo.collection(collectionName).updateOne(myQuery, newValues, function (err, result) {
@@ -233,6 +236,32 @@ app.put('/sunfinder/put', function (req, res) {
         res.send('succesfully updated')
     });
 });
+
+//GET method to test Data ---> distance is count from Friesam 34, 4902 Wolfsegg am Hausruck
+//url looks like this: 'http://localhost:3000/sunFinder/getTestData'
+app.get('/sunFinder/getTestData', function (req, res) {
+    console.log('Recieved GET Test-Request...')
+
+    //variables are needed for distance calculation
+    var lat = 48.1185843;
+    var lon = 13.6952736;
+
+    dbo.collection(collectionName).find({}).toArray(function (err, result) {
+        if (err) throw err;
+
+        //calc distance for all entries in database
+        var placesArr = calcDistanceArr(result, lat, lon);
+
+        //sort array
+        placesArr = sortJSON(placesArr, 'distance');
+
+        //show only first x places
+        var sunnyPlacesArr = placeArr.slice(0,30);
+
+        res.json(sunnyPlacesArr);
+    });
+});
+
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
