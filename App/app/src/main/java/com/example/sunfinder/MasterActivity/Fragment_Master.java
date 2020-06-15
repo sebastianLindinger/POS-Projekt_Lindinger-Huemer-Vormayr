@@ -102,15 +102,6 @@ public class Fragment_Master extends Fragment {
     }
 
     private void initializeViews(View view) {
-        imageView_weatherIcon = view.findViewById(R.id.imageView_weatherIcon);
-        textView_yourTown = view.findViewById(R.id.textView_Master_YourTown);
-        textView_clouds = view.findViewById(R.id.textView_Master_Clouds);
-        textView_wind = view.findViewById(R.id.textView_Master_Wind);
-        textView_temp = view.findViewById(R.id.textView_Master_Temp);
-        textView_tempFeels = view.findViewById(R.id.textView_Master_TempFeels);
-        textView_tempMax = view.findViewById(R.id.textView_Master_MaxTemp);
-        textView_tempMin = view.findViewById(R.id.textView_Master_MinTemp);
-
         listView = view.findViewById(R.id.listView_Master);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -121,6 +112,15 @@ public class Fragment_Master extends Fragment {
 
         View header = getLayoutInflater().inflate(R.layout.listview_header, null);
         listView.addHeaderView(header, null, false);
+
+        imageView_weatherIcon = header.findViewById(R.id.imageView_weatherIcon);
+        textView_yourTown = header.findViewById(R.id.textView_Master_YourTown);
+        textView_clouds = header.findViewById(R.id.textView_Master_Clouds);
+        textView_wind = header.findViewById(R.id.textView_Master_Wind);
+        textView_temp = header.findViewById(R.id.textView_Master_Temp);
+        textView_tempFeels = header.findViewById(R.id.textView_Master_TempFeels);
+        textView_tempMax = header.findViewById(R.id.textView_Master_MaxTemp);
+        textView_tempMin = header.findViewById(R.id.textView_Master_MinTemp);
     }
 
     public void setStorage(DataStorage storage) {

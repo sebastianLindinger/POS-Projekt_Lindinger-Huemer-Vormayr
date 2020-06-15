@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -36,6 +37,7 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
     private Button button_viewFacts;
     private Button button_openMap;
     private ListView listView;
+    private ImageView imageView_weatherIcon;
     private static final String TAG = Fragment_Start.class.getSimpleName();
     OnViewFactsListener mListener;
 
@@ -52,6 +54,7 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
     }
 
     private void initializeViews(View view) {
+        imageView_weatherIcon = view.findViewById(R.id.imageView_weatherIcon);
         button_viewFacts = view.findViewById(R.id.button_Detail_ViewFacs);
         button_viewFacts.setOnClickListener(this);
         button_openMap = view.findViewById(R.id.button_Detail_OpenMap);
@@ -77,6 +80,24 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
         textView_tempMin.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp_min + "")) + "°C");
         textView_humidity.setText(city.getWeatherData().main.humidity + "%");
         textView_pressure.setText(city.getWeatherData().main.pressure + "μPa");
+
+        switch (Functions.getWeather(city)) {
+            case SUN:
+                imageView_weatherIcon.setImageResource(R.drawable.sun);
+                break;
+
+            case RAIN:
+                imageView_weatherIcon.setImageResource(R.drawable.rain);
+                break;
+
+            case THUNDERSTORM:
+                imageView_weatherIcon.setImageResource(R.drawable.thunderstorm);
+                break;
+
+            case CLOUD:
+                imageView_weatherIcon.setImageResource(R.drawable.cloud);
+                break;
+        }
     }
 
     @Override
