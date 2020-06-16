@@ -9,15 +9,19 @@ Welche Arbeitspakete wurden erledigt?
 - MasterFragment wurde abgeschlossen
 - DetailFragment wurde abgeschlossen
 - Landscape Modus für DetailFragment und MasterFragment wurde entwickelt.
+- Traurige Wolke icon wurde erstellt (Wird angezeigt falls nirgends die sonne scheint).
+- Preferences (zur Zeit wird noch ein Dialog angezeigt wie viele Orte man anzeigen will. Wird aber noch geändert um unsinnige benutzereingaben zu verhindern)
 
 Welche Probleme sind aufgetreten?
 - Keine größeren Probleme.
 - Nur eine falsche Benennung einer ID-des Detail-Fragments erforderte uns eine lange Fehlersuche.
 
 Wie liegt die Gruppe im Zeitplan?
-- Das Projekt liegt perfekt im Plan.
+- Das Projekt liegt gut im Zeitplan.
+- Preferences sind noch nicht 100% fertig.
 
 Was wird nächste Woche erledigt?
 - Preferences (Number Picker)
 - FactFragment wird fertig implementiert.
+- Ort auf der Karte anzeigen wird implementiert.
 	
