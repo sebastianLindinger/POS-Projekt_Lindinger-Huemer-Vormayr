@@ -2,12 +2,12 @@
 <resources>
     <string-array name="pref_array">
         <item>Näherster Ort</item>
-        <item>Ort mit schönstem Wetter</item>
+        <item>Ort mit höchster Temperatur</item>
         <item>Ort mit dem wenigsten Wind</item>
     </string-array>
     <string-array name="pref_values">
         <item>near</item>
-        <item>bestWeather</item>
+        <item>highestTemp</item>
         <item>leastWind</item>
     </string-array>
 </resources>

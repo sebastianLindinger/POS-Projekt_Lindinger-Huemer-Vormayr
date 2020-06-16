@@ -43,6 +43,7 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
         String responseJson = "";
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
+            //HttpURLConnection connection = (HttpURLConnection) new URL(strings[1]).openConnection();
             connection.setRequestMethod(strings[0]);
 
             if (strings[0].equals("PUT")) {

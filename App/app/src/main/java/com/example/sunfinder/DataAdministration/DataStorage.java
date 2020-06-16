@@ -8,26 +8,40 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DataStorage implements Serializable {
+    private City myCity;
     private List<City> cities;
 
-    public DataStorage(List<City> cities) {
+    public DataStorage(City myCity, List<City> cities) {
+        this.myCity = myCity;
         this.cities = cities;
     }
 
-    public List<City> getCitiesSortedBy(int amount, Comparator comparator) {
-        Collections.sort(cities, comparator);
-        return cities.stream().limit(amount).collect(Collectors.<City>toList());
-    }
+    public List<City> getSunnyCitiesSortedBy(int amount, String comparatorString) {
+        Comparator comparator;
+        switch (comparatorString) {
 
-    public List<City> getAllCities() {
-        return cities;
+            case "highestTemp":
+                comparator = new SortByBestWeatherComparator();
+                break;
+            case "leastWind":
+                comparator = new SortByWindComparator();
+                break;
+                default:
+                    comparator = new SortByDistanceComparator();
+        }
+        Collections.sort(cities, comparator);
+        return cities.subList(0, amount);
     }
 
     public List<City> getSunnyCities() {
-        return cities.subList(1, cities.size());
+        return cities;
     }
 
     public City getCityByIndex(int index) {
         return cities.get(index);
+    }
+
+    public City getMyCity() {
+        return myCity;
     }
 }

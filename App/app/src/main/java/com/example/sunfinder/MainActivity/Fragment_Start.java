@@ -138,7 +138,7 @@ public class Fragment_Start extends Fragment implements View.OnClickListener {
         try {
             locationManager.requestLocationUpdates(
                     LocationManager.GPS_PROVIDER,
-                    5000,
+                    1000,
                     0,
                     locationListener);
         } catch (SecurityException e) {
