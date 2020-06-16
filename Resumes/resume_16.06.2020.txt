@@ -23,8 +23,8 @@ Wie liegt die Gruppe im Zeitplan?
 
 Was wird nächste Woche erledigt?
 - Preferences (Number Picker)
-- FactFragment wird fertig implementiert.
-- Ort auf der Karte anzeigen wird implementiert.
-- AlertDialog für die Eingabe der Fakten wird verschönert.
-- Design für Landscape Modus wird noch leicht geändert.
+- jonny FactFragment wird fertig implementiert.
+- lindi Ort auf der Karte anzeigen wird implementiert.
+- jogi AlertDialog für die Eingabe der Fakten wird verschönert.
+- lindi Design für Landscape Modus wird noch leicht geändert.
 	
