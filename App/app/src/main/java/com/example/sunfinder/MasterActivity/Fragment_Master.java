@@ -42,6 +42,8 @@ public class Fragment_Master extends Fragment {
     private List<City> cities = new ArrayList<>();
     private Context ctx;
     private DataStorage storage;
+    private String sortBy;
+    private int amountOfCities;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -64,14 +66,14 @@ public class Fragment_Master extends Fragment {
         }
     }
 
-    private void setAdapter(Context context) {
-        adapter = new ItemListAdapter(storage.getSunnyCities(), R.layout.listview_item_master, context);
+    public void setAdapter(Context context) {
+        adapter = new ItemListAdapter(storage.getSunnyCitiesSortedBy(amountOfCities, sortBy), R.layout.listview_item_master, context);
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
 
     public void setTextViews() {
-        City city = storage.getCityByIndex(0);
+        City city = storage.getMyCity();
         switch (Functions.getWeather(city)) {
             case SUN:
                 imageView_weatherIcon.setImageResource(R.drawable.sun);
@@ -98,6 +100,10 @@ public class Fragment_Master extends Fragment {
         textView_tempMax.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_max) + "°C");
         textView_tempMin.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_min) + "°C");
 
+        if(storage.getSunnyCities().size() == 0) {
+            View footer = getLayoutInflater().inflate(R.layout.listview_footer, null);
+            listView.addFooterView(footer, null, false);
+        }
         setAdapter(ctx);
     }
 
@@ -125,6 +131,11 @@ public class Fragment_Master extends Fragment {
 
     public void setStorage(DataStorage storage) {
         this.storage = storage;
+    }
+    public void setPreferences(int amountOfCities, String sortBy)
+    {
+        this.amountOfCities = amountOfCities;
+        this.sortBy = sortBy;
     }
 
 

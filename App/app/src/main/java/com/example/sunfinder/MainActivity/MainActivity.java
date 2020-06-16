@@ -28,6 +28,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnSunClickedListener {
@@ -60,11 +61,15 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
                 TypeToken<List<City>> token = new TypeToken<List<City>>() {
                 };
                 try {
-                    DataStorage storage = new DataStorage((List<City>) gson.fromJson(response, token.getType()));
-                    Toast.makeText(MainActivity.this, storage.getCityByIndex(0).getName(), Toast.LENGTH_LONG).show();
+                    List<City> cities = gson.fromJson(response, token.getType());
+                    City myCity = cities.get(0);
+                    cities.remove(0);
+                    DataStorage storage = new DataStorage( myCity, cities);
+                    //Toast.makeText(MainActivity.this, storage.getCityByIndex(0).getName(), Toast.LENGTH_LONG).show();
 
                     callMasterActivity(storage);
                 } catch (Exception e) {
+                    e.printStackTrace();
                     //city was not found
                     Log.e(TAG, response);
                     Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();

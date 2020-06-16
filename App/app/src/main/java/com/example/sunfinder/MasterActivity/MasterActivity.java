@@ -24,11 +24,15 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
     private static final String TAG = MasterActivity.class.getSimpleName();
     private Fragment_Master fragment_master;
     private DataStorage storage;
+    private String sortBy;
+    private int amountOfCities;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_master);
+
+        fragment_master = (Fragment_Master) getSupportFragmentManager().findFragmentById(R.id.fragment_master);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         preferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
@@ -43,7 +47,6 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
 
         storage = (DataStorage) getIntent().getSerializableExtra("storage");
 
-        fragment_master = (Fragment_Master) getSupportFragmentManager().findFragmentById(R.id.fragment_master);
         fragment_master.setStorage(storage);
         fragment_master.setTextViews();
     }
@@ -55,23 +58,26 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
 
     private void callDetailActivity(int position) {
         Intent intent = new Intent(this, DetailActivity.class);
-        intent.putExtra("city",storage.getCityByIndex(position));
+        intent.putExtra("city", storage.getCityByIndex(position - 1));
         startActivity(intent);
     }
 
 
     //getPreferences(only for testing)...Implement this
     private void loadPreferences() {
-        int amountOfTowns = Integer.parseInt(prefs.getString("preference_amountOfTowns", "10"));
-        String sortingBy = prefs.getString("preference_sorting", "near");
+        amountOfCities = Integer.parseInt(prefs.getString("preference_amountOfTowns", "10"));
+        sortBy = prefs.getString("preference_sorting", "near");
 
-        Log.d(TAG, "amount: " + amountOfTowns);
-        Log.d(TAG, "soring: " + sortingBy);
+        Log.d(TAG, "amount: " + amountOfCities);
+        Log.d(TAG, "soring: " + sortBy);
+        fragment_master.setPreferences(amountOfCities, sortBy);
+
     }
 
     //Reaction to Preference change
     private void preferenceChanged(SharedPreferences sharedPrefs, String key) {
         loadPreferences();
+        fragment_master.setAdapter(this);
     }
 
     //Implementation of the Preference menu
