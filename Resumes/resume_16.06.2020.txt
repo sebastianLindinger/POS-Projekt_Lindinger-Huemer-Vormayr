@@ -18,6 +18,6 @@ Wie liegt die Gruppe im Zeitplan?
 - Das Projekt liegt perfekt im Plan.
 
 Was wird nächste Woche erledigt?
-- Preferences
+- Preferences (Number Picker)
 - FactFragment wird fertig implementiert.
 	
