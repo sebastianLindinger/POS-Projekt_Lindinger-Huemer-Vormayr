@@ -49,8 +49,8 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
     public void addFactListener() {
         final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact, null);
         AlertDialog.Builder newNoteDialog = new AlertDialog.Builder(this);
-        newNoteDialog.setTitle("Neuen Fact verfassen");
-        newNoteDialog.setMessage("Beachten Sie das dieser Fact von jedem Benutzer gelesen werden kann!");
+        newNoteDialog.setTitle("Neuen Fakt verfassen");
+        newNoteDialog.setMessage("Beachten Sie das dieser Fakt von jedem Benutzer gelesen werden kann!");
         newNoteDialog.setView(vDialog);
         newNoteDialog.setPositiveButton("Senden", new DialogInterface.OnClickListener() {
             @Override
@@ -79,7 +79,7 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
                 }
             }
         });
-        newNoteDialog.setNegativeButton("Nicht Senden", null);
+        newNoteDialog.setNegativeButton("Abbrechen", null);
         newNoteDialog.show();
     }
 }
