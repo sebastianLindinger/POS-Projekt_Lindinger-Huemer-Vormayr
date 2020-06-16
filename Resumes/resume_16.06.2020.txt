@@ -1,0 +1,23 @@
+Resume 15.06.2020:
+	
+Was ist gut gelaufen?
+- Kommunikation zwischen den Entwicklern. Jeder wusste was zu tun ist.
+
+Welche Arbeitspakete wurden erledigt?
+- Fakten (über Gemeinden) implementiert, allerdings noch nicht voll funktionsfähig
+- Einige Verschönderungen und Änderungen am User-Interface vorgenommen
+- MasterFragment wurde abgeschlossen
+- DetailFragment wurde abgeschlossen
+- Landscape Modus für DetailFragment und MasterFragment wurde entwickelt.
+
+Welche Probleme sind aufgetreten?
+- Keine größeren Probleme.
+- Nur eine falsche Benennung einer ID-des Detail-Fragments erforderte uns eine lange Fehlersuche.
+
+Wie liegt die Gruppe im Zeitplan?
+- Das Projekt liegt perfekt im Plan.
+
+Was wird nächste Woche erledigt?
+- Preferences
+- FactFragment wird fertig implementiert.
+	
