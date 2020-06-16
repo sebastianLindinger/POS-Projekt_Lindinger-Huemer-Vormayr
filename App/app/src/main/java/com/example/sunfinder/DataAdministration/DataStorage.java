@@ -30,7 +30,8 @@ public class DataStorage implements Serializable {
                     comparator = new SortByDistanceComparator();
         }
         Collections.sort(cities, comparator);
-        return cities.subList(0, amount);
+        if(amount <= cities.size()) return cities.subList(0, amount);
+        return cities;
     }
 
     public List<City> getSunnyCities() {
