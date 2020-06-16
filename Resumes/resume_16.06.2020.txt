@@ -11,6 +11,7 @@ Welche Arbeitspakete wurden erledigt?
 - Landscape Modus für DetailFragment und MasterFragment wurde entwickelt.
 - Traurige Wolke icon wurde erstellt (Wird angezeigt falls nirgends die sonne scheint).
 - Preferences (zur Zeit wird noch ein Dialog angezeigt wie viele Orte man anzeigen will. Wird aber noch geändert um unsinnige benutzereingaben zu verhindern)
+- Services. Um 12.00 Uhr kommt eine Nachricht "an ... Orten scheint jetzt gerade die Sonne"
 
 Welche Probleme sind aufgetreten?
 - Keine größeren Probleme.
