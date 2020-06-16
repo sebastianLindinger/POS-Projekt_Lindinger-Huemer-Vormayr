@@ -25,4 +25,5 @@ Was wird nächste Woche erledigt?
 - FactFragment wird fertig implementiert.
 - Ort auf der Karte anzeigen wird implementiert.
 - AlertDialog für die Eingabe der Fakten wird verschönert.
+- Design für Landscape Modus wird noch leicht geändert.
 	
