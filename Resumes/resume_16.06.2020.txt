@@ -24,4 +24,5 @@ Was wird nächste Woche erledigt?
 - Preferences (Number Picker)
 - FactFragment wird fertig implementiert.
 - Ort auf der Karte anzeigen wird implementiert.
+- Design für Landscape Modus wird noch leicht geändert.
 	
