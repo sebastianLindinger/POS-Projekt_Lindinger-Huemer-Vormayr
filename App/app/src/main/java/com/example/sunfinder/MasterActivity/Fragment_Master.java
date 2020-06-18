@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 import com.example.sunfinder.DataAdministration.City;
 import com.example.sunfinder.DataAdministration.DataStorage;
-import com.example.sunfinder.DataAdministration.Functions;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
 
@@ -74,7 +73,7 @@ public class Fragment_Master extends Fragment {
 
     public void setTextViews() {
         City city = storage.getMyCity();
-        switch (Functions.getWeather(city)) {
+        switch (city.getWeather()) {
             case SUN:
                 imageView_weatherIcon.setImageResource(R.drawable.sun);
                 break;
@@ -95,10 +94,10 @@ public class Fragment_Master extends Fragment {
         textView_yourTown.setText(city.getName());
         textView_clouds.setText(city.getWeatherData().clouds.all + "%");
         textView_wind.setText(city.getWeatherData().wind.speed + " Km/h");
-        textView_temp.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp) + "°C");
-        textView_tempFeels.setText(Functions.kelvinToDegrees(city.getWeatherData().main.feels_like) + "°C");
-        textView_tempMax.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_max) + "°C");
-        textView_tempMin.setText(Functions.kelvinToDegrees(city.getWeatherData().main.temp_min) + "°C");
+        textView_temp.setText(city.getTempInDegrees() + "°C");
+        textView_tempFeels.setText(city.getTempFeelsLikeInDegrees() + "°C");
+        textView_tempMax.setText(city.getTempMaxInDegrees() + "°C");
+        textView_tempMin.setText(city.getTempMinInDegrees() + "°C");
 
         if(storage.getSunnyCities().size() == 0) {
             View footer = getLayoutInflater().inflate(R.layout.listview_footer, null);

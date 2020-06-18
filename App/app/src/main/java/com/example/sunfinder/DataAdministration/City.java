@@ -1,6 +1,7 @@
 package com.example.sunfinder.DataAdministration;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
 
 public class City implements Serializable {
     String _id;
@@ -50,6 +51,42 @@ public class City implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getLat() {
+        return weatherData.coord.lat;
+    }
+
+    public double getLon() {
+        return weatherData.coord.lon;
+    }
+
+    public double getTempInDegrees() {
+        return kelvinToDegrees(weatherData.main.temp);
+    }
+
+    public double getTempMaxInDegrees() {
+        return kelvinToDegrees(weatherData.main.temp_max);
+    }
+
+    public double getTempMinInDegrees() {
+        return kelvinToDegrees(weatherData.main.temp_min);
+    }
+
+    public double getTempFeelsLikeInDegrees() {
+        return kelvinToDegrees(weatherData.main.feels_like);
+    }
+
+    private double kelvinToDegrees(double kelvin) {
+        DecimalFormat df = new DecimalFormat("#.#");
+        return Double.parseDouble(df.format(kelvin - 273.15).replace(",", "."));
+    }
+
+    public com.example.sunfinder.DataAdministration.Weather getWeather() {
+        if(weatherData.weather[0].icon.equals("01d") && weatherData.weather[0].id == 800) return com.example.sunfinder.DataAdministration.Weather.SUN;
+        else if(weatherData.weather[0].main.equals("Thunderstorm")) return com.example.sunfinder.DataAdministration.Weather.THUNDERSTORM;
+        else if(weatherData.weather[0].main.equals("Rain")) return com.example.sunfinder.DataAdministration.Weather.RAIN;
+        else return com.example.sunfinder.DataAdministration.Weather.CLOUD;
     }
 
     public class WeatherData implements Serializable{

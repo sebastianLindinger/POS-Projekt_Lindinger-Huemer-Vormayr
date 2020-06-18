@@ -1,6 +1,8 @@
 package com.example.sunfinder.DetailActivity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,13 +17,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.sunfinder.DataAdministration.City;
-import com.example.sunfinder.DataAdministration.Functions;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 
 public class Fragment_Detail extends Fragment implements View.OnClickListener {
@@ -58,6 +55,7 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
         button_viewFacts = view.findViewById(R.id.button_Detail_ViewFacs);
         button_viewFacts.setOnClickListener(this);
         button_openMap = view.findViewById(R.id.button_Detail_OpenMap);
+        button_openMap.setOnClickListener(this);
         textView_yourTown = view.findViewById(R.id.textView_Detail_YourTown);
         textView_clouds = view.findViewById(R.id.textView_Detail_Clouds);
         textView_wind = view.findViewById(R.id.textView_Detail_Wind);
@@ -74,14 +72,14 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
         textView_yourTown.setText(city.getName());
         textView_clouds.setText(city.getWeatherData().clouds.all + "%");
         textView_wind.setText(city.getWeatherData().wind.speed + " Km/h");
-        textView_temp.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp + "")) + "°C");
-        textView_tempFeels.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.feels_like + "")) + "°C");
-        textView_tempMax.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp_max + "")) + "°C");
-        textView_tempMin.setText(Functions.kelvinToDegrees(Double.parseDouble(city.getWeatherData().main.temp_min + "")) + "°C");
+        textView_temp.setText(city.getTempInDegrees() + "°C");
+        textView_tempFeels.setText(city.getTempFeelsLikeInDegrees() + "°C");
+        textView_tempMax.setText(city.getTempMaxInDegrees() + "°C");
+        textView_tempMin.setText(city.getTempMinInDegrees() + "°C");
         textView_humidity.setText(city.getWeatherData().main.humidity + "%");
         textView_pressure.setText(city.getWeatherData().main.pressure + "μPa");
 
-        switch (Functions.getWeather(city)) {
+        switch (city.getWeather()) {
             case SUN:
                 imageView_weatherIcon.setImageResource(R.drawable.sun);
                 break;
@@ -113,12 +111,18 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == button_viewFacts.getId()) {
-            mListener.viewFactsClicked();
-        }
+        if (v.getId() == button_viewFacts.getId()) mListener.viewFactsClicked();
+        else if(v.getId() == button_openMap.getId()) openMap(city);
     }
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    private void openMap(City city) {
+        Uri gmmIntentUri = Uri.parse("geo:" + city.getLat() + "," + city.getLon()+"?z=14");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
     }
 }
