@@ -45,8 +45,6 @@ public class NotificationHelper extends ContextWrapper {
             ncb.setSmallIcon(R.drawable.sun);
             if (numberOfSunnyPlaces > 1) ncb.setContentText("Momentan haben " + numberOfSunnyPlaces + " Orte in Österreich Sonnenschein!");
             else ncb.setContentText("Momentan hat " + numberOfSunnyPlaces + " Ort in Österreich Sonnenschein!");
-
-
         }
         return ncb;
     }

@@ -7,69 +7,69 @@
 7
 8    <uses-sdk
 9        android:minSdkVersion="28"
-9-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml
+9-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml
 10        android:targetSdkVersion="29" />
-10-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml
+10-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml
 11
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:6:5-66
-12-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:6:22-64
+12-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:6:5-66
+12-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:7:5-78
-13-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:7:22-76
+13-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:7:5-78
+13-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:7:22-76
 14
 15    <application
-15-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:9:5-30:19
+15-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:9:5-30:19
 16        android:allowBackup="true"
-16-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:10:9-35
+16-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-17-->[androidx.core:core:1.1.0] C:\Users\seigl\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+17-->[androidx.core:core:1.1.0] C:\Users\Jonathan\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:11:9-43
+19-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:11:9-43
 20        android:label="@string/app_name"
-20-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:12:9-41
+20-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:12:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:13:9-54
+21-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:13:9-54
 22        android:supportsRtl="true"
-22-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:14:9-35
+22-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:14:9-35
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme"
-24-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:15:9-40
+24-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:15:9-40
 25        android:usesCleartextTraffic="true" >
-25-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:16:9-44
+25-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:16:9-44
 26        <service android:name="com.example.sunfinder.Service.NotificationService" />
-26-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:17:9-64
-26-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:17:18-61
+26-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:17:9-64
+26-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:17:18-61
 27
 28        <receiver android:name="com.example.sunfinder.Service.AlertReceiver" />
-28-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:9-58
-28-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:19-56
+28-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:9-58
+28-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:18:19-56
 29
 30        <activity android:name="com.example.sunfinder.Preferences.SettingsActivity" />
-30-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:19:9-96
-30-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:19:19-84
+30-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:19:9-96
+30-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:19:19-84
 31        <activity android:name="com.example.sunfinder.FactsActivity.FactsActivity" />
-31-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:9-86
-31-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:19-83
+31-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:9-86
+31-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:20:19-83
 32        <activity android:name="com.example.sunfinder.DetailActivity.DetailActivity" />
-32-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:21:9-88
-32-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:21:19-85
+32-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:21:9-88
+32-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:21:19-85
 33        <activity android:name="com.example.sunfinder.MasterActivity.MasterActivity" />
-33-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:22:9-88
-33-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:22:19-85
+33-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:22:9-88
+33-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:22:19-85
 34        <activity android:name="com.example.sunfinder.MainActivity.MainActivity" >
-34-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:23:9-29:20
-34-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:23:19-81
+34-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:23:9-29:20
+34-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:23:19-81
 35            <intent-filter>
-35-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:24:13-28:29
+35-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:24:13-28:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:25:17-69
-36-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:25:25-66
+36-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:25:17-69
+36-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:25:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:27:17-77
-38-->C:\Users\seigl\Documents\Sebastian\Schule\3. Klasse\Programmieren\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:27:27-74
+38-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:27:17-77
+38-->E:\Schule\Schulaufgaben\Pos\Pos3Projekt\POS-Projekt_Lindinger-Huemer-Vormayr\App\app\src\main\AndroidManifest.xml:27:27-74
 39            </intent-filter>
 40        </activity>
 41    </application>
