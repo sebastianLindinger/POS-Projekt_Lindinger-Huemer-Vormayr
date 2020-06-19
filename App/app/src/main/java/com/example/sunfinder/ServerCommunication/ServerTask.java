@@ -42,17 +42,24 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
     protected String doInBackground(String... strings) {
         String responseJson = "";
         try {
-            //HttpURLConnection connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
-            HttpURLConnection connection = (HttpURLConnection) new URL(strings[1]).openConnection();
-            connection.setRequestMethod(strings[0]);
+            HttpURLConnection connection;
+
+
 
             if (strings[0].equals("PUT")) {
                 connection = (HttpURLConnection) new URL(strings[1]).openConnection();
+                connection.setRequestMethod(strings[0]);
                 connection.setDoOutput(true);
                 byte[] data = strings[2].getBytes();
+                connection.setRequestProperty("Content-Type", "application/json");
                 connection.setFixedLengthStreamingMode(data.length);
                 connection.getOutputStream().write(data);
                 connection.getOutputStream().flush();
+            }
+            else {
+                connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
+                //connection = (HttpURLConnection) new URL(strings[1]).openConnection();
+                connection.setRequestMethod(strings[0]);
             }
 
             int responseCode = connection.getResponseCode();
