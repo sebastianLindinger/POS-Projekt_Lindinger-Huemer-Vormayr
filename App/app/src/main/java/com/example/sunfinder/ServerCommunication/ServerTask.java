@@ -1,21 +1,25 @@
 package com.example.sunfinder.ServerCommunication;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.example.sunfinder.DataAdministration.City;
 import com.example.sunfinder.DataAdministration.DataStorage;
+import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
 public class ServerTask extends AsyncTask<String, Integer, String> {
+    private static final String TAG = ServerTask.class.getSimpleName();
     private OnTaskFinishedListener listener;
 
     public ServerTask(OnTaskFinishedListener listener) {
@@ -40,11 +44,14 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
     //strings[2] = fact data
     @Override
     protected String doInBackground(String... strings) {
+        Log.d(TAG, "doInBackground entered...");
         String responseJson = "";
         try {
-            //HttpURLConnection connection = (HttpURLConnection) new URL(strings[1]).openConnection();
-            HttpURLConnection connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URL(strings[1]).openConnection();
+            //HttpURLConnection connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
             connection.setRequestMethod(strings[0]);
+            connection.setConnectTimeout(5000);
+            connection.setReadTimeout(5000);
 
             if (strings[0].equals("PUT")) {
                 connection = (HttpURLConnection) new URL(strings[1]).openConnection();
