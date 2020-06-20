@@ -2,6 +2,7 @@ package com.example.sunfinder.DetailActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -45,7 +46,12 @@ public class Fragment_Detail extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         Log.d(TAG, "onCreateView: entered");
-        View view = inflater.inflate(R.layout.fragment_fragment__detail, container, false);
+        View view;
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+            view = inflater.inflate(R.layout.fragment_fragment__detail, container, false);
+        } else {
+            view = inflater.inflate(R.layout.fragment_fragment__detail_port, container, false);
+        }
         initializeViews(view);
         return view;
     }

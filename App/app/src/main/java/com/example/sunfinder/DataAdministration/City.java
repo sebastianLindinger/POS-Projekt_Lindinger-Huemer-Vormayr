@@ -24,21 +24,17 @@ public class City implements Serializable {
     }
 
     public String[] getFacts() {
-        if(facts != null){
-            return facts;
-        }
-        else{
-            return new String[0];
-        }
+        if (facts != null) return facts;
+        else return new String[0];
     }
 
     public void addFact(String fact) {
-       String[] factArr = new String[facts.length+1];
-       for(int i = 0; i < facts.length; i++){
-           factArr[i] = facts[i];
-       }
-       factArr[facts.length] = fact;
-       facts = factArr;
+        String[] factArr = new String[facts.length + 1];
+        for (int i = 0; i < facts.length; i++) {
+            factArr[i] = facts[i];
+        }
+        factArr[facts.length] = fact;
+        facts = factArr;
     }
 
     public WeatherData getWeatherData() {
@@ -83,13 +79,16 @@ public class City implements Serializable {
     }
 
     public com.example.sunfinder.DataAdministration.Weather getWeather() {
-        if(weatherData.weather[0].icon.equals("01d") && weatherData.weather[0].id == 800) return com.example.sunfinder.DataAdministration.Weather.SUN;
-        else if(weatherData.weather[0].main.equals("Thunderstorm")) return com.example.sunfinder.DataAdministration.Weather.THUNDERSTORM;
-        else if(weatherData.weather[0].main.equals("Rain")) return com.example.sunfinder.DataAdministration.Weather.RAIN;
+        if (weatherData.weather[0].icon.equals("01d") && weatherData.weather[0].id == 800)
+            return com.example.sunfinder.DataAdministration.Weather.SUN;
+        else if (weatherData.weather[0].main.equals("Thunderstorm"))
+            return com.example.sunfinder.DataAdministration.Weather.THUNDERSTORM;
+        else if (weatherData.weather[0].main.equals("Rain"))
+            return com.example.sunfinder.DataAdministration.Weather.RAIN;
         else return com.example.sunfinder.DataAdministration.Weather.CLOUD;
     }
 
-    public class WeatherData implements Serializable{
+    public class WeatherData implements Serializable {
         public Coord coord;
         public Weather[] weather;
         public String base;
@@ -105,16 +104,16 @@ public class City implements Serializable {
         public int cod;
     }
 
-    public class Wind implements Serializable{
+    public class Wind implements Serializable {
         public double speed;
         public int deg;
     }
 
-    public class Clouds implements Serializable{
+    public class Clouds implements Serializable {
         public int all;
     }
 
-    public class Sys implements Serializable{
+    public class Sys implements Serializable {
         int type;
         int id;
         String country;
@@ -122,19 +121,19 @@ public class City implements Serializable {
         long sunset;
     }
 
-    public class Coord implements Serializable{
+    public class Coord implements Serializable {
         double lat;
         double lon;
     }
 
-    public class Weather implements Serializable{
+    public class Weather implements Serializable {
         int id;
         String main;
         String description;
         String icon;
     }
 
-    public class Main implements Serializable{
+    public class Main implements Serializable {
         public double temp;
         public double feels_like;
         public double temp_min;
