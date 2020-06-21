@@ -52,7 +52,7 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
         Log.d(TAG, "vieFactsClicked: entered");
         Log.d(TAG, city.getName());
 
-        if (showFacts) fragment_facts.showinformation(city);
+        if (showFacts) fragment_facts.showInformation(city);
         else callFactsActivity();
     }
 
@@ -78,7 +78,7 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
                     city.addFact(fact);
 
                     if (showFacts) {
-                        fragment_facts.showinformation(city);
+                        fragment_facts.showInformation(city);
                     } else callFactsActivity();
                 }
             }

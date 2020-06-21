@@ -75,7 +75,7 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
                     }
                     serverTask.execute("PUT", URL_AddFact.replace("<id>", city.get_id()), factData.toString());
 
-                    fragment_facts.showinformation(city);
+                    fragment_facts.showInformation(city);
                 }
             }
         });
