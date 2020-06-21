@@ -44,8 +44,6 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
         try {
             HttpURLConnection connection;
 
-
-
             if (strings[0].equals("PUT")) {
                 connection = (HttpURLConnection) new URL(strings[1]).openConnection();
                 connection.setRequestMethod(strings[0]);
