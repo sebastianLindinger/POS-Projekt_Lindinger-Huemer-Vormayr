@@ -22,7 +22,6 @@
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="Geboltskirchen"
-                android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="25dp"
                 android:textStyle="bold" />

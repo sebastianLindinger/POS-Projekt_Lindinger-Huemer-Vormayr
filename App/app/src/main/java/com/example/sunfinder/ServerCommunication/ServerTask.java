@@ -50,8 +50,6 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
             //HttpURLConnection connection = (HttpURLConnection) new URL(strings[1]).openConnection();
             HttpURLConnection connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
             connection.setRequestMethod(strings[0]);
-            connection.setConnectTimeout(5000);
-            connection.setReadTimeout(5000);
 
             if (strings[0].equals("PUT")) {
                 connection = (HttpURLConnection) new URL(strings[1]).openConnection();
@@ -89,5 +87,4 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
         }
         return stringBuilder.toString();
     }
-
 }
