@@ -55,17 +55,11 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         ServerTask getDataFromServer = new ServerTask(new OnTaskFinishedListener() {
             @Override
             public void onTaskFinished(String response) {
-                Log.d(TAG, response);
-                //parse responseJsonArray (do this in a method) (hob grod kan bock dase oa klasse dafir erstö)
-                Gson gson = new Gson();
-                TypeToken<List<City>> token = new TypeToken<List<City>>() {
-                };
+                Log.d(TAG, "response:" + response);
                 try {
-                    List<City> cities = gson.fromJson(response, token.getType());
-                    City myCity = cities.get(0);
-                    cities.remove(0);
-                    DataStorage storage = new DataStorage( myCity, cities);
-                    //Toast.makeText(MainActivity.this, storage.getCityByIndex(0).getName(), Toast.LENGTH_LONG).show();
+                    List<City> cities = parseJson(response);
+                    City myCity = cities.remove(0);
+                    DataStorage storage = new DataStorage(myCity, cities);
 
                     callMasterActivity(storage);
                 } catch (Exception e) {
@@ -78,15 +72,16 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
         });
 
         if (fragment_start.useGPS) {
-            if(lon != 0.0 && lat != 0.0) getDataFromServer.execute("GET", URL_geo.replace("<lat>", String.valueOf(lat)).replace("<lon>", String.valueOf(lon)));
-        } else if(!city.equals("") || !postcode.equals("")){
+            if (lon != 0.0 && lat != 0.0)
+                getDataFromServer.execute("GET", URL_geo.replace("<lat>", String.valueOf(lat)).replace("<lon>", String.valueOf(lon)));
+        } else if (!city.equals("") || !postcode.equals("")) {
             getDataFromServer.execute("GET", URL_nameAndPostcode.replace("<name>", city).replace("<postcode>", postcode));
         } else {
             Toast.makeText(MainActivity.this, "Kein Ort eingegeben!", Toast.LENGTH_LONG).show();
         }
     }
-    private void startNotificationService()
-    {
+
+    private void startNotificationService() {
         Log.d(TAG, "entered: startNotificationService");
         Intent intent = new Intent(this, NotificationService.class);
         startService(intent);
@@ -133,5 +128,12 @@ public class MainActivity extends AppCompatActivity implements OnSunClickedListe
                 fragment_start.createLocationListener();
             }
         }
+    }
+
+    public List<City> parseJson(String response) {
+        Gson gson = new Gson();
+        TypeToken<List<City>> token = new TypeToken<List<City>>() {
+        };
+        return gson.fromJson(response, token.getType());
     }
 }
