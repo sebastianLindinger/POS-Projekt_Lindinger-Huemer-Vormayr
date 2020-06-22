@@ -1,0 +1,22 @@
+﻿Resume 15.06.2020:
+	
+Was ist gut gelaufen?
+- Kommunikation zwischen den Entwicklern. Jeder wusste was zu tun ist.
+- letzte Arbeiten wurden erfolgreich gemacht
+
+Welche Arbeitspakete wurden erledigt?
+- Bug fixing
+- Projektpräsentation
+- kleine Verbesserungen
+
+Welche Probleme sind aufgetreten?
+- Keine größeren Probleme.
+
+
+Wie liegt die Gruppe im Zeitplan?
+- Das Projekt ist Fertig
+
+
+Was wird nächste Woche erledigt?
+- App wird für die veröffentlichung vorbereitet
+	
