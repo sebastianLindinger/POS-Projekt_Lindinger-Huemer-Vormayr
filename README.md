@@ -1,8 +1,8 @@
 # Sunfinder
-Sunfinder ist eine Android Applikation, die es Ihnen ermöglicht mit leichtigkeit den nächstgelegenen Ort zu finden an dem die Sonne scheint
+Sunfinder ist eine Android Applikation, die es Ihnen ermöglicht, mit Leichtigkeit den nächstgelegenen Ort zu finden an dem die Sonne scheint. Außderdem können Sie zu jedem Ort einen persönlichen Kommentar verfassen, welcher von anderen Benutzern gesehen werden kann.
 
 ## NodeJs Server
-Dieser Server speichert die Wetterdaten, für jeden Ort in Oberösterreich, welche er sich von einer Wetter API herunterlädt. (Link zur Wetter-API finden Sie weiter unten.) Außerdem gibt der Sever bei entsprechenden GET-Request die Daten an die App weiter.
+Dieser Server speichert die Wetterdaten, für jede Gemeinde in Österreich, welche er sich von einer Wetter API herunterlädt. (Link zur Wetter-API finden Sie weiter unten.) Außerdem gibt der Sever bei entsprechendem GET-Request die Daten an die App weiter.
 
 ## Mitwirkende
 [Sebastian Lindinger](https://github.com/sebastianLindinger/) <br>
