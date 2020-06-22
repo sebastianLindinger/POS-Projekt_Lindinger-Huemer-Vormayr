@@ -10,20 +10,22 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
         android:layout_marginBottom="10dp"
+        android:text="Neuen Fakt verfassen"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:text="Neuen Fakt verfassen" />
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:text="Beachten Sie das dieser Fakt von jedem Benutzer gelesen werden kann!"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:text="Beachten Sie das dieser Fakt von jedem Benutzer gelesen werden kann!" />
+        android:textSize="19dp" />
 
     <EditText
         android:id="@+id/editText_newFact"
