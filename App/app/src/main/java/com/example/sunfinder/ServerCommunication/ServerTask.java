@@ -55,8 +55,8 @@ public class ServerTask extends AsyncTask<String, Integer, String> {
                 connection.getOutputStream().flush();
             }
             else {
-                connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
-                //connection = (HttpURLConnection) new URL(strings[1]).openConnection();
+                //connection = (HttpURLConnection) new URL("http://varchar42.me:3000/sunFinder/getTestData").openConnection();
+                connection = (HttpURLConnection) new URL(strings[1]).openConnection();
                 connection.setRequestMethod(strings[0]);
             }
 

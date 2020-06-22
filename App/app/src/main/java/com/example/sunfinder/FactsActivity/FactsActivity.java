@@ -84,6 +84,7 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
 
                     fragment_facts.showInformation(city);
                 }
+                vDialog.dismiss();
             }
         });
         vDialog.show();

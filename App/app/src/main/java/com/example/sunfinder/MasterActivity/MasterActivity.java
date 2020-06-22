@@ -33,6 +33,8 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
         setContentView(R.layout.activity_master);
 
         fragment_master = (Fragment_Master) getSupportFragmentManager().findFragmentById(R.id.fragment_master);
+        storage = (DataStorage) getIntent().getSerializableExtra("storage");
+
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
         preferenceChangeListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
@@ -44,8 +46,6 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
         };
         prefs.registerOnSharedPreferenceChangeListener(preferenceChangeListener);
         loadPreferences();
-
-        storage = (DataStorage) getIntent().getSerializableExtra("storage");
 
         fragment_master.setStorage(storage);
         fragment_master.setTextViews();
@@ -62,16 +62,33 @@ public class MasterActivity extends AppCompatActivity implements OnTownSelectedL
         startActivity(intent);
     }
 
-
-    //getPreferences(only for testing)...Implement this
     private void loadPreferences() {
-        amountOfCities = Integer.parseInt(prefs.getString("preference_amountOfTowns", "10"));
+
+        try {
+            amountOfCities = Integer.parseInt(prefs.getString("preference_amountOfTowns", "10"));
+
+            //if user entered a number which is too big -> take number of elements in storage
+            //if user entered negative number -> take 0
+            int amountOfSunnyCities = storage.getSunnyCities().size();
+            if(amountOfCities > amountOfSunnyCities) {
+                amountOfCities = amountOfSunnyCities;
+                prefs.edit().putString("preference_amountOfTowns", String.valueOf(amountOfSunnyCities)).commit();
+            }
+            else if(amountOfCities < 1) {
+                amountOfCities = 1;
+                prefs.edit().putString("preference_amountOfTowns", "1").commit();
+            }
+        } catch (NumberFormatException e) {
+            //user did not enter a number
+            //default value will be used
+            amountOfCities = 10;
+            prefs.edit().putString("preference_amountOfTowns", "10").commit();
+        }
         sortBy = prefs.getString("preference_sorting", "near");
 
         Log.d(TAG, "amount: " + amountOfCities);
         Log.d(TAG, "soring: " + sortBy);
         fragment_master.setPreferences(amountOfCities, sortBy);
-
     }
 
     //Reaction to Preference change

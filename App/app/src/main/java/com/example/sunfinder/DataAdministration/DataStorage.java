@@ -1,11 +1,14 @@
 package com.example.sunfinder.DataAdministration;
 
+import com.example.sunfinder.DataAdministration.Comparators.SortByLeastDistanceComparator;
+import com.example.sunfinder.DataAdministration.Comparators.SortByHighestTemperatureComparator;
+import com.example.sunfinder.DataAdministration.Comparators.SortByStrongestWindComparator;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class DataStorage implements Serializable {
     private City myCity;
@@ -17,17 +20,18 @@ public class DataStorage implements Serializable {
     }
 
     public List<City> getSunnyCitiesSortedBy(int amount, String comparatorString) {
+        if (amount <= 0) return new ArrayList<>();
         Comparator comparator;
         switch (comparatorString) {
 
             case "highestTemp":
-                comparator = new SortByBestWeatherComparator();
+                comparator = new SortByHighestTemperatureComparator();
                 break;
             case "leastWind":
-                comparator = new SortByWindComparator();
+                comparator = new SortByStrongestWindComparator();
                 break;
                 default:
-                    comparator = new SortByDistanceComparator();
+                    comparator = new SortByLeastDistanceComparator();
         }
         Collections.sort(cities, comparator);
         if(amount <= cities.size()) return cities.subList(0, amount);

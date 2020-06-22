@@ -8,11 +8,11 @@
         android:singleLine="true"
         android:summary="Wie viele Orte sollen angezeigt werden?"
         android:title="Anzahl der angezeigten Orte" />
-        <ListPreference
-            android:key="preference_sorting"
-            android:title="Sortierung"
-            android:entries="@array/pref_array"
-            android:entryValues="@array/pref_values"
-            android:defaultValue="near"
-            android:summary="Nach was soll sortiert werden?"></ListPreference>
+    <ListPreference
+        android:defaultValue="near"
+        android:entries="@array/pref_array"
+        android:entryValues="@array/pref_values"
+        android:key="preference_sorting"
+        android:summary="Nach was soll sortiert werden?"
+        android:title="Sortierung"></ListPreference>
 </PreferenceScreen>
