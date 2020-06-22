@@ -14,14 +14,14 @@ import java.text.DecimalFormat;
 import java.util.List;
 
 public class ItemListAdapter extends BaseAdapter {
-    private List<City>cities;
+    private List<City> cities;
     private int layoutId;
     private LayoutInflater inflater;
 
     public ItemListAdapter(List<City> cities, int layoutId, Context context) {
         this.cities = cities;
         this.layoutId = layoutId;
-        this.inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override

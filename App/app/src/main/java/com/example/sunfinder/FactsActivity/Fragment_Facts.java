@@ -1,4 +1,5 @@
 package com.example.sunfinder.FactsActivity;
+
 import android.content.Context;
 import android.os.Bundle;
 
@@ -19,7 +20,7 @@ import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
 
 
-public class Fragment_Facts extends Fragment implements View.OnClickListener{
+public class Fragment_Facts extends Fragment implements View.OnClickListener {
 
     private static final String TAG = Fragment_Start.class.getSimpleName();
 
@@ -42,27 +43,27 @@ public class Fragment_Facts extends Fragment implements View.OnClickListener{
 
     private void initializeViews(View view) {
         button_addFact = view.findViewById(R.id.button_Facts_WriteFact);
-        button_addFact.setOnClickListener(new AdapterView.OnClickListener(){
+        button_addFact.setOnClickListener(new AdapterView.OnClickListener() {
             @Override
             public void onClick(View v) {
-               mListener.addFactListener();
+                mListener.addFactListener();
             }
         });
 
         factFragTitle = view.findViewById(R.id.textView_Facts_Title);
         factList = view.findViewById(R.id.listview_Facts);
     }
-    public void showInformation(City pCity) {
-       ArrayAdapter<String> factAdapter =
-                new ArrayAdapter<String>(ctx, android.R.layout.simple_list_item_1, pCity.getFacts());
 
-       factList.setAdapter(factAdapter);
-       factFragTitle.setText("Nutzerkommentare zu " +pCity.getName());
+    public void showInformation(City pCity) {
+        FactListAdapter adapter = new FactListAdapter(pCity.getFacts(), R.layout.listview_item_facts, ctx);
+        factList.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+
+        factFragTitle.setText("Nutzerkommentare zu " + pCity.getName());
     }
 
     public void setCity(City city) {
         showInformation(city);
-
     }
 
     @Override
@@ -80,8 +81,7 @@ public class Fragment_Facts extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == button_addFact.getId())
-        {
+        if (v.getId() == button_addFact.getId()) {
             mListener.addFactListener();
         }
     }

@@ -2,6 +2,9 @@ package com.example.sunfinder.DataAdministration;
 
 import java.io.Serializable;
 import java.text.DecimalFormat;
+import java.util.Arrays;
+import java.util.function.IntFunction;
+import java.util.stream.Collectors;
 
 public class City implements Serializable {
     String _id;
@@ -24,7 +27,8 @@ public class City implements Serializable {
     }
 
     public String[] getFacts() {
-        if (facts != null) return facts;
+        //do not show empty elements
+        if (facts != null) return Arrays.stream(facts).filter(fact -> !fact.equals("")).toArray(String[]::new);
         else return new String[0];
     }
 

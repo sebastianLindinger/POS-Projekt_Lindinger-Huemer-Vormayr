@@ -3,6 +3,7 @@ package com.example.sunfinder.DetailActivity;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,11 @@ import com.example.sunfinder.FactsActivity.Fragment_Facts;
 import com.example.sunfinder.FactsActivity.OnAddFactListener;
 import com.example.sunfinder.MainActivity.Fragment_Start;
 import com.example.sunfinder.R;
+import com.example.sunfinder.ServerCommunication.OnTaskFinishedListener;
+import com.example.sunfinder.ServerCommunication.ServerTask;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -64,26 +70,33 @@ public class DetailActivity extends AppCompatActivity implements OnViewFactsList
 
     @Override
     public void addFactListener() {
-        final View vDialog = getLayoutInflater().inflate(R.layout.alertdialog_new_fact, null);
-        AlertDialog.Builder newNoteDialog = new AlertDialog.Builder(this);
-        newNoteDialog.setTitle("Neuen Fact verfassen");
-        newNoteDialog.setMessage("Beachten Sie das dieser Fact von jedem Benutzer gelesen werden kann!");
-        newNoteDialog.setView(vDialog);
-        newNoteDialog.setPositiveButton("Senden", new DialogInterface.OnClickListener() {
+        final Dialog vDialog = new Dialog(this);
+        vDialog.setContentView(R.layout.alertdialog_new_fact);
+
+        vDialog.findViewById(R.id.button_dialog_cancel).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
+            public void onClick(View v) {
+                vDialog.dismiss();
+            }
+        });
+        vDialog.findViewById(R.id.button_dialog_send).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "entered: sendClicked");
                 EditText txtFact = vDialog.findViewById(R.id.editText_newFact);
                 if (!txtFact.getText().equals("")) {
                     String fact = txtFact.getText().toString();
                     city.addFact(fact);
 
+                    FactsActivity.sendDataToServer(city.get_id(), fact);
+
                     if (showFacts) {
                         fragment_facts.showInformation(city);
                     } else callFactsActivity();
                 }
+                vDialog.dismiss();
             }
         });
-        newNoteDialog.setNegativeButton("Nicht Senden", null);
-        newNoteDialog.show();
+        vDialog.show();
     }
 }

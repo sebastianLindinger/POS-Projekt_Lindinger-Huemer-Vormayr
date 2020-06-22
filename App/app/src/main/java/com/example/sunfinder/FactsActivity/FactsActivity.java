@@ -21,10 +21,10 @@ import com.example.sunfinder.ServerCommunication.ServerTask;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class FactsActivity extends AppCompatActivity implements OnAddFactListener{
+public class FactsActivity extends AppCompatActivity implements OnAddFactListener {
 
     private City city;
-    private final String URL_AddFact = "http://varchar42.me:3000/sunFinder/put?id=<id>";
+    public static final String URL_AddFact = "http://varchar42.me:3000/sunFinder/put?id=<id>";
     private static final String TAG = FactsActivity.class.getSimpleName();
 
     Fragment_Facts fragment_facts;
@@ -66,21 +66,8 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
                 if (!txtFact.getText().equals("")) {
                     String fact = txtFact.getText().toString();
                     city.addFact(fact);
-                    ServerTask serverTask = new ServerTask(new OnTaskFinishedListener() {
-                        @Override
-                        public void onTaskFinished(String response) {
-                            Log.d(TAG, response);
-                        }
-                    });
-                    //PUT the new Fact on the Server
-                    JSONObject factData = new JSONObject();
-                    try {
-                        factData.put("fact", fact);
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    serverTask.execute("PUT", URL_AddFact.replace("<id>", city.get_id()), factData.toString());
+                    sendDataToServer(city.get_id(), fact);
 
                     fragment_facts.showInformation(city);
                 }
@@ -88,6 +75,32 @@ public class FactsActivity extends AppCompatActivity implements OnAddFactListene
             }
         });
         vDialog.show();
+    }
+
+    public static void sendDataToServer(String id, String fact) {
+        ServerTask serverTask = new ServerTask(new OnTaskFinishedListener() {
+            @Override
+            public void onTaskFinished(String response) {
+                Log.d(TAG, response);
+            }
+        });
+
+        try {
+            //create JSON object
+            JSONObject factData = FactsActivity.createJSONObject(fact);
+
+            //send to Server
+            serverTask.execute("PUT", URL_AddFact.replace("<id>", id), factData.toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static JSONObject createJSONObject(String fact) throws JSONException {
+        JSONObject factData = new JSONObject();
+        factData.put("fact", fact);
+        return factData;
     }
 
 }
