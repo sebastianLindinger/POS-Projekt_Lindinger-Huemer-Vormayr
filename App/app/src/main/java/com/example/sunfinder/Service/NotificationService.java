@@ -8,6 +8,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class NotificationService extends Service {
     private static String TAG = NotificationService.class.getSimpleName();
@@ -19,7 +20,7 @@ public class NotificationService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(TAG, "onStartCommand: Service: onStartCommand");
         createAlarm();
-        return super.onStartCommand(intent, flags, startId);
+        return START_STICKY;
     }
 
     @Override
@@ -35,8 +36,9 @@ public class NotificationService extends Service {
     }
     private void createAlarm() {
         Calendar c = Calendar.getInstance();
-        c.set(Calendar.HOUR_OF_DAY, 20);
-        c.set(Calendar.MINUTE, 16);
+        c.setTimeZone(TimeZone.getDefault());
+        c.set(Calendar.HOUR_OF_DAY, 12);
+        c.set(Calendar.MINUTE, 0);
         c.set(Calendar.SECOND, 0);
         AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(this, AlertReceiver.class);
