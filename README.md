@@ -12,7 +12,7 @@ Dieser Server speichert die Wetterdaten, für jede Gemeinde in Österreich, welc
 ## Wetter-API
 [openweathermap](https://openweathermap.org/)
 
-##Arbeitspakete
+## Arbeitspakete
 https://docs.google.com/spreadsheets/d/1RNFcoASJOL7tsuMML-bIptsMvuKYpXNv35VKmKvvzkg/edit?usp=sharing
 
 
